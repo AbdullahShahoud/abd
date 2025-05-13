@@ -1,0 +1,53 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:learn_programtion/features/courses/logic/model/courses_me_response.dart';
+
+import '../../model/courses_response.dart';
+
+part 'coursees_state.freezed.dart';
+
+@freezed
+class CoursesState<T> with _$CoursesState<T> {
+  const factory CoursesState.initialCourses() = _InitialCourses;
+  const factory CoursesState.loadingCourses() = LoadingCourses;
+  const factory CoursesState.successCourses(T data) = SuccessCourses<T>;
+  const factory CoursesState.errorCourses({required String error}) =
+      ErrorCourses;
+
+  const factory CoursesState.initialCoursesMe() = _InitialCoursesMe;
+  const factory CoursesState.loadingCoursesMe() = LoadingCoursesMe;
+  const factory CoursesState.successCoursesMe(T data) = SuccessCoursesMe<T>;
+  const factory CoursesState.errorCoursesMe({required String error}) =
+      ErrorCoursesMe;
+
+  const factory CoursesState.courseSelected(CoursesResponse selectedCourse) =
+      CourseSelected;
+  const factory CoursesState.lessonSelected(Lesson selectedlesson) =
+      LessonSelected;
+  const factory CoursesState.levelSelected(Level selectedlevel) = LevelSelected;
+
+  const factory CoursesState.courseSelectedMe(
+      CoursesMeResponse selectedCourseMe) = CourseSelectedMe;
+  const factory CoursesState.lessonSelectedMe(LessonMe selectedlesson) =
+      LessonSelectedMe;
+  const factory CoursesState.levelSelectedMe(LevelMe selectedlevel) =
+      LevelSelectedMe;
+  const factory CoursesState.sendQuationInitial() = _SendQuationInitial;
+  const factory CoursesState.sendQuationLoading() = SendQuationLoading;
+  const factory CoursesState.sendQuationSuccess(String data) =
+      SendQuationSuccess;
+  const factory CoursesState.sendQuationError({required String error}) =
+      SendQuationError;
+
+  const factory CoursesState.finishedInitial() = _FinishedInitial;
+  const factory CoursesState.finishedLoading() = FinishedLoading;
+  const factory CoursesState.finishedSuccess(String data) = FinishedSuccess;
+  const factory CoursesState.finishedError({required String error}) =
+      FinishedError;
+
+  const factory CoursesState.listCoursesInitial() = _ListCoursesInitial;
+
+  const factory CoursesState.listCoursesLoading() = ListCoursesLoading;
+  const factory CoursesState.listCoursesSuccess(T data) = ListCoursesSuccess<T>;
+  const factory CoursesState.listCoursesError({required String error}) =
+      ListCoursesError;
+}
