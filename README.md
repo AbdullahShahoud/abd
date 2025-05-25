@@ -19,4 +19,6 @@ this is same screenshot to app:
 ![photo_2_2025-05-25_19-21-50](https://github.com/user-attachments/assets/592d867f-293a-4819-91ce-32882dc74f40)
 ![photo_3_2025-05-25_19-21-50](https://github.com/user-attachments/assets/241bccb3-f85b-485f-87e5-c65cba1895d1)
 ![photo_4_2025-05-25_19-21-50](https://github.com/user-attachments/assets/5572d813-1c31-4f04-905e-a440b53b7492)
+![photo_9_2025-05-25_19-21-50](https://github.com/user-attachments/assets/e4185d56-2f3e-4718-91cb-7a5b1185edd7)
+
 
