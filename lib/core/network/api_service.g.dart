@@ -13,7 +13,9 @@ class _ApiService implements ApiService {
     this._dio, {
     this.baseUrl,
     this.errorLogger,
-  });
+  }) {
+    baseUrl ??= 'https://5c05-149-40-62-20.ngrok-free.app/api/';
+  }
 
   final Dio _dio;
 
@@ -35,7 +37,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'login',
+          'login/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -69,7 +71,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'signup',
+          'register/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -102,7 +104,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'book',
+          'books/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -135,7 +137,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'notification',
+          'notifications/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -170,7 +172,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'profile/change_email',
+          'user-detail/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -205,7 +207,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'profile/change_email',
+          'change-password/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -271,7 +273,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'courses',
+          'courses/',
           queryParameters: queryParameters,
           data: _data,
         )

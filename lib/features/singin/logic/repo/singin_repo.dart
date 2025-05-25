@@ -6,7 +6,7 @@ import 'package:learn_programtion/features/singin/logic/model/singin_response.da
 import '../../../../core/network/api_service.dart';
 
 class SinginRepo {
-  late final ApiService _apiService;
+  final ApiService _apiService;
   SinginRepo(this._apiService);
   Future<ApiResult<SinginResponse>> Singin(SinginRequest singinRequest) async {
     try {

@@ -15,12 +15,12 @@ class CheckCourseBlocListener extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<CourseesCubit, CoursesState>(
       listenWhen: (previous, current) =>
-          current is ErrorCourses ||
-          current is SuccessCourses ||
-          current is LoadingCourses,
+          current is CheckCoursesError ||
+          current is CheckCoursesLoading ||
+          current is CheckCoursesSuccess,
       listener: (context, state) {
         state.maybeWhen(
-          loadingCourses: () => showDialog(
+          checkCoursesLoading: () => showDialog(
             context: context,
             builder: (context) => Center(
               child: CircularProgressIndicator(
@@ -28,8 +28,8 @@ class CheckCourseBlocListener extends StatelessWidget {
               ),
             ),
           ),
-          successCourses: (message) => successcourses(context, message),
-          errorCourses: (error) => errorcourse(context, error),
+          checkCoursesSuccess: (message) => successcourses(context, message),
+          checkCoursesError: (error) => errorcourse(context, error),
           orElse: () {
             SizedBox.shrink();
           },

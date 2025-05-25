@@ -15,21 +15,20 @@ class NotificationNormalBlocListener extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<ProfileAndNotificationCubit,
             ProfileAndNotificationState>(
-        child:
-            //  const SizedBox.shrink(),
-            successNotification(
-                ProfileAndNotificationCubit.get(context).notification),
+        child: const SizedBox.shrink(),
         listenWhen: (previous, current) =>
-            current is Loading || current is Success || current is Error,
+            current is LoadingNotificationNormal ||
+            current is SuccessNotificationNormal ||
+            current is ErrorNotificationNormal,
         listener: (context, state) {
           state.maybeWhen(
-            loading: () {
+            loadingNotificationNormal: () {
               loadingNotification();
             },
-            success: (data) {
+            successNotificationNormal: (data) {
               successNotification(data);
             },
-            error: (error) {
+            errorNotificationNormal: (error) {
               errorNotification();
             },
             orElse: () {},

@@ -14,21 +14,44 @@ class GradeBlocListener extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocListener<ProfileAndNotificationCubit,
+    return BlocBuilder<ProfileAndNotificationCubit,
             ProfileAndNotificationState>(
-        child: SizedBox.shrink(),
-        listenWhen: (previous, current) =>
-            current is Loading || current is Success || current is Error,
-        listener: (context, state) {
-          state.whenOrNull(
-            success: (data) {
-              gradeSuccess(data);
-            },
-            error: (error) {
-              errorGrade(context, error);
-            },
-          );
-        });
+        buildWhen: (previous, current) =>
+            current is LoadingGrade ||
+            current is SuccessGrade ||
+            current is ErrorGrade,
+        builder: ((context, state) {
+          return state.maybeWhen(successGrade: (data) {
+            return gradeSuccess(data);
+          }, errorGrade: (error) {
+            return AlertDialog(
+              content: Text(
+                '${error}',
+                textDirection: TextDirection.rtl,
+                style: FontStyleAndText.font_big,
+              ),
+              icon: Icon(
+                Icons.error,
+                size: 50,
+                color: Colors.red,
+              ),
+              actions: [
+                ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: ColorManger.primary_ColorBlue),
+                    onPressed: () {
+                      context.pop();
+                      context.pop();
+                    },
+                    child: Text(
+                      'حسناً',
+                    ))
+              ],
+            );
+          }, orElse: () {
+            return SizedBox.shrink();
+          });
+        }));
   }
 }
 

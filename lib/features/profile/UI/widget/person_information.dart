@@ -77,6 +77,7 @@ class _PersonInformationState extends State<PersonInformation> {
               Text(
                 'البريد الالكتروني',
                 style: FontStyleAndText.homefonttext,
+                textAlign: TextAlign.right,
               ),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 5.h),
@@ -91,6 +92,8 @@ class _PersonInformationState extends State<PersonInformation> {
                   'البريد الالكتروني',
                   textDirection: TextDirection.rtl,
                   style: FontStyleAndText.textfrom,
+                  textAlign: TextAlign.right,
+
                 ),
               ),
               verticalBox(10.h),

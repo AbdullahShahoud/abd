@@ -26,6 +26,7 @@ class _SinginBlocListenerState extends State<SinginBlocListener> {
       listener: (context, state) {
         state.whenOrNull(
           loading: () => showDialog(
+            barrierDismissible: false,
             context: context,
             builder: (context) => Center(
               child: CircularProgressIndicator(
@@ -55,7 +56,6 @@ void SinginSuccess(BuildContext context) {
                   child: Text('خروج'))
             ],
           ));
-  context.pushNamed(Routers.home_page);
 }
 
 void singinError(BuildContext context) {

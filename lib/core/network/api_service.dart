@@ -54,7 +54,7 @@ abstract class ApiService {
     @Body() ChangeEmailRequest changeEmailRequest,
   );
 
-  @POST(ApiConstant.ProfileChangeEmail)
+  @POST(ApiConstant.ProfileChangePassword)
   Future<ChangePasswordResponse> changePassword(
     @Body() ChangePasswordRequest changePasswordRequest,
   );
@@ -92,10 +92,10 @@ abstract class ApiService {
   Future<FinishLessonResponse> finishLesson(
     @Body() FinishLessonRuqest sendQautions,
   );
-   @DELETE(ApiConstant.DeletCourse)
+  @DELETE(ApiConstant.DeletCourse)
   Future<DeletCourseResponse> deletCourse(
     @Body() DeletCourseRuqest deletCourseRuqest,
   );
-   @DELETE(ApiConstant.DeletCourse)
+  @DELETE(ApiConstant.DeletCourse)
   Future<UserDeletResponse> deletUser();
 }

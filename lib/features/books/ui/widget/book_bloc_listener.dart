@@ -21,22 +21,21 @@ class _BookBlocListenerState extends State<BookBlocListener> {
     return BlocBuilder<ProfileAndNotificationCubit,
             ProfileAndNotificationState>(
         buildWhen: (previous, current) =>
-            current is Loading || current is Success || current is Error,
+            current is LoadingBook ||
+            current is SuccessBook ||
+            current is ErrorBook,
         builder: ((context, state) {
           return state.maybeWhen(
             orElse: () {
-              // return SizedBox.shrink();
-              return errorGetBook();
-              // return successGetBook(
-              //     ProfileAndNotificationCubit.get(context).book);
+              return SizedBox.shrink();
             },
-            success: (data) {
+            successBook: (data) {
               return successGetBook(data);
             },
-            error: (error) {
+            errorBook: (error) {
               return errorGetBook();
             },
-            loading: () {
+            loadingBook: () {
               return loadingGetBook();
             },
           );

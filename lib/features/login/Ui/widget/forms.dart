@@ -52,7 +52,7 @@ class _FormsState extends State<Forms> {
               paddingContentV: 18.h,
               hint: 'كلمة المرور',
               controller: context.read<LoginCubit>().controllerPassword!,
-              keyboardType: TextInputType.number,
+              keyboardType: TextInputType.emailAddress,
               context: context,
               obscure: LoginCubit.get(context).obscure,
               icon: IconButton(
@@ -79,13 +79,12 @@ class _FormsState extends State<Forms> {
                 paddingV: 20,
                 function: () {
                   ValidateLogin(context);
-                  context.pushNamed(Routers.password);
-
                 }),
           ],
         ));
   }
 }
+
 void ValidateLogin(BuildContext context) {
   if (context.read<LoginCubit>().key.currentState!.validate()) {
     context.read<LoginCubit>().emitLogin();

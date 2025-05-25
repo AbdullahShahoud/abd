@@ -30,7 +30,7 @@ class LessonsMe extends StatelessWidget {
                   children: [
                     TabBarCourse(image: coures!.image!, name: coures.name!),
                     verticalBox(10.h),
-                    Text('الدروس', style: FontStyleAndText.homefont),
+                    Text('الدروس', style: FontStyleAndText.fontbold),
                     Container(
                       height: 540.h,
                       child: ListView.builder(

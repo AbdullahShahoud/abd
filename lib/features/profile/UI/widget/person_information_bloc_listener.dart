@@ -25,16 +25,18 @@ class _PersonInformationBlocListenerState
         ProfileAndNotificationState>(
       child: SizedBox.shrink(),
       listener: (context, state) {
-        state.whenOrNull(success: (data) {
+        state.whenOrNull(successPersoinInformation: (data) {
           succcessInformation(context, data);
-        }, error: (error) {
+        }, errorPersoinInformation: (error) {
           errorInformation(context, error);
-        }, loading: () {
+        }, loadingPersoinInformation: () {
           loadingInformation(context);
         });
       },
       listenWhen: (previous, current) =>
-          current is Loading || current is Success || current is Error,
+          current is LoadingPersoinInformation ||
+          current is SuccessPersoinInformation ||
+          current is ErrorPersoinInformation,
     );
   }
 }

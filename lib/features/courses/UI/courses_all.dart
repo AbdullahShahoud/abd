@@ -6,6 +6,7 @@ import '../../../core/routing/router.dart';
 import '../../../core/theming/color.dart';
 import '../../home/widget/courses_item.dart';
 import '../logic/cubit/cubit/coursees_cubit.dart';
+List<String> category = ['برمجة', 'تطوير واجهات', 'تصميم', 'php', 'larvel'];
 
 class CoursesAll extends StatefulWidget {
   const CoursesAll({super.key});
@@ -55,7 +56,7 @@ class _CoursesAllState extends State<CoursesAll> {
             labelColor: ColorManger.primary_ColorYello,
             tabs: List.generate(
               courses.length,
-              (index) => Tab(text: 'كورس ${index + 1}'),
+              (index) => Tab(text: category[index]),
             ),
           ),
         ),

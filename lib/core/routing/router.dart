@@ -6,7 +6,7 @@ class Routers {
   static const String singin = 'singin';
   static const String profile = 'profile';
   static const String notification = 'notification';
-  static const String password = 'password';
+  // static const String password = 'password';
   static const String courses_all = 'courses_all';
   static const String info = 'info';
   // static const String lessons = 'lessons';

@@ -12,7 +12,6 @@ import '../../../core/helper/spacing.dart';
 import '../../../core/theming/font_style.dart';
 import '../../widget/background.dart';
 import 'widget/account.dart';
-import 'widget/singin_bloc_listener.dart';
 
 class HomeSignIn extends StatefulWidget {
   HomeSignIn({super.key});
@@ -52,7 +51,7 @@ class _HomeSignInState extends State<HomeSignIn> {
                     FormSingin(),
                     verticalBox(20.h),
                     YourAccount(),
-                    SinginBlocListener()
+                    // SinginBlocListener()
                   ],
                 ),
               )

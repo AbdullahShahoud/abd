@@ -27,8 +27,7 @@ class CoursesBlocListenerCubit extends StatelessWidget {
         builder: (context, state) {
           return state.maybeWhen(
             orElse: () {
-              return successCourse(CourseesCubit.get(context).courses);
-              // return SizedBox.shrink();
+              return SizedBox.shrink();
             },
             listCoursesSuccess: (data) {
               return successCourse(data);

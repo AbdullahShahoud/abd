@@ -81,7 +81,7 @@ class SearchCourseName extends SearchDelegate<String> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/image/search.jpg', width: 200.w, height: 140.h),
+            Image.asset('assets/image/search.jpg', width: 200.w, height: 140.h ,fit: BoxFit.cover,),
             const SizedBox(height: 16),
             const Text("ابدأ بالبحث عن كورس", style: TextStyle(fontSize: 18)),
           ],

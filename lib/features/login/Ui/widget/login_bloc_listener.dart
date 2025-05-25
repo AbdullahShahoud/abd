@@ -32,7 +32,7 @@ class _LoginBlocListenerState extends State<LoginBlocListener> {
                     ),
                   )),
           success: (loginResponse) {
-            context.pop();
+            Navigator.of(context, rootNavigator: true).pop();
             context.pushNamed(Routers.home_page);
           },
           error: (error) {

@@ -48,11 +48,11 @@ class LevelesMe extends StatelessWidget {
                         },
                         icon: Icon(
                           Icons.delete,
-                          size: 30,
+                          size: 35,
                           color: Colors.red,
                         )),
                     Spacer(),
-                    Text('المستويات', style: FontStyleAndText.homefont),
+                    Text('المستويات', style: FontStyleAndText.fontbold),
                   ],
                 ),
               ),

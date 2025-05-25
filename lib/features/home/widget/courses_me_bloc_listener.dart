@@ -28,7 +28,7 @@ class CoursesMeBlocListener extends StatelessWidget {
             }, loadingCoursesMe: () {
               return loading(context);
             }, orElse: () {
-              return success(CourseesCubit.get(context).coursesMe);
+              return SizedBox.shrink();
             });
           });
     });

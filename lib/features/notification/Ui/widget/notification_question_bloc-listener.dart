@@ -16,21 +16,20 @@ class NotificationQuestionListener extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<ProfileAndNotificationCubit,
             ProfileAndNotificationState>(
-        child:
-            // const SizedBox.shrink(),
-            successQuestion(
-                ProfileAndNotificationCubit.get(context).questionAndResponse),
+        child: const SizedBox.shrink(),
         listenWhen: (previous, current) =>
-            current is Loading || current is Success || current is Error,
+            current is LoadingNotificationNormal ||
+            current is SuccessNotificationQuestion ||
+            current is ErrorNotificationNormal,
         listener: (context, state) {
           state.maybeWhen(
-              success: (data) {
+              successNotificationQuestion: (data) {
                 successQuestion(data);
               },
-              error: (error) {
+              errorNotificationNormal: (error) {
                 errorQuestion();
               },
-              loading: () {
+              loadingNotificationNormal: () {
                 loadingQuestion();
               },
               orElse: () {});

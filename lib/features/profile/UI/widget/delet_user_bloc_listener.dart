@@ -15,10 +15,12 @@ class DeletBlocListener extends StatelessWidget {
             ProfileAndNotificationState>(
         child: SizedBox.shrink(),
         listenWhen: (previous, current) =>
-            current is Success || current is Loading || current is Error,
+            current is SuccessDelete ||
+            current is LoadingDelete ||
+            current is ErrorDelete,
         listener: (context, state) {
           state.whenOrNull(
-            loading: () {
+            loadingDelete: () {
               showDialog(
                   context: context,
                   builder: (context) {
@@ -29,10 +31,10 @@ class DeletBlocListener extends StatelessWidget {
                     );
                   });
             },
-            success: (message) {
+            successDelete: (message) {
               sucessDelet(context, message);
             },
-            error: (error) {
+            errorDelete: (error) {
               errorDelet(context, error);
             },
           );

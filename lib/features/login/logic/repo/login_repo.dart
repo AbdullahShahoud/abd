@@ -6,7 +6,7 @@ import '../../../../core/network/api_error_handler.dart';
 import '../../../../core/network/api_result.dart';
 
 class LoginRepo {
-  late final ApiService _apiService;
+  final ApiService _apiService;
   LoginRepo(this._apiService);
   Future<ApiResult<LoginResponse>> login(LoginRequest loginRequest) async {
     try {

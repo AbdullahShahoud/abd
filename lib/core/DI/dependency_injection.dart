@@ -25,8 +25,8 @@ import '../network/dio.dart';
 
 final getIt = GetIt.instance;
 Future<void> setupGetIt() async {
-  Dio? dio = DioFactory.getDio();
-  getIt.registerLazySingleton<ApiService>(() => ApiService(dio!));
+  Dio dio = await DioFactory.getDio();
+  getIt.registerLazySingleton<ApiService>(() => ApiService(dio));
 
   getIt.registerLazySingleton<LoginRepo>(() => LoginRepo(getIt()));
   getIt.registerFactory<LoginCubit>(() => LoginCubit(getIt()));

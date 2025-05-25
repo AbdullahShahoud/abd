@@ -20,10 +20,12 @@ class _SecurityBlocListenerState extends State<SecurityBlocListener> {
             ProfileAndNotificationState>(
         child: SizedBox.shrink(),
         listenWhen: (previous, current) =>
-            current is Success || current is Loading || current is Error,
+            current is SuccessSecurite ||
+            current is LoadingSecurite ||
+            current is ErrorSecurite,
         listener: (context, state) {
           state.whenOrNull(
-            loading: () {
+            loadingSecurite: () {
               showDialog(
                   context: context,
                   builder: (context) {
@@ -34,10 +36,10 @@ class _SecurityBlocListenerState extends State<SecurityBlocListener> {
                     );
                   });
             },
-            success: (message) {
+            successSecurite: (message) {
               sucessSecurity(context, message);
             },
-            error: (error) {
+            errorSecurite: (error) {
               errorSecurity(context, error);
             },
           );

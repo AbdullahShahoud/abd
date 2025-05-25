@@ -37,9 +37,12 @@ class _ProfileState extends State<Profile> {
           child: Column(
             children: [
               Stack(children: [
-                CircleAvatar(
-                  backgroundImage: AssetImage('assets/image/welcome.jfif'),
-                  radius: 100.sp,
+                Padding(
+                  padding:  EdgeInsets.only(top:17.h),
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage('assets/image/welcome.jfif'),
+                    radius: 100.sp,
+                  ),
                 ),
                 Positioned(
                   bottom: 0,

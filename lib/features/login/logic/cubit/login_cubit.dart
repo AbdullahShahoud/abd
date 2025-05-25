@@ -23,7 +23,7 @@ class LoginCubit extends Cubit<LoginState> {
   }
 
   void emitLogin() async {
-    emit(LoginState.initial());
+    emit(LoginState.loading());
     final response = await _loginRepo.login(LoginRequest(
         email: controllerEmail?.text, password: controllerPassword?.text));
     response.when(success: (loginResponse) async {

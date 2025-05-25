@@ -24,7 +24,7 @@ class CourseIntrodaction extends StatelessWidget {
             child: Column(
               children: [
                 Image(
-                  image: AssetImage('assets/image/welcome.jfif'
+                  image: AssetImage('assets/image/unnamed.png'
                       // course!.image!
                       ),
                   width: MediaQuery.of(context).size.width.w,

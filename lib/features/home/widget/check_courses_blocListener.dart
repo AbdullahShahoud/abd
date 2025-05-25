@@ -23,23 +23,23 @@ class CheekCoursesBlocListener extends StatelessWidget {
       builder: (context, state) {
         return state.maybeWhen(
           orElse: () {
-            return success(courses);
+            return SizedBox.shrink();
           },
-          loadingCourses: () {
+          listCoursesLoading: () {
             return loading(context);
           },
-          successCourses: (data) {
+          listCoursesSuccess: (data) {
             return success(data);
           },
-          errorCourses: (error) {
+          listCoursesError: (error) {
             return Error();
           },
         );
       },
       buildWhen: (previous, current) =>
-          current is SuccessCourses ||
-          current is ErrorCourses ||
-          current is LoadingCourses,
+          current is ListCoursesError ||
+          current is ListCoursesSuccess ||
+          current is ListCoursesLoading,
     );
   }
 }

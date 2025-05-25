@@ -18,10 +18,6 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$CoursesState<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -45,14 +41,16 @@ mixin _$CoursesState<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -75,14 +73,16 @@ mixin _$CoursesState<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -105,15 +105,17 @@ mixin _$CoursesState<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -136,14 +138,18 @@ mixin _$CoursesState<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -166,14 +172,16 @@ mixin _$CoursesState<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -196,6 +204,12 @@ mixin _$CoursesState<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -217,1060 +231,6 @@ class _$CoursesStateCopyWithImpl<T, $Res, $Val extends CoursesState<T>>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
-}
-
-/// @nodoc
-abstract class _$$InitialCoursesImplCopyWith<T, $Res> {
-  factory _$$InitialCoursesImplCopyWith(_$InitialCoursesImpl<T> value,
-          $Res Function(_$InitialCoursesImpl<T>) then) =
-      __$$InitialCoursesImplCopyWithImpl<T, $Res>;
-}
-
-/// @nodoc
-class __$$InitialCoursesImplCopyWithImpl<T, $Res>
-    extends _$CoursesStateCopyWithImpl<T, $Res, _$InitialCoursesImpl<T>>
-    implements _$$InitialCoursesImplCopyWith<T, $Res> {
-  __$$InitialCoursesImplCopyWithImpl(_$InitialCoursesImpl<T> _value,
-      $Res Function(_$InitialCoursesImpl<T>) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$InitialCoursesImpl<T> implements _InitialCourses<T> {
-  const _$InitialCoursesImpl();
-
-  @override
-  String toString() {
-    return 'CoursesState<$T>.initialCourses()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$InitialCoursesImpl<T>);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
-    required TResult Function() initialCoursesMe,
-    required TResult Function() loadingCoursesMe,
-    required TResult Function(T data) successCoursesMe,
-    required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
-    required TResult Function(CoursesMeResponse selectedCourseMe)
-        courseSelectedMe,
-    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
-    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
-    required TResult Function() sendQuationInitial,
-    required TResult Function() sendQuationLoading,
-    required TResult Function(String data) sendQuationSuccess,
-    required TResult Function(String error) sendQuationError,
-    required TResult Function() finishedInitial,
-    required TResult Function() finishedLoading,
-    required TResult Function(String data) finishedSuccess,
-    required TResult Function(String error) finishedError,
-    required TResult Function() listCoursesInitial,
-    required TResult Function() listCoursesLoading,
-    required TResult Function(T data) listCoursesSuccess,
-    required TResult Function(String error) listCoursesError,
-  }) {
-    return initialCourses();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
-    TResult? Function()? initialCoursesMe,
-    TResult? Function()? loadingCoursesMe,
-    TResult? Function(T data)? successCoursesMe,
-    TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
-    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult? Function()? sendQuationInitial,
-    TResult? Function()? sendQuationLoading,
-    TResult? Function(String data)? sendQuationSuccess,
-    TResult? Function(String error)? sendQuationError,
-    TResult? Function()? finishedInitial,
-    TResult? Function()? finishedLoading,
-    TResult? Function(String data)? finishedSuccess,
-    TResult? Function(String error)? finishedError,
-    TResult? Function()? listCoursesInitial,
-    TResult? Function()? listCoursesLoading,
-    TResult? Function(T data)? listCoursesSuccess,
-    TResult? Function(String error)? listCoursesError,
-  }) {
-    return initialCourses?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
-    TResult Function()? initialCoursesMe,
-    TResult Function()? loadingCoursesMe,
-    TResult Function(T data)? successCoursesMe,
-    TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
-    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult Function()? sendQuationInitial,
-    TResult Function()? sendQuationLoading,
-    TResult Function(String data)? sendQuationSuccess,
-    TResult Function(String error)? sendQuationError,
-    TResult Function()? finishedInitial,
-    TResult Function()? finishedLoading,
-    TResult Function(String data)? finishedSuccess,
-    TResult Function(String error)? finishedError,
-    TResult Function()? listCoursesInitial,
-    TResult Function()? listCoursesLoading,
-    TResult Function(T data)? listCoursesSuccess,
-    TResult Function(String error)? listCoursesError,
-    required TResult orElse(),
-  }) {
-    if (initialCourses != null) {
-      return initialCourses();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
-    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
-    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
-    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
-    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
-    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
-    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
-    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
-    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
-    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
-    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
-    required TResult Function(SendQuationError<T> value) sendQuationError,
-    required TResult Function(_FinishedInitial<T> value) finishedInitial,
-    required TResult Function(FinishedLoading<T> value) finishedLoading,
-    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
-    required TResult Function(FinishedError<T> value) finishedError,
-    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
-    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
-    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
-    required TResult Function(ListCoursesError<T> value) listCoursesError,
-  }) {
-    return initialCourses(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
-    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
-    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult? Function(SendQuationError<T> value)? sendQuationError,
-    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult? Function(FinishedLoading<T> value)? finishedLoading,
-    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult? Function(FinishedError<T> value)? finishedError,
-    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult? Function(ListCoursesError<T> value)? listCoursesError,
-  }) {
-    return initialCourses?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
-    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
-    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult Function(SendQuationError<T> value)? sendQuationError,
-    TResult Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult Function(FinishedLoading<T> value)? finishedLoading,
-    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult Function(FinishedError<T> value)? finishedError,
-    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult Function(ListCoursesError<T> value)? listCoursesError,
-    required TResult orElse(),
-  }) {
-    if (initialCourses != null) {
-      return initialCourses(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _InitialCourses<T> implements CoursesState<T> {
-  const factory _InitialCourses() = _$InitialCoursesImpl<T>;
-}
-
-/// @nodoc
-abstract class _$$LoadingCoursesImplCopyWith<T, $Res> {
-  factory _$$LoadingCoursesImplCopyWith(_$LoadingCoursesImpl<T> value,
-          $Res Function(_$LoadingCoursesImpl<T>) then) =
-      __$$LoadingCoursesImplCopyWithImpl<T, $Res>;
-}
-
-/// @nodoc
-class __$$LoadingCoursesImplCopyWithImpl<T, $Res>
-    extends _$CoursesStateCopyWithImpl<T, $Res, _$LoadingCoursesImpl<T>>
-    implements _$$LoadingCoursesImplCopyWith<T, $Res> {
-  __$$LoadingCoursesImplCopyWithImpl(_$LoadingCoursesImpl<T> _value,
-      $Res Function(_$LoadingCoursesImpl<T>) _then)
-      : super(_value, _then);
-}
-
-/// @nodoc
-
-class _$LoadingCoursesImpl<T> implements LoadingCourses<T> {
-  const _$LoadingCoursesImpl();
-
-  @override
-  String toString() {
-    return 'CoursesState<$T>.loadingCourses()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$LoadingCoursesImpl<T>);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
-    required TResult Function() initialCoursesMe,
-    required TResult Function() loadingCoursesMe,
-    required TResult Function(T data) successCoursesMe,
-    required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
-    required TResult Function(CoursesMeResponse selectedCourseMe)
-        courseSelectedMe,
-    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
-    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
-    required TResult Function() sendQuationInitial,
-    required TResult Function() sendQuationLoading,
-    required TResult Function(String data) sendQuationSuccess,
-    required TResult Function(String error) sendQuationError,
-    required TResult Function() finishedInitial,
-    required TResult Function() finishedLoading,
-    required TResult Function(String data) finishedSuccess,
-    required TResult Function(String error) finishedError,
-    required TResult Function() listCoursesInitial,
-    required TResult Function() listCoursesLoading,
-    required TResult Function(T data) listCoursesSuccess,
-    required TResult Function(String error) listCoursesError,
-  }) {
-    return loadingCourses();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
-    TResult? Function()? initialCoursesMe,
-    TResult? Function()? loadingCoursesMe,
-    TResult? Function(T data)? successCoursesMe,
-    TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
-    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult? Function()? sendQuationInitial,
-    TResult? Function()? sendQuationLoading,
-    TResult? Function(String data)? sendQuationSuccess,
-    TResult? Function(String error)? sendQuationError,
-    TResult? Function()? finishedInitial,
-    TResult? Function()? finishedLoading,
-    TResult? Function(String data)? finishedSuccess,
-    TResult? Function(String error)? finishedError,
-    TResult? Function()? listCoursesInitial,
-    TResult? Function()? listCoursesLoading,
-    TResult? Function(T data)? listCoursesSuccess,
-    TResult? Function(String error)? listCoursesError,
-  }) {
-    return loadingCourses?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
-    TResult Function()? initialCoursesMe,
-    TResult Function()? loadingCoursesMe,
-    TResult Function(T data)? successCoursesMe,
-    TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
-    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult Function()? sendQuationInitial,
-    TResult Function()? sendQuationLoading,
-    TResult Function(String data)? sendQuationSuccess,
-    TResult Function(String error)? sendQuationError,
-    TResult Function()? finishedInitial,
-    TResult Function()? finishedLoading,
-    TResult Function(String data)? finishedSuccess,
-    TResult Function(String error)? finishedError,
-    TResult Function()? listCoursesInitial,
-    TResult Function()? listCoursesLoading,
-    TResult Function(T data)? listCoursesSuccess,
-    TResult Function(String error)? listCoursesError,
-    required TResult orElse(),
-  }) {
-    if (loadingCourses != null) {
-      return loadingCourses();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
-    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
-    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
-    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
-    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
-    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
-    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
-    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
-    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
-    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
-    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
-    required TResult Function(SendQuationError<T> value) sendQuationError,
-    required TResult Function(_FinishedInitial<T> value) finishedInitial,
-    required TResult Function(FinishedLoading<T> value) finishedLoading,
-    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
-    required TResult Function(FinishedError<T> value) finishedError,
-    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
-    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
-    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
-    required TResult Function(ListCoursesError<T> value) listCoursesError,
-  }) {
-    return loadingCourses(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
-    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
-    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult? Function(SendQuationError<T> value)? sendQuationError,
-    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult? Function(FinishedLoading<T> value)? finishedLoading,
-    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult? Function(FinishedError<T> value)? finishedError,
-    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult? Function(ListCoursesError<T> value)? listCoursesError,
-  }) {
-    return loadingCourses?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
-    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
-    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult Function(SendQuationError<T> value)? sendQuationError,
-    TResult Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult Function(FinishedLoading<T> value)? finishedLoading,
-    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult Function(FinishedError<T> value)? finishedError,
-    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult Function(ListCoursesError<T> value)? listCoursesError,
-    required TResult orElse(),
-  }) {
-    if (loadingCourses != null) {
-      return loadingCourses(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class LoadingCourses<T> implements CoursesState<T> {
-  const factory LoadingCourses() = _$LoadingCoursesImpl<T>;
-}
-
-/// @nodoc
-abstract class _$$SuccessCoursesImplCopyWith<T, $Res> {
-  factory _$$SuccessCoursesImplCopyWith(_$SuccessCoursesImpl<T> value,
-          $Res Function(_$SuccessCoursesImpl<T>) then) =
-      __$$SuccessCoursesImplCopyWithImpl<T, $Res>;
-  @useResult
-  $Res call({T data});
-}
-
-/// @nodoc
-class __$$SuccessCoursesImplCopyWithImpl<T, $Res>
-    extends _$CoursesStateCopyWithImpl<T, $Res, _$SuccessCoursesImpl<T>>
-    implements _$$SuccessCoursesImplCopyWith<T, $Res> {
-  __$$SuccessCoursesImplCopyWithImpl(_$SuccessCoursesImpl<T> _value,
-      $Res Function(_$SuccessCoursesImpl<T>) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? data = freezed,
-  }) {
-    return _then(_$SuccessCoursesImpl<T>(
-      freezed == data
-          ? _value.data
-          : data // ignore: cast_nullable_to_non_nullable
-              as T,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$SuccessCoursesImpl<T> implements SuccessCourses<T> {
-  const _$SuccessCoursesImpl(this.data);
-
-  @override
-  final T data;
-
-  @override
-  String toString() {
-    return 'CoursesState<$T>.successCourses(data: $data)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SuccessCoursesImpl<T> &&
-            const DeepCollectionEquality().equals(other.data, data));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SuccessCoursesImplCopyWith<T, _$SuccessCoursesImpl<T>> get copyWith =>
-      __$$SuccessCoursesImplCopyWithImpl<T, _$SuccessCoursesImpl<T>>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
-    required TResult Function() initialCoursesMe,
-    required TResult Function() loadingCoursesMe,
-    required TResult Function(T data) successCoursesMe,
-    required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
-    required TResult Function(CoursesMeResponse selectedCourseMe)
-        courseSelectedMe,
-    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
-    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
-    required TResult Function() sendQuationInitial,
-    required TResult Function() sendQuationLoading,
-    required TResult Function(String data) sendQuationSuccess,
-    required TResult Function(String error) sendQuationError,
-    required TResult Function() finishedInitial,
-    required TResult Function() finishedLoading,
-    required TResult Function(String data) finishedSuccess,
-    required TResult Function(String error) finishedError,
-    required TResult Function() listCoursesInitial,
-    required TResult Function() listCoursesLoading,
-    required TResult Function(T data) listCoursesSuccess,
-    required TResult Function(String error) listCoursesError,
-  }) {
-    return successCourses(data);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
-    TResult? Function()? initialCoursesMe,
-    TResult? Function()? loadingCoursesMe,
-    TResult? Function(T data)? successCoursesMe,
-    TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
-    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult? Function()? sendQuationInitial,
-    TResult? Function()? sendQuationLoading,
-    TResult? Function(String data)? sendQuationSuccess,
-    TResult? Function(String error)? sendQuationError,
-    TResult? Function()? finishedInitial,
-    TResult? Function()? finishedLoading,
-    TResult? Function(String data)? finishedSuccess,
-    TResult? Function(String error)? finishedError,
-    TResult? Function()? listCoursesInitial,
-    TResult? Function()? listCoursesLoading,
-    TResult? Function(T data)? listCoursesSuccess,
-    TResult? Function(String error)? listCoursesError,
-  }) {
-    return successCourses?.call(data);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
-    TResult Function()? initialCoursesMe,
-    TResult Function()? loadingCoursesMe,
-    TResult Function(T data)? successCoursesMe,
-    TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
-    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult Function()? sendQuationInitial,
-    TResult Function()? sendQuationLoading,
-    TResult Function(String data)? sendQuationSuccess,
-    TResult Function(String error)? sendQuationError,
-    TResult Function()? finishedInitial,
-    TResult Function()? finishedLoading,
-    TResult Function(String data)? finishedSuccess,
-    TResult Function(String error)? finishedError,
-    TResult Function()? listCoursesInitial,
-    TResult Function()? listCoursesLoading,
-    TResult Function(T data)? listCoursesSuccess,
-    TResult Function(String error)? listCoursesError,
-    required TResult orElse(),
-  }) {
-    if (successCourses != null) {
-      return successCourses(data);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
-    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
-    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
-    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
-    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
-    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
-    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
-    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
-    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
-    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
-    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
-    required TResult Function(SendQuationError<T> value) sendQuationError,
-    required TResult Function(_FinishedInitial<T> value) finishedInitial,
-    required TResult Function(FinishedLoading<T> value) finishedLoading,
-    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
-    required TResult Function(FinishedError<T> value) finishedError,
-    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
-    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
-    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
-    required TResult Function(ListCoursesError<T> value) listCoursesError,
-  }) {
-    return successCourses(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
-    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
-    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult? Function(SendQuationError<T> value)? sendQuationError,
-    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult? Function(FinishedLoading<T> value)? finishedLoading,
-    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult? Function(FinishedError<T> value)? finishedError,
-    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult? Function(ListCoursesError<T> value)? listCoursesError,
-  }) {
-    return successCourses?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
-    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
-    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult Function(SendQuationError<T> value)? sendQuationError,
-    TResult Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult Function(FinishedLoading<T> value)? finishedLoading,
-    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult Function(FinishedError<T> value)? finishedError,
-    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult Function(ListCoursesError<T> value)? listCoursesError,
-    required TResult orElse(),
-  }) {
-    if (successCourses != null) {
-      return successCourses(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class SuccessCourses<T> implements CoursesState<T> {
-  const factory SuccessCourses(final T data) = _$SuccessCoursesImpl<T>;
-
-  T get data;
-  @JsonKey(ignore: true)
-  _$$SuccessCoursesImplCopyWith<T, _$SuccessCoursesImpl<T>> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$ErrorCoursesImplCopyWith<T, $Res> {
-  factory _$$ErrorCoursesImplCopyWith(_$ErrorCoursesImpl<T> value,
-          $Res Function(_$ErrorCoursesImpl<T>) then) =
-      __$$ErrorCoursesImplCopyWithImpl<T, $Res>;
-  @useResult
-  $Res call({String error});
-}
-
-/// @nodoc
-class __$$ErrorCoursesImplCopyWithImpl<T, $Res>
-    extends _$CoursesStateCopyWithImpl<T, $Res, _$ErrorCoursesImpl<T>>
-    implements _$$ErrorCoursesImplCopyWith<T, $Res> {
-  __$$ErrorCoursesImplCopyWithImpl(
-      _$ErrorCoursesImpl<T> _value, $Res Function(_$ErrorCoursesImpl<T>) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? error = null,
-  }) {
-    return _then(_$ErrorCoursesImpl<T>(
-      error: null == error
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$ErrorCoursesImpl<T> implements ErrorCourses<T> {
-  const _$ErrorCoursesImpl({required this.error});
-
-  @override
-  final String error;
-
-  @override
-  String toString() {
-    return 'CoursesState<$T>.errorCourses(error: $error)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ErrorCoursesImpl<T> &&
-            (identical(other.error, error) || other.error == error));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, error);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ErrorCoursesImplCopyWith<T, _$ErrorCoursesImpl<T>> get copyWith =>
-      __$$ErrorCoursesImplCopyWithImpl<T, _$ErrorCoursesImpl<T>>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
-    required TResult Function() initialCoursesMe,
-    required TResult Function() loadingCoursesMe,
-    required TResult Function(T data) successCoursesMe,
-    required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
-    required TResult Function(CoursesMeResponse selectedCourseMe)
-        courseSelectedMe,
-    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
-    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
-    required TResult Function() sendQuationInitial,
-    required TResult Function() sendQuationLoading,
-    required TResult Function(String data) sendQuationSuccess,
-    required TResult Function(String error) sendQuationError,
-    required TResult Function() finishedInitial,
-    required TResult Function() finishedLoading,
-    required TResult Function(String data) finishedSuccess,
-    required TResult Function(String error) finishedError,
-    required TResult Function() listCoursesInitial,
-    required TResult Function() listCoursesLoading,
-    required TResult Function(T data) listCoursesSuccess,
-    required TResult Function(String error) listCoursesError,
-  }) {
-    return errorCourses(error);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
-    TResult? Function()? initialCoursesMe,
-    TResult? Function()? loadingCoursesMe,
-    TResult? Function(T data)? successCoursesMe,
-    TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
-    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult? Function()? sendQuationInitial,
-    TResult? Function()? sendQuationLoading,
-    TResult? Function(String data)? sendQuationSuccess,
-    TResult? Function(String error)? sendQuationError,
-    TResult? Function()? finishedInitial,
-    TResult? Function()? finishedLoading,
-    TResult? Function(String data)? finishedSuccess,
-    TResult? Function(String error)? finishedError,
-    TResult? Function()? listCoursesInitial,
-    TResult? Function()? listCoursesLoading,
-    TResult? Function(T data)? listCoursesSuccess,
-    TResult? Function(String error)? listCoursesError,
-  }) {
-    return errorCourses?.call(error);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
-    TResult Function()? initialCoursesMe,
-    TResult Function()? loadingCoursesMe,
-    TResult Function(T data)? successCoursesMe,
-    TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
-    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult Function()? sendQuationInitial,
-    TResult Function()? sendQuationLoading,
-    TResult Function(String data)? sendQuationSuccess,
-    TResult Function(String error)? sendQuationError,
-    TResult Function()? finishedInitial,
-    TResult Function()? finishedLoading,
-    TResult Function(String data)? finishedSuccess,
-    TResult Function(String error)? finishedError,
-    TResult Function()? listCoursesInitial,
-    TResult Function()? listCoursesLoading,
-    TResult Function(T data)? listCoursesSuccess,
-    TResult Function(String error)? listCoursesError,
-    required TResult orElse(),
-  }) {
-    if (errorCourses != null) {
-      return errorCourses(error);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
-    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
-    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
-    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
-    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
-    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
-    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
-    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
-    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
-    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
-    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
-    required TResult Function(SendQuationError<T> value) sendQuationError,
-    required TResult Function(_FinishedInitial<T> value) finishedInitial,
-    required TResult Function(FinishedLoading<T> value) finishedLoading,
-    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
-    required TResult Function(FinishedError<T> value) finishedError,
-    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
-    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
-    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
-    required TResult Function(ListCoursesError<T> value) listCoursesError,
-  }) {
-    return errorCourses(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
-    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
-    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult? Function(SendQuationError<T> value)? sendQuationError,
-    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult? Function(FinishedLoading<T> value)? finishedLoading,
-    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult? Function(FinishedError<T> value)? finishedError,
-    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult? Function(ListCoursesError<T> value)? listCoursesError,
-  }) {
-    return errorCourses?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
-    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
-    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult Function(SendQuationError<T> value)? sendQuationError,
-    TResult Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult Function(FinishedLoading<T> value)? finishedLoading,
-    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult Function(FinishedError<T> value)? finishedError,
-    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult Function(ListCoursesError<T> value)? listCoursesError,
-    required TResult orElse(),
-  }) {
-    if (errorCourses != null) {
-      return errorCourses(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class ErrorCourses<T> implements CoursesState<T> {
-  const factory ErrorCourses({required final String error}) =
-      _$ErrorCoursesImpl<T>;
-
-  String get error;
-  @JsonKey(ignore: true)
-  _$$ErrorCoursesImplCopyWith<T, _$ErrorCoursesImpl<T>> get copyWith =>
-      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -1312,10 +272,6 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -1339,6 +295,12 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return initialCoursesMe();
   }
@@ -1346,10 +308,6 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -1372,6 +330,12 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return initialCoursesMe?.call();
   }
@@ -1379,10 +343,6 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -1405,6 +365,12 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (initialCoursesMe != null) {
@@ -1416,10 +382,6 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -1442,6 +404,14 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return initialCoursesMe(this);
   }
@@ -1449,10 +419,6 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -1475,6 +441,12 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return initialCoursesMe?.call(this);
   }
@@ -1482,10 +454,6 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -1508,6 +476,12 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (initialCoursesMe != null) {
@@ -1560,10 +534,6 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -1587,6 +557,12 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return loadingCoursesMe();
   }
@@ -1594,10 +570,6 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -1620,6 +592,12 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return loadingCoursesMe?.call();
   }
@@ -1627,10 +605,6 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -1653,6 +627,12 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (loadingCoursesMe != null) {
@@ -1664,10 +644,6 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -1690,6 +666,14 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return loadingCoursesMe(this);
   }
@@ -1697,10 +681,6 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -1723,6 +703,12 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return loadingCoursesMe?.call(this);
   }
@@ -1730,10 +716,6 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -1756,6 +738,12 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (loadingCoursesMe != null) {
@@ -1835,10 +823,6 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -1862,6 +846,12 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return successCoursesMe(data);
   }
@@ -1869,10 +859,6 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -1895,6 +881,12 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return successCoursesMe?.call(data);
   }
@@ -1902,10 +894,6 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -1928,6 +916,12 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (successCoursesMe != null) {
@@ -1939,10 +933,6 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -1965,6 +955,14 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return successCoursesMe(this);
   }
@@ -1972,10 +970,6 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -1998,6 +992,12 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return successCoursesMe?.call(this);
   }
@@ -2005,10 +1005,6 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -2031,6 +1027,12 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (successCoursesMe != null) {
@@ -2114,10 +1116,6 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -2141,6 +1139,12 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return errorCoursesMe(error);
   }
@@ -2148,10 +1152,6 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -2174,6 +1174,12 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return errorCoursesMe?.call(error);
   }
@@ -2181,10 +1187,6 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -2207,6 +1209,12 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (errorCoursesMe != null) {
@@ -2218,10 +1226,6 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -2244,6 +1248,14 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return errorCoursesMe(this);
   }
@@ -2251,10 +1263,6 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -2277,6 +1285,12 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return errorCoursesMe?.call(this);
   }
@@ -2284,10 +1298,6 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -2310,6 +1320,12 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (errorCoursesMe != null) {
@@ -2395,10 +1411,6 @@ class _$CourseSelectedImpl<T> implements CourseSelected<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -2422,6 +1434,12 @@ class _$CourseSelectedImpl<T> implements CourseSelected<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return courseSelected(selectedCourse);
   }
@@ -2429,10 +1447,6 @@ class _$CourseSelectedImpl<T> implements CourseSelected<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -2455,6 +1469,12 @@ class _$CourseSelectedImpl<T> implements CourseSelected<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return courseSelected?.call(selectedCourse);
   }
@@ -2462,10 +1482,6 @@ class _$CourseSelectedImpl<T> implements CourseSelected<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -2488,6 +1504,12 @@ class _$CourseSelectedImpl<T> implements CourseSelected<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (courseSelected != null) {
@@ -2499,10 +1521,6 @@ class _$CourseSelectedImpl<T> implements CourseSelected<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -2525,6 +1543,14 @@ class _$CourseSelectedImpl<T> implements CourseSelected<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return courseSelected(this);
   }
@@ -2532,10 +1558,6 @@ class _$CourseSelectedImpl<T> implements CourseSelected<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -2558,6 +1580,12 @@ class _$CourseSelectedImpl<T> implements CourseSelected<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return courseSelected?.call(this);
   }
@@ -2565,10 +1593,6 @@ class _$CourseSelectedImpl<T> implements CourseSelected<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -2591,6 +1615,12 @@ class _$CourseSelectedImpl<T> implements CourseSelected<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (courseSelected != null) {
@@ -2676,10 +1706,6 @@ class _$LessonSelectedImpl<T> implements LessonSelected<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -2703,6 +1729,12 @@ class _$LessonSelectedImpl<T> implements LessonSelected<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return lessonSelected(selectedlesson);
   }
@@ -2710,10 +1742,6 @@ class _$LessonSelectedImpl<T> implements LessonSelected<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -2736,6 +1764,12 @@ class _$LessonSelectedImpl<T> implements LessonSelected<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return lessonSelected?.call(selectedlesson);
   }
@@ -2743,10 +1777,6 @@ class _$LessonSelectedImpl<T> implements LessonSelected<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -2769,6 +1799,12 @@ class _$LessonSelectedImpl<T> implements LessonSelected<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (lessonSelected != null) {
@@ -2780,10 +1816,6 @@ class _$LessonSelectedImpl<T> implements LessonSelected<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -2806,6 +1838,14 @@ class _$LessonSelectedImpl<T> implements LessonSelected<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return lessonSelected(this);
   }
@@ -2813,10 +1853,6 @@ class _$LessonSelectedImpl<T> implements LessonSelected<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -2839,6 +1875,12 @@ class _$LessonSelectedImpl<T> implements LessonSelected<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return lessonSelected?.call(this);
   }
@@ -2846,10 +1888,6 @@ class _$LessonSelectedImpl<T> implements LessonSelected<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -2872,6 +1910,12 @@ class _$LessonSelectedImpl<T> implements LessonSelected<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (lessonSelected != null) {
@@ -2957,10 +2001,6 @@ class _$LevelSelectedImpl<T> implements LevelSelected<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -2984,6 +2024,12 @@ class _$LevelSelectedImpl<T> implements LevelSelected<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return levelSelected(selectedlevel);
   }
@@ -2991,10 +2037,6 @@ class _$LevelSelectedImpl<T> implements LevelSelected<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -3017,6 +2059,12 @@ class _$LevelSelectedImpl<T> implements LevelSelected<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return levelSelected?.call(selectedlevel);
   }
@@ -3024,10 +2072,6 @@ class _$LevelSelectedImpl<T> implements LevelSelected<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -3050,6 +2094,12 @@ class _$LevelSelectedImpl<T> implements LevelSelected<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (levelSelected != null) {
@@ -3061,10 +2111,6 @@ class _$LevelSelectedImpl<T> implements LevelSelected<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -3087,6 +2133,14 @@ class _$LevelSelectedImpl<T> implements LevelSelected<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return levelSelected(this);
   }
@@ -3094,10 +2148,6 @@ class _$LevelSelectedImpl<T> implements LevelSelected<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -3120,6 +2170,12 @@ class _$LevelSelectedImpl<T> implements LevelSelected<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return levelSelected?.call(this);
   }
@@ -3127,10 +2183,6 @@ class _$LevelSelectedImpl<T> implements LevelSelected<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -3153,6 +2205,12 @@ class _$LevelSelectedImpl<T> implements LevelSelected<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (levelSelected != null) {
@@ -3238,10 +2296,6 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -3265,6 +2319,12 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return courseSelectedMe(selectedCourseMe);
   }
@@ -3272,10 +2332,6 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -3298,6 +2354,12 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return courseSelectedMe?.call(selectedCourseMe);
   }
@@ -3305,10 +2367,6 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -3331,6 +2389,12 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (courseSelectedMe != null) {
@@ -3342,10 +2406,6 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -3368,6 +2428,14 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return courseSelectedMe(this);
   }
@@ -3375,10 +2443,6 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -3401,6 +2465,12 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return courseSelectedMe?.call(this);
   }
@@ -3408,10 +2478,6 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -3434,6 +2500,12 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (courseSelectedMe != null) {
@@ -3519,10 +2591,6 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -3546,6 +2614,12 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return lessonSelectedMe(selectedlesson);
   }
@@ -3553,10 +2627,6 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -3579,6 +2649,12 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return lessonSelectedMe?.call(selectedlesson);
   }
@@ -3586,10 +2662,6 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -3612,6 +2684,12 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (lessonSelectedMe != null) {
@@ -3623,10 +2701,6 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -3649,6 +2723,14 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return lessonSelectedMe(this);
   }
@@ -3656,10 +2738,6 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -3682,6 +2760,12 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return lessonSelectedMe?.call(this);
   }
@@ -3689,10 +2773,6 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -3715,6 +2795,12 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (lessonSelectedMe != null) {
@@ -3800,10 +2886,6 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -3827,6 +2909,12 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return levelSelectedMe(selectedlevel);
   }
@@ -3834,10 +2922,6 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -3860,6 +2944,12 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return levelSelectedMe?.call(selectedlevel);
   }
@@ -3867,10 +2957,6 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -3893,6 +2979,12 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (levelSelectedMe != null) {
@@ -3904,10 +2996,6 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -3930,6 +3018,14 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return levelSelectedMe(this);
   }
@@ -3937,10 +3033,6 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -3963,6 +3055,12 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return levelSelectedMe?.call(this);
   }
@@ -3970,10 +3068,6 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -3996,6 +3090,12 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (levelSelectedMe != null) {
@@ -4054,10 +3154,6 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -4081,6 +3177,12 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return sendQuationInitial();
   }
@@ -4088,10 +3190,6 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -4114,6 +3212,12 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return sendQuationInitial?.call();
   }
@@ -4121,10 +3225,6 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -4147,6 +3247,12 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (sendQuationInitial != null) {
@@ -4158,10 +3264,6 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -4184,6 +3286,14 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return sendQuationInitial(this);
   }
@@ -4191,10 +3301,6 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -4217,6 +3323,12 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return sendQuationInitial?.call(this);
   }
@@ -4224,10 +3336,6 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -4250,6 +3358,12 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (sendQuationInitial != null) {
@@ -4302,10 +3416,6 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -4329,6 +3439,12 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return sendQuationLoading();
   }
@@ -4336,10 +3452,6 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -4362,6 +3474,12 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return sendQuationLoading?.call();
   }
@@ -4369,10 +3487,6 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -4395,6 +3509,12 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (sendQuationLoading != null) {
@@ -4406,10 +3526,6 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -4432,6 +3548,14 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return sendQuationLoading(this);
   }
@@ -4439,10 +3563,6 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -4465,6 +3585,12 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return sendQuationLoading?.call(this);
   }
@@ -4472,10 +3598,6 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -4498,6 +3620,12 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (sendQuationLoading != null) {
@@ -4576,10 +3704,6 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -4603,6 +3727,12 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return sendQuationSuccess(data);
   }
@@ -4610,10 +3740,6 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -4636,6 +3762,12 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return sendQuationSuccess?.call(data);
   }
@@ -4643,10 +3775,6 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -4669,6 +3797,12 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (sendQuationSuccess != null) {
@@ -4680,10 +3814,6 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -4706,6 +3836,14 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return sendQuationSuccess(this);
   }
@@ -4713,10 +3851,6 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -4739,6 +3873,12 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return sendQuationSuccess?.call(this);
   }
@@ -4746,10 +3886,6 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -4772,6 +3908,12 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (sendQuationSuccess != null) {
@@ -4856,10 +3998,6 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -4883,6 +4021,12 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return sendQuationError(error);
   }
@@ -4890,10 +4034,6 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -4916,6 +4056,12 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return sendQuationError?.call(error);
   }
@@ -4923,10 +4069,6 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -4949,6 +4091,12 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (sendQuationError != null) {
@@ -4960,10 +4108,6 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -4986,6 +4130,14 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return sendQuationError(this);
   }
@@ -4993,10 +4145,6 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -5019,6 +4167,12 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return sendQuationError?.call(this);
   }
@@ -5026,10 +4180,6 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -5052,6 +4202,12 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (sendQuationError != null) {
@@ -5109,10 +4265,6 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -5136,6 +4288,12 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return finishedInitial();
   }
@@ -5143,10 +4301,6 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -5169,6 +4323,12 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return finishedInitial?.call();
   }
@@ -5176,10 +4336,6 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -5202,6 +4358,12 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (finishedInitial != null) {
@@ -5213,10 +4375,6 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -5239,6 +4397,14 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return finishedInitial(this);
   }
@@ -5246,10 +4412,6 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -5272,6 +4434,12 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return finishedInitial?.call(this);
   }
@@ -5279,10 +4447,6 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -5305,6 +4469,12 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (finishedInitial != null) {
@@ -5356,10 +4526,6 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -5383,6 +4549,12 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return finishedLoading();
   }
@@ -5390,10 +4562,6 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -5416,6 +4584,12 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return finishedLoading?.call();
   }
@@ -5423,10 +4597,6 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -5449,6 +4619,12 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (finishedLoading != null) {
@@ -5460,10 +4636,6 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -5486,6 +4658,14 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return finishedLoading(this);
   }
@@ -5493,10 +4673,6 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -5519,6 +4695,12 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return finishedLoading?.call(this);
   }
@@ -5526,10 +4708,6 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -5552,6 +4730,12 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (finishedLoading != null) {
@@ -5630,10 +4814,6 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -5657,6 +4837,12 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return finishedSuccess(data);
   }
@@ -5664,10 +4850,6 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -5690,6 +4872,12 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return finishedSuccess?.call(data);
   }
@@ -5697,10 +4885,6 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -5723,6 +4907,12 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (finishedSuccess != null) {
@@ -5734,10 +4924,6 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -5760,6 +4946,14 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return finishedSuccess(this);
   }
@@ -5767,10 +4961,6 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -5793,6 +4983,12 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return finishedSuccess?.call(this);
   }
@@ -5800,10 +4996,6 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -5826,6 +5018,12 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (finishedSuccess != null) {
@@ -5909,10 +5107,6 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -5936,6 +5130,12 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return finishedError(error);
   }
@@ -5943,10 +5143,6 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -5969,6 +5165,12 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return finishedError?.call(error);
   }
@@ -5976,10 +5178,6 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -6002,6 +5200,12 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (finishedError != null) {
@@ -6013,10 +5217,6 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -6039,6 +5239,14 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return finishedError(this);
   }
@@ -6046,10 +5254,6 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -6072,6 +5276,12 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return finishedError?.call(this);
   }
@@ -6079,10 +5289,6 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -6105,6 +5311,12 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (finishedError != null) {
@@ -6163,10 +5375,6 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -6190,6 +5398,12 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return listCoursesInitial();
   }
@@ -6197,10 +5411,6 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -6223,6 +5433,12 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return listCoursesInitial?.call();
   }
@@ -6230,10 +5446,6 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -6256,6 +5468,12 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (listCoursesInitial != null) {
@@ -6267,10 +5485,6 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -6293,6 +5507,14 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return listCoursesInitial(this);
   }
@@ -6300,10 +5522,6 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -6326,6 +5544,12 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return listCoursesInitial?.call(this);
   }
@@ -6333,10 +5557,6 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -6359,6 +5579,12 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (listCoursesInitial != null) {
@@ -6411,10 +5637,6 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -6438,6 +5660,12 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return listCoursesLoading();
   }
@@ -6445,10 +5673,6 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -6471,6 +5695,12 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return listCoursesLoading?.call();
   }
@@ -6478,10 +5708,6 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -6504,6 +5730,12 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (listCoursesLoading != null) {
@@ -6515,10 +5747,6 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -6541,6 +5769,14 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return listCoursesLoading(this);
   }
@@ -6548,10 +5784,6 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -6574,6 +5806,12 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return listCoursesLoading?.call(this);
   }
@@ -6581,10 +5819,6 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -6607,6 +5841,12 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (listCoursesLoading != null) {
@@ -6686,10 +5926,6 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -6713,6 +5949,12 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return listCoursesSuccess(data);
   }
@@ -6720,10 +5962,6 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -6746,6 +5984,12 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return listCoursesSuccess?.call(data);
   }
@@ -6753,10 +5997,6 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -6779,6 +6019,12 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (listCoursesSuccess != null) {
@@ -6790,10 +6036,6 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -6816,6 +6058,14 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return listCoursesSuccess(this);
   }
@@ -6823,10 +6073,6 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -6849,6 +6095,12 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return listCoursesSuccess?.call(this);
   }
@@ -6856,10 +6108,6 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -6882,6 +6130,12 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (listCoursesSuccess != null) {
@@ -6965,10 +6219,6 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() initialCourses,
-    required TResult Function() loadingCourses,
-    required TResult Function(T data) successCourses,
-    required TResult Function(String error) errorCourses,
     required TResult Function() initialCoursesMe,
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
@@ -6992,6 +6242,12 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
     required TResult Function() listCoursesLoading,
     required TResult Function(T data) listCoursesSuccess,
     required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
   }) {
     return listCoursesError(error);
   }
@@ -6999,10 +6255,6 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCourses,
-    TResult? Function()? loadingCourses,
-    TResult? Function(T data)? successCourses,
-    TResult? Function(String error)? errorCourses,
     TResult? Function()? initialCoursesMe,
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
@@ -7025,6 +6277,12 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
     TResult? Function()? listCoursesLoading,
     TResult? Function(T data)? listCoursesSuccess,
     TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
   }) {
     return listCoursesError?.call(error);
   }
@@ -7032,10 +6290,6 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCourses,
-    TResult Function()? loadingCourses,
-    TResult Function(T data)? successCourses,
-    TResult Function(String error)? errorCourses,
     TResult Function()? initialCoursesMe,
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
@@ -7058,6 +6312,12 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
     TResult Function()? listCoursesLoading,
     TResult Function(T data)? listCoursesSuccess,
     TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (listCoursesError != null) {
@@ -7069,10 +6329,6 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCourses<T> value) initialCourses,
-    required TResult Function(LoadingCourses<T> value) loadingCourses,
-    required TResult Function(SuccessCourses<T> value) successCourses,
-    required TResult Function(ErrorCourses<T> value) errorCourses,
     required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
@@ -7095,6 +6351,14 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
     required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
     required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
     required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
   }) {
     return listCoursesError(this);
   }
@@ -7102,10 +6366,6 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCourses<T> value)? initialCourses,
-    TResult? Function(LoadingCourses<T> value)? loadingCourses,
-    TResult? Function(SuccessCourses<T> value)? successCourses,
-    TResult? Function(ErrorCourses<T> value)? errorCourses,
     TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -7128,6 +6388,12 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
     TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
   }) {
     return listCoursesError?.call(this);
   }
@@ -7135,10 +6401,6 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCourses<T> value)? initialCourses,
-    TResult Function(LoadingCourses<T> value)? loadingCourses,
-    TResult Function(SuccessCourses<T> value)? successCourses,
-    TResult Function(ErrorCourses<T> value)? errorCourses,
     TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
@@ -7161,6 +6423,12 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
     TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
     TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
     TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
     required TResult orElse(),
   }) {
     if (listCoursesError != null) {
@@ -7178,4 +6446,1709 @@ abstract class ListCoursesError<T> implements CoursesState<T> {
   @JsonKey(ignore: true)
   _$$ListCoursesErrorImplCopyWith<T, _$ListCoursesErrorImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$CheckCoursesLoadingImplCopyWith<T, $Res> {
+  factory _$$CheckCoursesLoadingImplCopyWith(_$CheckCoursesLoadingImpl<T> value,
+          $Res Function(_$CheckCoursesLoadingImpl<T>) then) =
+      __$$CheckCoursesLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$CheckCoursesLoadingImplCopyWithImpl<T, $Res>
+    extends _$CoursesStateCopyWithImpl<T, $Res, _$CheckCoursesLoadingImpl<T>>
+    implements _$$CheckCoursesLoadingImplCopyWith<T, $Res> {
+  __$$CheckCoursesLoadingImplCopyWithImpl(_$CheckCoursesLoadingImpl<T> _value,
+      $Res Function(_$CheckCoursesLoadingImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$CheckCoursesLoadingImpl<T> implements CheckCoursesLoading<T> {
+  const _$CheckCoursesLoadingImpl();
+
+  @override
+  String toString() {
+    return 'CoursesState<$T>.checkCoursesLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$CheckCoursesLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initialCoursesMe,
+    required TResult Function() loadingCoursesMe,
+    required TResult Function(T data) successCoursesMe,
+    required TResult Function(String error) errorCoursesMe,
+    required TResult Function(CoursesResponse selectedCourse) courseSelected,
+    required TResult Function(Lesson selectedlesson) lessonSelected,
+    required TResult Function(Level selectedlevel) levelSelected,
+    required TResult Function(CoursesMeResponse selectedCourseMe)
+        courseSelectedMe,
+    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
+    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
+    required TResult Function() sendQuationInitial,
+    required TResult Function() sendQuationLoading,
+    required TResult Function(String data) sendQuationSuccess,
+    required TResult Function(String error) sendQuationError,
+    required TResult Function() finishedInitial,
+    required TResult Function() finishedLoading,
+    required TResult Function(String data) finishedSuccess,
+    required TResult Function(String error) finishedError,
+    required TResult Function() listCoursesInitial,
+    required TResult Function() listCoursesLoading,
+    required TResult Function(T data) listCoursesSuccess,
+    required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
+  }) {
+    return checkCoursesLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialCoursesMe,
+    TResult? Function()? loadingCoursesMe,
+    TResult? Function(T data)? successCoursesMe,
+    TResult? Function(String error)? errorCoursesMe,
+    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
+    TResult? Function(Lesson selectedlesson)? lessonSelected,
+    TResult? Function(Level selectedlevel)? levelSelected,
+    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
+    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
+    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
+    TResult? Function()? sendQuationInitial,
+    TResult? Function()? sendQuationLoading,
+    TResult? Function(String data)? sendQuationSuccess,
+    TResult? Function(String error)? sendQuationError,
+    TResult? Function()? finishedInitial,
+    TResult? Function()? finishedLoading,
+    TResult? Function(String data)? finishedSuccess,
+    TResult? Function(String error)? finishedError,
+    TResult? Function()? listCoursesInitial,
+    TResult? Function()? listCoursesLoading,
+    TResult? Function(T data)? listCoursesSuccess,
+    TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
+  }) {
+    return checkCoursesLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initialCoursesMe,
+    TResult Function()? loadingCoursesMe,
+    TResult Function(T data)? successCoursesMe,
+    TResult Function(String error)? errorCoursesMe,
+    TResult Function(CoursesResponse selectedCourse)? courseSelected,
+    TResult Function(Lesson selectedlesson)? lessonSelected,
+    TResult Function(Level selectedlevel)? levelSelected,
+    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
+    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
+    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
+    TResult Function()? sendQuationInitial,
+    TResult Function()? sendQuationLoading,
+    TResult Function(String data)? sendQuationSuccess,
+    TResult Function(String error)? sendQuationError,
+    TResult Function()? finishedInitial,
+    TResult Function()? finishedLoading,
+    TResult Function(String data)? finishedSuccess,
+    TResult Function(String error)? finishedError,
+    TResult Function()? listCoursesInitial,
+    TResult Function()? listCoursesLoading,
+    TResult Function(T data)? listCoursesSuccess,
+    TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
+    required TResult orElse(),
+  }) {
+    if (checkCoursesLoading != null) {
+      return checkCoursesLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
+    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
+    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
+    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
+    required TResult Function(CourseSelected<T> value) courseSelected,
+    required TResult Function(LessonSelected<T> value) lessonSelected,
+    required TResult Function(LevelSelected<T> value) levelSelected,
+    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
+    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
+    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
+    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
+    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
+    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
+    required TResult Function(SendQuationError<T> value) sendQuationError,
+    required TResult Function(_FinishedInitial<T> value) finishedInitial,
+    required TResult Function(FinishedLoading<T> value) finishedLoading,
+    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
+    required TResult Function(FinishedError<T> value) finishedError,
+    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
+    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
+    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
+    required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
+  }) {
+    return checkCoursesLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
+    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
+    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
+    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
+    TResult? Function(CourseSelected<T> value)? courseSelected,
+    TResult? Function(LessonSelected<T> value)? lessonSelected,
+    TResult? Function(LevelSelected<T> value)? levelSelected,
+    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
+    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
+    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
+    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
+    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
+    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
+    TResult? Function(SendQuationError<T> value)? sendQuationError,
+    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
+    TResult? Function(FinishedLoading<T> value)? finishedLoading,
+    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
+    TResult? Function(FinishedError<T> value)? finishedError,
+    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
+    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
+    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
+    TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
+  }) {
+    return checkCoursesLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
+    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
+    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
+    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
+    TResult Function(CourseSelected<T> value)? courseSelected,
+    TResult Function(LessonSelected<T> value)? lessonSelected,
+    TResult Function(LevelSelected<T> value)? levelSelected,
+    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
+    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
+    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
+    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
+    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
+    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
+    TResult Function(SendQuationError<T> value)? sendQuationError,
+    TResult Function(_FinishedInitial<T> value)? finishedInitial,
+    TResult Function(FinishedLoading<T> value)? finishedLoading,
+    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
+    TResult Function(FinishedError<T> value)? finishedError,
+    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
+    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
+    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
+    TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
+    required TResult orElse(),
+  }) {
+    if (checkCoursesLoading != null) {
+      return checkCoursesLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class CheckCoursesLoading<T> implements CoursesState<T> {
+  const factory CheckCoursesLoading() = _$CheckCoursesLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$CheckCoursesSuccessImplCopyWith<T, $Res> {
+  factory _$$CheckCoursesSuccessImplCopyWith(_$CheckCoursesSuccessImpl<T> value,
+          $Res Function(_$CheckCoursesSuccessImpl<T>) then) =
+      __$$CheckCoursesSuccessImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({T data});
+}
+
+/// @nodoc
+class __$$CheckCoursesSuccessImplCopyWithImpl<T, $Res>
+    extends _$CoursesStateCopyWithImpl<T, $Res, _$CheckCoursesSuccessImpl<T>>
+    implements _$$CheckCoursesSuccessImplCopyWith<T, $Res> {
+  __$$CheckCoursesSuccessImplCopyWithImpl(_$CheckCoursesSuccessImpl<T> _value,
+      $Res Function(_$CheckCoursesSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$CheckCoursesSuccessImpl<T>(
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as T,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$CheckCoursesSuccessImpl<T> implements CheckCoursesSuccess<T> {
+  const _$CheckCoursesSuccessImpl(this.data);
+
+  @override
+  final T data;
+
+  @override
+  String toString() {
+    return 'CoursesState<$T>.checkCoursesSuccess(data: $data)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$CheckCoursesSuccessImpl<T> &&
+            const DeepCollectionEquality().equals(other.data, data));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$CheckCoursesSuccessImplCopyWith<T, _$CheckCoursesSuccessImpl<T>>
+      get copyWith => __$$CheckCoursesSuccessImplCopyWithImpl<T,
+          _$CheckCoursesSuccessImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initialCoursesMe,
+    required TResult Function() loadingCoursesMe,
+    required TResult Function(T data) successCoursesMe,
+    required TResult Function(String error) errorCoursesMe,
+    required TResult Function(CoursesResponse selectedCourse) courseSelected,
+    required TResult Function(Lesson selectedlesson) lessonSelected,
+    required TResult Function(Level selectedlevel) levelSelected,
+    required TResult Function(CoursesMeResponse selectedCourseMe)
+        courseSelectedMe,
+    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
+    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
+    required TResult Function() sendQuationInitial,
+    required TResult Function() sendQuationLoading,
+    required TResult Function(String data) sendQuationSuccess,
+    required TResult Function(String error) sendQuationError,
+    required TResult Function() finishedInitial,
+    required TResult Function() finishedLoading,
+    required TResult Function(String data) finishedSuccess,
+    required TResult Function(String error) finishedError,
+    required TResult Function() listCoursesInitial,
+    required TResult Function() listCoursesLoading,
+    required TResult Function(T data) listCoursesSuccess,
+    required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
+  }) {
+    return checkCoursesSuccess(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialCoursesMe,
+    TResult? Function()? loadingCoursesMe,
+    TResult? Function(T data)? successCoursesMe,
+    TResult? Function(String error)? errorCoursesMe,
+    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
+    TResult? Function(Lesson selectedlesson)? lessonSelected,
+    TResult? Function(Level selectedlevel)? levelSelected,
+    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
+    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
+    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
+    TResult? Function()? sendQuationInitial,
+    TResult? Function()? sendQuationLoading,
+    TResult? Function(String data)? sendQuationSuccess,
+    TResult? Function(String error)? sendQuationError,
+    TResult? Function()? finishedInitial,
+    TResult? Function()? finishedLoading,
+    TResult? Function(String data)? finishedSuccess,
+    TResult? Function(String error)? finishedError,
+    TResult? Function()? listCoursesInitial,
+    TResult? Function()? listCoursesLoading,
+    TResult? Function(T data)? listCoursesSuccess,
+    TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
+  }) {
+    return checkCoursesSuccess?.call(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initialCoursesMe,
+    TResult Function()? loadingCoursesMe,
+    TResult Function(T data)? successCoursesMe,
+    TResult Function(String error)? errorCoursesMe,
+    TResult Function(CoursesResponse selectedCourse)? courseSelected,
+    TResult Function(Lesson selectedlesson)? lessonSelected,
+    TResult Function(Level selectedlevel)? levelSelected,
+    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
+    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
+    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
+    TResult Function()? sendQuationInitial,
+    TResult Function()? sendQuationLoading,
+    TResult Function(String data)? sendQuationSuccess,
+    TResult Function(String error)? sendQuationError,
+    TResult Function()? finishedInitial,
+    TResult Function()? finishedLoading,
+    TResult Function(String data)? finishedSuccess,
+    TResult Function(String error)? finishedError,
+    TResult Function()? listCoursesInitial,
+    TResult Function()? listCoursesLoading,
+    TResult Function(T data)? listCoursesSuccess,
+    TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
+    required TResult orElse(),
+  }) {
+    if (checkCoursesSuccess != null) {
+      return checkCoursesSuccess(data);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
+    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
+    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
+    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
+    required TResult Function(CourseSelected<T> value) courseSelected,
+    required TResult Function(LessonSelected<T> value) lessonSelected,
+    required TResult Function(LevelSelected<T> value) levelSelected,
+    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
+    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
+    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
+    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
+    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
+    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
+    required TResult Function(SendQuationError<T> value) sendQuationError,
+    required TResult Function(_FinishedInitial<T> value) finishedInitial,
+    required TResult Function(FinishedLoading<T> value) finishedLoading,
+    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
+    required TResult Function(FinishedError<T> value) finishedError,
+    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
+    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
+    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
+    required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
+  }) {
+    return checkCoursesSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
+    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
+    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
+    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
+    TResult? Function(CourseSelected<T> value)? courseSelected,
+    TResult? Function(LessonSelected<T> value)? lessonSelected,
+    TResult? Function(LevelSelected<T> value)? levelSelected,
+    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
+    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
+    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
+    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
+    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
+    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
+    TResult? Function(SendQuationError<T> value)? sendQuationError,
+    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
+    TResult? Function(FinishedLoading<T> value)? finishedLoading,
+    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
+    TResult? Function(FinishedError<T> value)? finishedError,
+    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
+    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
+    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
+    TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
+  }) {
+    return checkCoursesSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
+    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
+    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
+    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
+    TResult Function(CourseSelected<T> value)? courseSelected,
+    TResult Function(LessonSelected<T> value)? lessonSelected,
+    TResult Function(LevelSelected<T> value)? levelSelected,
+    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
+    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
+    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
+    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
+    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
+    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
+    TResult Function(SendQuationError<T> value)? sendQuationError,
+    TResult Function(_FinishedInitial<T> value)? finishedInitial,
+    TResult Function(FinishedLoading<T> value)? finishedLoading,
+    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
+    TResult Function(FinishedError<T> value)? finishedError,
+    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
+    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
+    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
+    TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
+    required TResult orElse(),
+  }) {
+    if (checkCoursesSuccess != null) {
+      return checkCoursesSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class CheckCoursesSuccess<T> implements CoursesState<T> {
+  const factory CheckCoursesSuccess(final T data) =
+      _$CheckCoursesSuccessImpl<T>;
+
+  T get data;
+  @JsonKey(ignore: true)
+  _$$CheckCoursesSuccessImplCopyWith<T, _$CheckCoursesSuccessImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$CheckCoursesErrorImplCopyWith<T, $Res> {
+  factory _$$CheckCoursesErrorImplCopyWith(_$CheckCoursesErrorImpl<T> value,
+          $Res Function(_$CheckCoursesErrorImpl<T>) then) =
+      __$$CheckCoursesErrorImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String error});
+}
+
+/// @nodoc
+class __$$CheckCoursesErrorImplCopyWithImpl<T, $Res>
+    extends _$CoursesStateCopyWithImpl<T, $Res, _$CheckCoursesErrorImpl<T>>
+    implements _$$CheckCoursesErrorImplCopyWith<T, $Res> {
+  __$$CheckCoursesErrorImplCopyWithImpl(_$CheckCoursesErrorImpl<T> _value,
+      $Res Function(_$CheckCoursesErrorImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+  }) {
+    return _then(_$CheckCoursesErrorImpl<T>(
+      error: null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$CheckCoursesErrorImpl<T> implements CheckCoursesError<T> {
+  const _$CheckCoursesErrorImpl({required this.error});
+
+  @override
+  final String error;
+
+  @override
+  String toString() {
+    return 'CoursesState<$T>.checkCoursesError(error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$CheckCoursesErrorImpl<T> &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, error);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$CheckCoursesErrorImplCopyWith<T, _$CheckCoursesErrorImpl<T>>
+      get copyWith =>
+          __$$CheckCoursesErrorImplCopyWithImpl<T, _$CheckCoursesErrorImpl<T>>(
+              this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initialCoursesMe,
+    required TResult Function() loadingCoursesMe,
+    required TResult Function(T data) successCoursesMe,
+    required TResult Function(String error) errorCoursesMe,
+    required TResult Function(CoursesResponse selectedCourse) courseSelected,
+    required TResult Function(Lesson selectedlesson) lessonSelected,
+    required TResult Function(Level selectedlevel) levelSelected,
+    required TResult Function(CoursesMeResponse selectedCourseMe)
+        courseSelectedMe,
+    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
+    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
+    required TResult Function() sendQuationInitial,
+    required TResult Function() sendQuationLoading,
+    required TResult Function(String data) sendQuationSuccess,
+    required TResult Function(String error) sendQuationError,
+    required TResult Function() finishedInitial,
+    required TResult Function() finishedLoading,
+    required TResult Function(String data) finishedSuccess,
+    required TResult Function(String error) finishedError,
+    required TResult Function() listCoursesInitial,
+    required TResult Function() listCoursesLoading,
+    required TResult Function(T data) listCoursesSuccess,
+    required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
+  }) {
+    return checkCoursesError(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialCoursesMe,
+    TResult? Function()? loadingCoursesMe,
+    TResult? Function(T data)? successCoursesMe,
+    TResult? Function(String error)? errorCoursesMe,
+    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
+    TResult? Function(Lesson selectedlesson)? lessonSelected,
+    TResult? Function(Level selectedlevel)? levelSelected,
+    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
+    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
+    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
+    TResult? Function()? sendQuationInitial,
+    TResult? Function()? sendQuationLoading,
+    TResult? Function(String data)? sendQuationSuccess,
+    TResult? Function(String error)? sendQuationError,
+    TResult? Function()? finishedInitial,
+    TResult? Function()? finishedLoading,
+    TResult? Function(String data)? finishedSuccess,
+    TResult? Function(String error)? finishedError,
+    TResult? Function()? listCoursesInitial,
+    TResult? Function()? listCoursesLoading,
+    TResult? Function(T data)? listCoursesSuccess,
+    TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
+  }) {
+    return checkCoursesError?.call(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initialCoursesMe,
+    TResult Function()? loadingCoursesMe,
+    TResult Function(T data)? successCoursesMe,
+    TResult Function(String error)? errorCoursesMe,
+    TResult Function(CoursesResponse selectedCourse)? courseSelected,
+    TResult Function(Lesson selectedlesson)? lessonSelected,
+    TResult Function(Level selectedlevel)? levelSelected,
+    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
+    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
+    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
+    TResult Function()? sendQuationInitial,
+    TResult Function()? sendQuationLoading,
+    TResult Function(String data)? sendQuationSuccess,
+    TResult Function(String error)? sendQuationError,
+    TResult Function()? finishedInitial,
+    TResult Function()? finishedLoading,
+    TResult Function(String data)? finishedSuccess,
+    TResult Function(String error)? finishedError,
+    TResult Function()? listCoursesInitial,
+    TResult Function()? listCoursesLoading,
+    TResult Function(T data)? listCoursesSuccess,
+    TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
+    required TResult orElse(),
+  }) {
+    if (checkCoursesError != null) {
+      return checkCoursesError(error);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
+    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
+    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
+    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
+    required TResult Function(CourseSelected<T> value) courseSelected,
+    required TResult Function(LessonSelected<T> value) lessonSelected,
+    required TResult Function(LevelSelected<T> value) levelSelected,
+    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
+    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
+    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
+    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
+    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
+    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
+    required TResult Function(SendQuationError<T> value) sendQuationError,
+    required TResult Function(_FinishedInitial<T> value) finishedInitial,
+    required TResult Function(FinishedLoading<T> value) finishedLoading,
+    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
+    required TResult Function(FinishedError<T> value) finishedError,
+    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
+    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
+    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
+    required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
+  }) {
+    return checkCoursesError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
+    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
+    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
+    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
+    TResult? Function(CourseSelected<T> value)? courseSelected,
+    TResult? Function(LessonSelected<T> value)? lessonSelected,
+    TResult? Function(LevelSelected<T> value)? levelSelected,
+    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
+    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
+    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
+    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
+    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
+    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
+    TResult? Function(SendQuationError<T> value)? sendQuationError,
+    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
+    TResult? Function(FinishedLoading<T> value)? finishedLoading,
+    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
+    TResult? Function(FinishedError<T> value)? finishedError,
+    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
+    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
+    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
+    TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
+  }) {
+    return checkCoursesError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
+    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
+    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
+    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
+    TResult Function(CourseSelected<T> value)? courseSelected,
+    TResult Function(LessonSelected<T> value)? lessonSelected,
+    TResult Function(LevelSelected<T> value)? levelSelected,
+    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
+    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
+    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
+    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
+    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
+    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
+    TResult Function(SendQuationError<T> value)? sendQuationError,
+    TResult Function(_FinishedInitial<T> value)? finishedInitial,
+    TResult Function(FinishedLoading<T> value)? finishedLoading,
+    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
+    TResult Function(FinishedError<T> value)? finishedError,
+    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
+    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
+    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
+    TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
+    required TResult orElse(),
+  }) {
+    if (checkCoursesError != null) {
+      return checkCoursesError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class CheckCoursesError<T> implements CoursesState<T> {
+  const factory CheckCoursesError({required final String error}) =
+      _$CheckCoursesErrorImpl<T>;
+
+  String get error;
+  @JsonKey(ignore: true)
+  _$$CheckCoursesErrorImplCopyWith<T, _$CheckCoursesErrorImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$DeleteCoursesLoadingImplCopyWith<T, $Res> {
+  factory _$$DeleteCoursesLoadingImplCopyWith(
+          _$DeleteCoursesLoadingImpl<T> value,
+          $Res Function(_$DeleteCoursesLoadingImpl<T>) then) =
+      __$$DeleteCoursesLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$DeleteCoursesLoadingImplCopyWithImpl<T, $Res>
+    extends _$CoursesStateCopyWithImpl<T, $Res, _$DeleteCoursesLoadingImpl<T>>
+    implements _$$DeleteCoursesLoadingImplCopyWith<T, $Res> {
+  __$$DeleteCoursesLoadingImplCopyWithImpl(_$DeleteCoursesLoadingImpl<T> _value,
+      $Res Function(_$DeleteCoursesLoadingImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$DeleteCoursesLoadingImpl<T> implements DeleteCoursesLoading<T> {
+  const _$DeleteCoursesLoadingImpl();
+
+  @override
+  String toString() {
+    return 'CoursesState<$T>.deleteCoursesLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteCoursesLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initialCoursesMe,
+    required TResult Function() loadingCoursesMe,
+    required TResult Function(T data) successCoursesMe,
+    required TResult Function(String error) errorCoursesMe,
+    required TResult Function(CoursesResponse selectedCourse) courseSelected,
+    required TResult Function(Lesson selectedlesson) lessonSelected,
+    required TResult Function(Level selectedlevel) levelSelected,
+    required TResult Function(CoursesMeResponse selectedCourseMe)
+        courseSelectedMe,
+    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
+    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
+    required TResult Function() sendQuationInitial,
+    required TResult Function() sendQuationLoading,
+    required TResult Function(String data) sendQuationSuccess,
+    required TResult Function(String error) sendQuationError,
+    required TResult Function() finishedInitial,
+    required TResult Function() finishedLoading,
+    required TResult Function(String data) finishedSuccess,
+    required TResult Function(String error) finishedError,
+    required TResult Function() listCoursesInitial,
+    required TResult Function() listCoursesLoading,
+    required TResult Function(T data) listCoursesSuccess,
+    required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
+  }) {
+    return deleteCoursesLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialCoursesMe,
+    TResult? Function()? loadingCoursesMe,
+    TResult? Function(T data)? successCoursesMe,
+    TResult? Function(String error)? errorCoursesMe,
+    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
+    TResult? Function(Lesson selectedlesson)? lessonSelected,
+    TResult? Function(Level selectedlevel)? levelSelected,
+    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
+    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
+    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
+    TResult? Function()? sendQuationInitial,
+    TResult? Function()? sendQuationLoading,
+    TResult? Function(String data)? sendQuationSuccess,
+    TResult? Function(String error)? sendQuationError,
+    TResult? Function()? finishedInitial,
+    TResult? Function()? finishedLoading,
+    TResult? Function(String data)? finishedSuccess,
+    TResult? Function(String error)? finishedError,
+    TResult? Function()? listCoursesInitial,
+    TResult? Function()? listCoursesLoading,
+    TResult? Function(T data)? listCoursesSuccess,
+    TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
+  }) {
+    return deleteCoursesLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initialCoursesMe,
+    TResult Function()? loadingCoursesMe,
+    TResult Function(T data)? successCoursesMe,
+    TResult Function(String error)? errorCoursesMe,
+    TResult Function(CoursesResponse selectedCourse)? courseSelected,
+    TResult Function(Lesson selectedlesson)? lessonSelected,
+    TResult Function(Level selectedlevel)? levelSelected,
+    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
+    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
+    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
+    TResult Function()? sendQuationInitial,
+    TResult Function()? sendQuationLoading,
+    TResult Function(String data)? sendQuationSuccess,
+    TResult Function(String error)? sendQuationError,
+    TResult Function()? finishedInitial,
+    TResult Function()? finishedLoading,
+    TResult Function(String data)? finishedSuccess,
+    TResult Function(String error)? finishedError,
+    TResult Function()? listCoursesInitial,
+    TResult Function()? listCoursesLoading,
+    TResult Function(T data)? listCoursesSuccess,
+    TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
+    required TResult orElse(),
+  }) {
+    if (deleteCoursesLoading != null) {
+      return deleteCoursesLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
+    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
+    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
+    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
+    required TResult Function(CourseSelected<T> value) courseSelected,
+    required TResult Function(LessonSelected<T> value) lessonSelected,
+    required TResult Function(LevelSelected<T> value) levelSelected,
+    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
+    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
+    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
+    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
+    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
+    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
+    required TResult Function(SendQuationError<T> value) sendQuationError,
+    required TResult Function(_FinishedInitial<T> value) finishedInitial,
+    required TResult Function(FinishedLoading<T> value) finishedLoading,
+    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
+    required TResult Function(FinishedError<T> value) finishedError,
+    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
+    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
+    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
+    required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
+  }) {
+    return deleteCoursesLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
+    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
+    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
+    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
+    TResult? Function(CourseSelected<T> value)? courseSelected,
+    TResult? Function(LessonSelected<T> value)? lessonSelected,
+    TResult? Function(LevelSelected<T> value)? levelSelected,
+    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
+    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
+    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
+    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
+    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
+    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
+    TResult? Function(SendQuationError<T> value)? sendQuationError,
+    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
+    TResult? Function(FinishedLoading<T> value)? finishedLoading,
+    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
+    TResult? Function(FinishedError<T> value)? finishedError,
+    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
+    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
+    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
+    TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
+  }) {
+    return deleteCoursesLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
+    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
+    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
+    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
+    TResult Function(CourseSelected<T> value)? courseSelected,
+    TResult Function(LessonSelected<T> value)? lessonSelected,
+    TResult Function(LevelSelected<T> value)? levelSelected,
+    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
+    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
+    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
+    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
+    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
+    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
+    TResult Function(SendQuationError<T> value)? sendQuationError,
+    TResult Function(_FinishedInitial<T> value)? finishedInitial,
+    TResult Function(FinishedLoading<T> value)? finishedLoading,
+    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
+    TResult Function(FinishedError<T> value)? finishedError,
+    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
+    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
+    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
+    TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
+    required TResult orElse(),
+  }) {
+    if (deleteCoursesLoading != null) {
+      return deleteCoursesLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeleteCoursesLoading<T> implements CoursesState<T> {
+  const factory DeleteCoursesLoading() = _$DeleteCoursesLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$DeleteCoursesSuccessImplCopyWith<T, $Res> {
+  factory _$$DeleteCoursesSuccessImplCopyWith(
+          _$DeleteCoursesSuccessImpl<T> value,
+          $Res Function(_$DeleteCoursesSuccessImpl<T>) then) =
+      __$$DeleteCoursesSuccessImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({T data});
+}
+
+/// @nodoc
+class __$$DeleteCoursesSuccessImplCopyWithImpl<T, $Res>
+    extends _$CoursesStateCopyWithImpl<T, $Res, _$DeleteCoursesSuccessImpl<T>>
+    implements _$$DeleteCoursesSuccessImplCopyWith<T, $Res> {
+  __$$DeleteCoursesSuccessImplCopyWithImpl(_$DeleteCoursesSuccessImpl<T> _value,
+      $Res Function(_$DeleteCoursesSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$DeleteCoursesSuccessImpl<T>(
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as T,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$DeleteCoursesSuccessImpl<T> implements DeleteCoursesSuccess<T> {
+  const _$DeleteCoursesSuccessImpl(this.data);
+
+  @override
+  final T data;
+
+  @override
+  String toString() {
+    return 'CoursesState<$T>.deleteCoursesSuccess(data: $data)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteCoursesSuccessImpl<T> &&
+            const DeepCollectionEquality().equals(other.data, data));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$DeleteCoursesSuccessImplCopyWith<T, _$DeleteCoursesSuccessImpl<T>>
+      get copyWith => __$$DeleteCoursesSuccessImplCopyWithImpl<T,
+          _$DeleteCoursesSuccessImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initialCoursesMe,
+    required TResult Function() loadingCoursesMe,
+    required TResult Function(T data) successCoursesMe,
+    required TResult Function(String error) errorCoursesMe,
+    required TResult Function(CoursesResponse selectedCourse) courseSelected,
+    required TResult Function(Lesson selectedlesson) lessonSelected,
+    required TResult Function(Level selectedlevel) levelSelected,
+    required TResult Function(CoursesMeResponse selectedCourseMe)
+        courseSelectedMe,
+    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
+    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
+    required TResult Function() sendQuationInitial,
+    required TResult Function() sendQuationLoading,
+    required TResult Function(String data) sendQuationSuccess,
+    required TResult Function(String error) sendQuationError,
+    required TResult Function() finishedInitial,
+    required TResult Function() finishedLoading,
+    required TResult Function(String data) finishedSuccess,
+    required TResult Function(String error) finishedError,
+    required TResult Function() listCoursesInitial,
+    required TResult Function() listCoursesLoading,
+    required TResult Function(T data) listCoursesSuccess,
+    required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
+  }) {
+    return deleteCoursesSuccess(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialCoursesMe,
+    TResult? Function()? loadingCoursesMe,
+    TResult? Function(T data)? successCoursesMe,
+    TResult? Function(String error)? errorCoursesMe,
+    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
+    TResult? Function(Lesson selectedlesson)? lessonSelected,
+    TResult? Function(Level selectedlevel)? levelSelected,
+    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
+    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
+    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
+    TResult? Function()? sendQuationInitial,
+    TResult? Function()? sendQuationLoading,
+    TResult? Function(String data)? sendQuationSuccess,
+    TResult? Function(String error)? sendQuationError,
+    TResult? Function()? finishedInitial,
+    TResult? Function()? finishedLoading,
+    TResult? Function(String data)? finishedSuccess,
+    TResult? Function(String error)? finishedError,
+    TResult? Function()? listCoursesInitial,
+    TResult? Function()? listCoursesLoading,
+    TResult? Function(T data)? listCoursesSuccess,
+    TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
+  }) {
+    return deleteCoursesSuccess?.call(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initialCoursesMe,
+    TResult Function()? loadingCoursesMe,
+    TResult Function(T data)? successCoursesMe,
+    TResult Function(String error)? errorCoursesMe,
+    TResult Function(CoursesResponse selectedCourse)? courseSelected,
+    TResult Function(Lesson selectedlesson)? lessonSelected,
+    TResult Function(Level selectedlevel)? levelSelected,
+    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
+    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
+    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
+    TResult Function()? sendQuationInitial,
+    TResult Function()? sendQuationLoading,
+    TResult Function(String data)? sendQuationSuccess,
+    TResult Function(String error)? sendQuationError,
+    TResult Function()? finishedInitial,
+    TResult Function()? finishedLoading,
+    TResult Function(String data)? finishedSuccess,
+    TResult Function(String error)? finishedError,
+    TResult Function()? listCoursesInitial,
+    TResult Function()? listCoursesLoading,
+    TResult Function(T data)? listCoursesSuccess,
+    TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
+    required TResult orElse(),
+  }) {
+    if (deleteCoursesSuccess != null) {
+      return deleteCoursesSuccess(data);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
+    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
+    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
+    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
+    required TResult Function(CourseSelected<T> value) courseSelected,
+    required TResult Function(LessonSelected<T> value) lessonSelected,
+    required TResult Function(LevelSelected<T> value) levelSelected,
+    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
+    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
+    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
+    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
+    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
+    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
+    required TResult Function(SendQuationError<T> value) sendQuationError,
+    required TResult Function(_FinishedInitial<T> value) finishedInitial,
+    required TResult Function(FinishedLoading<T> value) finishedLoading,
+    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
+    required TResult Function(FinishedError<T> value) finishedError,
+    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
+    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
+    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
+    required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
+  }) {
+    return deleteCoursesSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
+    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
+    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
+    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
+    TResult? Function(CourseSelected<T> value)? courseSelected,
+    TResult? Function(LessonSelected<T> value)? lessonSelected,
+    TResult? Function(LevelSelected<T> value)? levelSelected,
+    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
+    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
+    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
+    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
+    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
+    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
+    TResult? Function(SendQuationError<T> value)? sendQuationError,
+    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
+    TResult? Function(FinishedLoading<T> value)? finishedLoading,
+    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
+    TResult? Function(FinishedError<T> value)? finishedError,
+    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
+    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
+    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
+    TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
+  }) {
+    return deleteCoursesSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
+    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
+    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
+    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
+    TResult Function(CourseSelected<T> value)? courseSelected,
+    TResult Function(LessonSelected<T> value)? lessonSelected,
+    TResult Function(LevelSelected<T> value)? levelSelected,
+    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
+    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
+    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
+    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
+    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
+    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
+    TResult Function(SendQuationError<T> value)? sendQuationError,
+    TResult Function(_FinishedInitial<T> value)? finishedInitial,
+    TResult Function(FinishedLoading<T> value)? finishedLoading,
+    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
+    TResult Function(FinishedError<T> value)? finishedError,
+    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
+    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
+    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
+    TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
+    required TResult orElse(),
+  }) {
+    if (deleteCoursesSuccess != null) {
+      return deleteCoursesSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeleteCoursesSuccess<T> implements CoursesState<T> {
+  const factory DeleteCoursesSuccess(final T data) =
+      _$DeleteCoursesSuccessImpl<T>;
+
+  T get data;
+  @JsonKey(ignore: true)
+  _$$DeleteCoursesSuccessImplCopyWith<T, _$DeleteCoursesSuccessImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$DeleteCoursesErrorImplCopyWith<T, $Res> {
+  factory _$$DeleteCoursesErrorImplCopyWith(_$DeleteCoursesErrorImpl<T> value,
+          $Res Function(_$DeleteCoursesErrorImpl<T>) then) =
+      __$$DeleteCoursesErrorImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String error});
+}
+
+/// @nodoc
+class __$$DeleteCoursesErrorImplCopyWithImpl<T, $Res>
+    extends _$CoursesStateCopyWithImpl<T, $Res, _$DeleteCoursesErrorImpl<T>>
+    implements _$$DeleteCoursesErrorImplCopyWith<T, $Res> {
+  __$$DeleteCoursesErrorImplCopyWithImpl(_$DeleteCoursesErrorImpl<T> _value,
+      $Res Function(_$DeleteCoursesErrorImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+  }) {
+    return _then(_$DeleteCoursesErrorImpl<T>(
+      error: null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$DeleteCoursesErrorImpl<T> implements DeleteCoursesError<T> {
+  const _$DeleteCoursesErrorImpl({required this.error});
+
+  @override
+  final String error;
+
+  @override
+  String toString() {
+    return 'CoursesState<$T>.deleteCoursesError(error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteCoursesErrorImpl<T> &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, error);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$DeleteCoursesErrorImplCopyWith<T, _$DeleteCoursesErrorImpl<T>>
+      get copyWith => __$$DeleteCoursesErrorImplCopyWithImpl<T,
+          _$DeleteCoursesErrorImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initialCoursesMe,
+    required TResult Function() loadingCoursesMe,
+    required TResult Function(T data) successCoursesMe,
+    required TResult Function(String error) errorCoursesMe,
+    required TResult Function(CoursesResponse selectedCourse) courseSelected,
+    required TResult Function(Lesson selectedlesson) lessonSelected,
+    required TResult Function(Level selectedlevel) levelSelected,
+    required TResult Function(CoursesMeResponse selectedCourseMe)
+        courseSelectedMe,
+    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
+    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
+    required TResult Function() sendQuationInitial,
+    required TResult Function() sendQuationLoading,
+    required TResult Function(String data) sendQuationSuccess,
+    required TResult Function(String error) sendQuationError,
+    required TResult Function() finishedInitial,
+    required TResult Function() finishedLoading,
+    required TResult Function(String data) finishedSuccess,
+    required TResult Function(String error) finishedError,
+    required TResult Function() listCoursesInitial,
+    required TResult Function() listCoursesLoading,
+    required TResult Function(T data) listCoursesSuccess,
+    required TResult Function(String error) listCoursesError,
+    required TResult Function() checkCoursesLoading,
+    required TResult Function(T data) checkCoursesSuccess,
+    required TResult Function(String error) checkCoursesError,
+    required TResult Function() deleteCoursesLoading,
+    required TResult Function(T data) deleteCoursesSuccess,
+    required TResult Function(String error) deleteCoursesError,
+  }) {
+    return deleteCoursesError(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initialCoursesMe,
+    TResult? Function()? loadingCoursesMe,
+    TResult? Function(T data)? successCoursesMe,
+    TResult? Function(String error)? errorCoursesMe,
+    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
+    TResult? Function(Lesson selectedlesson)? lessonSelected,
+    TResult? Function(Level selectedlevel)? levelSelected,
+    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
+    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
+    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
+    TResult? Function()? sendQuationInitial,
+    TResult? Function()? sendQuationLoading,
+    TResult? Function(String data)? sendQuationSuccess,
+    TResult? Function(String error)? sendQuationError,
+    TResult? Function()? finishedInitial,
+    TResult? Function()? finishedLoading,
+    TResult? Function(String data)? finishedSuccess,
+    TResult? Function(String error)? finishedError,
+    TResult? Function()? listCoursesInitial,
+    TResult? Function()? listCoursesLoading,
+    TResult? Function(T data)? listCoursesSuccess,
+    TResult? Function(String error)? listCoursesError,
+    TResult? Function()? checkCoursesLoading,
+    TResult? Function(T data)? checkCoursesSuccess,
+    TResult? Function(String error)? checkCoursesError,
+    TResult? Function()? deleteCoursesLoading,
+    TResult? Function(T data)? deleteCoursesSuccess,
+    TResult? Function(String error)? deleteCoursesError,
+  }) {
+    return deleteCoursesError?.call(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initialCoursesMe,
+    TResult Function()? loadingCoursesMe,
+    TResult Function(T data)? successCoursesMe,
+    TResult Function(String error)? errorCoursesMe,
+    TResult Function(CoursesResponse selectedCourse)? courseSelected,
+    TResult Function(Lesson selectedlesson)? lessonSelected,
+    TResult Function(Level selectedlevel)? levelSelected,
+    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
+    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
+    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
+    TResult Function()? sendQuationInitial,
+    TResult Function()? sendQuationLoading,
+    TResult Function(String data)? sendQuationSuccess,
+    TResult Function(String error)? sendQuationError,
+    TResult Function()? finishedInitial,
+    TResult Function()? finishedLoading,
+    TResult Function(String data)? finishedSuccess,
+    TResult Function(String error)? finishedError,
+    TResult Function()? listCoursesInitial,
+    TResult Function()? listCoursesLoading,
+    TResult Function(T data)? listCoursesSuccess,
+    TResult Function(String error)? listCoursesError,
+    TResult Function()? checkCoursesLoading,
+    TResult Function(T data)? checkCoursesSuccess,
+    TResult Function(String error)? checkCoursesError,
+    TResult Function()? deleteCoursesLoading,
+    TResult Function(T data)? deleteCoursesSuccess,
+    TResult Function(String error)? deleteCoursesError,
+    required TResult orElse(),
+  }) {
+    if (deleteCoursesError != null) {
+      return deleteCoursesError(error);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
+    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
+    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
+    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
+    required TResult Function(CourseSelected<T> value) courseSelected,
+    required TResult Function(LessonSelected<T> value) lessonSelected,
+    required TResult Function(LevelSelected<T> value) levelSelected,
+    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
+    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
+    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
+    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
+    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
+    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
+    required TResult Function(SendQuationError<T> value) sendQuationError,
+    required TResult Function(_FinishedInitial<T> value) finishedInitial,
+    required TResult Function(FinishedLoading<T> value) finishedLoading,
+    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
+    required TResult Function(FinishedError<T> value) finishedError,
+    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
+    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
+    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
+    required TResult Function(ListCoursesError<T> value) listCoursesError,
+    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
+    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
+    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
+    required TResult Function(DeleteCoursesLoading<T> value)
+        deleteCoursesLoading,
+    required TResult Function(DeleteCoursesSuccess<T> value)
+        deleteCoursesSuccess,
+    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
+  }) {
+    return deleteCoursesError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
+    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
+    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
+    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
+    TResult? Function(CourseSelected<T> value)? courseSelected,
+    TResult? Function(LessonSelected<T> value)? lessonSelected,
+    TResult? Function(LevelSelected<T> value)? levelSelected,
+    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
+    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
+    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
+    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
+    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
+    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
+    TResult? Function(SendQuationError<T> value)? sendQuationError,
+    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
+    TResult? Function(FinishedLoading<T> value)? finishedLoading,
+    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
+    TResult? Function(FinishedError<T> value)? finishedError,
+    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
+    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
+    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
+    TResult? Function(ListCoursesError<T> value)? listCoursesError,
+    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
+  }) {
+    return deleteCoursesError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
+    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
+    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
+    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
+    TResult Function(CourseSelected<T> value)? courseSelected,
+    TResult Function(LessonSelected<T> value)? lessonSelected,
+    TResult Function(LevelSelected<T> value)? levelSelected,
+    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
+    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
+    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
+    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
+    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
+    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
+    TResult Function(SendQuationError<T> value)? sendQuationError,
+    TResult Function(_FinishedInitial<T> value)? finishedInitial,
+    TResult Function(FinishedLoading<T> value)? finishedLoading,
+    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
+    TResult Function(FinishedError<T> value)? finishedError,
+    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
+    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
+    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
+    TResult Function(ListCoursesError<T> value)? listCoursesError,
+    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
+    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
+    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
+    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
+    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
+    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
+    required TResult orElse(),
+  }) {
+    if (deleteCoursesError != null) {
+      return deleteCoursesError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class DeleteCoursesError<T> implements CoursesState<T> {
+  const factory DeleteCoursesError({required final String error}) =
+      _$DeleteCoursesErrorImpl<T>;
+
+  String get error;
+  @JsonKey(ignore: true)
+  _$$DeleteCoursesErrorImplCopyWith<T, _$DeleteCoursesErrorImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
 }

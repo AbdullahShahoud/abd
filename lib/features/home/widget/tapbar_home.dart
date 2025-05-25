@@ -43,56 +43,60 @@ class _TabBarhomeState extends State<TabBarhome> {
                       ),
                     ),
                     verticalBox(7.h),
-                    Container(
-                      height: 45.h,
-                      width: MediaQuery.of(context).size.width - 70.w,
-                      child: TextFormField(
-                        onTap: () {
-                          showSearch(
-                              context: context,
-                              delegate: SearchCourseName(
-                                  courses: CourseesCubit.get(context).courses,
-                                  history: ['mm', 'tt', 'yy']));
-                        },
-                        enabled: false,
-                        keyboardType: TextInputType.name,
-                        validator: (value) {
-                          if (value!.isEmpty || value == null) {
-                            return 'الرجاء ادخال البريد الالكتروني';
-                          }
-                          return null;
-                        },
-                        decoration: InputDecoration(
-                            filled: true,
-                            fillColor: Colors.white,
-                            contentPadding: EdgeInsets.symmetric(
-                                vertical: 10.h, horizontal: 10.w),
-                            prefixIcon: Icon(
-                              Icons.search,
-                              size: 30,
-                              color: ColorManger.font,
-                            ),
-                            hintText: 'بحث',
-                            hintStyle: FontStyleAndText.textfrom,
-                            disabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.black),
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.black),
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            focusedBorder: OutlineInputBorder(
+                    InkWell(
+                      onTap: (){
+                        showSearch(
+                            context: context,
+                            delegate: SearchCourseName(
+                                courses:
+                                CourseesCubit.get(context)
+                                    .courses,
+                                history: ['mm', 'tt', 'yy']));
+                      },
+                      child: Container(
+                        height: 45.h,
+                        width: MediaQuery.of(context).size.width - 70.w,
+                        child: TextFormField(
+                          enabled: false,
+                          keyboardType: TextInputType.name,
+                          validator: (value) {
+                            if (value!.isEmpty || value == null) {
+                              return 'الرجاء ادخال البريد الالكتروني';
+                            }
+                            return null;
+                          },
+                          decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Colors.white,
+                              contentPadding: EdgeInsets.symmetric(
+                                  vertical: 10.h, horizontal: 10.w),
+                              prefixIcon: Icon(
+                                Icons.search,
+                                size: 30,
+                                color: ColorManger.font,
+                              ),
+                              hintText: 'بحث',
+                              hintStyle: FontStyleAndText.textfrom,
+                              disabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.black),
                                 borderRadius: BorderRadius.circular(20),
-                                borderSide: BorderSide(
-                                    color: ColorManger.primary_ColorYello)),
-                            focusedErrorBorder: OutlineInputBorder(
+                              ),
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Colors.black),
                                 borderRadius: BorderRadius.circular(20),
-                                borderSide: BorderSide(color: Colors.red))),
-                        style: TextStyle(
-                          fontSize: 24.sp,
-                          fontWeight: FontWeight.w400,
-                          color: ColorManger.font,
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                  borderSide: BorderSide(
+                                      color: ColorManger.primary_ColorYello)),
+                              focusedErrorBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                  borderSide: BorderSide(color: Colors.red))),
+                          style: TextStyle(
+                            fontSize: 24.sp,
+                            fontWeight: FontWeight.w400,
+                            color: ColorManger.font,
+                          ),
                         ),
                       ),
                     )
