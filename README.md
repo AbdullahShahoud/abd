@@ -21,4 +21,8 @@ this is same screenshot to app:
 ![photo_4_2025-05-25_19-21-50](https://github.com/user-attachments/assets/5572d813-1c31-4f04-905e-a440b53b7492)
 ![photo_9_2025-05-25_19-21-50](https://github.com/user-attachments/assets/e4185d56-2f3e-4718-91cb-7a5b1185edd7)
 
+![Screenshot_20250513_221043](https://github.com/user-attachments/assets/d23d08d4-75d7-434f-be0c-7114ce68451f)
+![Screenshot_20250513_220738](https://github.com/user-attachments/assets/10986edf-b87c-4cff-a5f5-9f23aeb99fbf)
+![Screenshot_20250513_221043](https://github.com/user-attachments/assets/e82b1e8c-eba7-48f0-854a-403c5d940d04)
+![Screenshot_20250513_222302](https://github.com/user-attachments/assets/cbe603a4-a50f-4173-af6a-efc19d40d7c1)
 
