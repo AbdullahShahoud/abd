@@ -8,6 +8,7 @@ import '../../../../notification/logic/model/notification_response.dart';
 import '../../../../notification/logic/repo/notification_repo.dart';
 import '../../model/changEmail/chang_email_request.dart';
 import '../../model/changePassord/chang_password_request.dart';
+import '../../model/delet_user_ruqest.dart';
 import '../../repo/change_email_repo.dart';
 import '../../repo/change_password_repo.dart';
 import '../../repo/delet_repo.dart';
@@ -107,7 +108,7 @@ class ProfileAndNotificationCubit extends Cubit<ProfileAndNotificationState> {
 
   void emiteDeletUser() async {
     emit(ProfileAndNotificationState.loadingDelete());
-    final response = await deletRepo.delUser();
+    final response = await deletRepo.delUser(DeletUserRuqest('1'));
     response.when(success: (data) {
       emit(ProfileAndNotificationState.successDelete(data.message));
     }, failure: (error) {

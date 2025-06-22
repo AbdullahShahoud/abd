@@ -31,9 +31,9 @@ class SinginCubit extends Cubit<SinginState> {
     final respons = await _singinRepo.Singin(SinginRequest(
         email: controllerEmail?.text,
         password: controllerPassword?.text,
-        name: controllerName?.text,
-        type: '${site}',
-        confimPassword: controllerPasswordCon?.text));
+        username: controllerName?.text,
+        account_type: site.toString(),
+        confirmPassword: controllerPasswordCon?.text));
     respons.when(
       success: (singin) {
         emit(SinginState.success(singin));
@@ -41,6 +41,7 @@ class SinginCubit extends Cubit<SinginState> {
         print('User Email: ${singin.user?.email}');
       },
       failure: (errorHandler) {
+        print('❌ Error: ${errorHandler.error}' + 'ohhhhhhhhhh');
         emit(SinginState.error(error: 'notSingin'));
       },
     );

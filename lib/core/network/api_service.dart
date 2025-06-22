@@ -25,6 +25,7 @@ import '../../features/profile/logic/model/changEmail/chang_email_response.dart'
 import '../../features/profile/logic/model/changePassord/chang_password_request.dart';
 import '../../features/profile/logic/model/changePassord/change_password_response.dart';
 import '../../features/profile/logic/model/delet_user_response.dart';
+import '../../features/profile/logic/model/delet_user_ruqest.dart';
 import '../../features/profile/logic/model/viewGrade/view_grade.dart';
 import '../../features/singin/logic/model/singin_reqest.dart';
 import '../../features/singin/logic/model/singin_response.dart';
@@ -44,8 +45,10 @@ abstract class ApiService {
   Future<SinginResponse> signup(
     @Body() SinginRequest signupRequest,
   );
+
   @GET(ApiConstant.Book)
   Future<BookResponse> getBook();
+
   @GET(ApiConstant.Notifications)
   Future<NotificationResponse> getNotification();
 
@@ -88,14 +91,20 @@ abstract class ApiService {
     @Body() SendQautionsRuqest sendQautions,
   );
 
-  @POST(ApiConstant.SendQaution)
+  @POST(ApiConstant.FinishLeson)
   Future<FinishLessonResponse> finishLesson(
     @Body() FinishLessonRuqest sendQautions,
   );
+
   @DELETE(ApiConstant.DeletCourse)
   Future<DeletCourseResponse> deletCourse(
     @Body() DeletCourseRuqest deletCourseRuqest,
   );
-  @DELETE(ApiConstant.DeletCourse)
-  Future<UserDeletResponse> deletUser();
+  @DELETE(ApiConstant.DeletUesr)
+  Future<UserDeletResponse> deletUser(
+    @Body() DeletUserRuqest deletUserRuqest,
+  );
+//   @POST(ApiConstant.DeletCourse)
+//   Future<DeletCourseResponse> deletUser(
+//       @Body() DeletCourseRuqest deletCourseRuqest,);
 }

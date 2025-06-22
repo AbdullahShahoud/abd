@@ -14,7 +14,7 @@ class _ApiService implements ApiService {
     this.baseUrl,
     this.errorLogger,
   }) {
-    baseUrl ??= 'https://5c05-149-40-62-20.ngrok-free.app/api/';
+    baseUrl ??= 'https://50ff-212-8-243-74.ngrok-free.app/api/';
   }
 
   final Dio _dio;
@@ -486,7 +486,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'SendQaution',
+          'lessons/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -542,11 +542,12 @@ class _ApiService implements ApiService {
   }
 
   @override
-  Future<UserDeletResponse> deletUser() async {
+  Future<UserDeletResponse> deletUser(DeletUserRuqest deletUserRuqest) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
-    const Map<String, dynamic>? _data = null;
+    final _data = <String, dynamic>{};
+    _data.addAll(deletUserRuqest.toJson());
     final _options = _setStreamType<UserDeletResponse>(Options(
       method: 'DELETE',
       headers: _headers,
@@ -554,7 +555,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'DeletCourse',
+          'logout/',
           queryParameters: queryParameters,
           data: _data,
         )

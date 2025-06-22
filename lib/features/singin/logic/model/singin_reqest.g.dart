@@ -9,17 +9,17 @@ part of 'singin_reqest.dart';
 SinginRequest _$SinginRequestFromJson(Map<String, dynamic> json) =>
     SinginRequest(
       email: json['email'] as String?,
-      name: json['name'] as String?,
+      username: json['username'] as String?,
       password: json['password'] as String?,
-      confimPassword: json['confimPassword'] as String?,
-      type: json['type'] as String?,
+      confirmPassword: json['confirmPassword'] as String?,
+      account_type: json['account_type'] as String?,
     );
 
 Map<String, dynamic> _$SinginRequestToJson(SinginRequest instance) =>
     <String, dynamic>{
       'email': instance.email,
-      'name': instance.name,
+      'username': instance.username,
       'password': instance.password,
-      'confimPassword': instance.confimPassword,
-      'type': instance.type,
+      'confirmPassword': instance.confirmPassword,
+      'account_type': instance.account_type,
     };

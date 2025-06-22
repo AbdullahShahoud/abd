@@ -43,8 +43,9 @@ class DioFactory {
     if (_dio == null) {
       _dio = Dio()
         ..options = BaseOptions(
-          connectTimeout: Duration(milliseconds: 30),
-          receiveTimeout: Duration(milliseconds: 30),
+          connectTimeout: Duration(seconds: 30),
+          receiveTimeout: Duration(seconds: 30),
+          sendTimeout: const Duration(seconds: 10),
         );
 
       await _addDioHeader();
@@ -56,8 +57,11 @@ class DioFactory {
   static Future<void> _addDioHeader() async {
     String? token = await SharedPrefHelper.getString('token');
     _dio?.options.headers = {
+      'Content-Type': 'application/json',
+      // 'content-type':
+      //     'multipart/form-data; boundary=<calculated when request is sent>',
       'Accept': '*/*',
-      if (token != null) 'Authorization': 'Bearer $token',
+      //if (token != null) 'Authorization': 'Bearer $token',
     };
   }
 

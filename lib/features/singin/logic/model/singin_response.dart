@@ -6,7 +6,8 @@ part 'singin_response.g.dart';
 class SinginResponse {
   String? token;
   User? user;
-  SinginResponse({this.token, this.user});
+  User? account_type;
+  SinginResponse({this.token, this.user,this.account_type});
 
   factory SinginResponse.fromJson(Map<String, dynamic> json) =>
       _$SinginResponseFromJson(json);
@@ -14,8 +15,8 @@ class SinginResponse {
 @JsonSerializable()
 class User {
   String? email;
-  String? name;
-  String? type;
-  User({this.email, this.name, this.type});
+  String? username;
+  String? id;
+  User({this.email, this.username, this.id});
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
 }
