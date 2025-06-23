@@ -20,6 +20,8 @@ import '../../features/courses/logic/model/send_qaustion_response.dart';
 import '../../features/login/logic/model/login_request.dart';
 import '../../features/login/logic/model/login_response.dart';
 import '../../features/notification/logic/model/notification_response.dart';
+import '../../features/otp/logic/model/otp_response.dart';
+import '../../features/otp/logic/model/otp_ruqest.dart';
 import '../../features/profile/logic/model/changEmail/chang_email_request.dart';
 import '../../features/profile/logic/model/changEmail/chang_email_response.dart';
 import '../../features/profile/logic/model/changePassord/chang_password_request.dart';
@@ -44,6 +46,10 @@ abstract class ApiService {
   @POST(ApiConstant.Signup)
   Future<SinginResponse> signup(
     @Body() SinginRequest signupRequest,
+  );
+  @POST(ApiConstant.verfify_email)
+  Future<OtpResponse> veifyEmail(
+    @Body() OtpRuqest otpRuqest,
   );
 
   @GET(ApiConstant.Book)

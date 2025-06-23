@@ -16,6 +16,4 @@ class SinginRequest {
       required this.confirmPassword,
       required this.account_type});
   Map<String, dynamic> toJson() => _$SinginRequestToJson(this);
-  factory SinginRequest.fromJson(Map<String, dynamic> json) =>
-      _$SinginRequestFromJson(json);
 }

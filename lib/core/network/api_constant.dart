@@ -16,4 +16,5 @@ class ApiConstant {
   static const String CheckCourse = "CheckCourse";
   static const String DeletCourse = "DeletCourse";
   static const String DeletUesr = "logout/";
+  static const String verfify_email = "verfify_email/";
 }

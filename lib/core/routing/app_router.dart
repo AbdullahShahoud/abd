@@ -16,6 +16,7 @@ import '../../features/courses/UI/courses_all.dart';
 import '../../features/login/Ui/login.dart';
 import '../../features/login/logic/cubit/login_cubit.dart';
 import '../../features/onBording/onbording_screen.dart';
+import '../../features/otp/otp_ui.dart';
 import '../../features/profile/logic/profile_cubit/cubit/profile_and_notification_cubit.dart';
 import '../../features/singin/Ui/welcame.dart';
 import '../../features/notification/Ui/notification.dart';
@@ -33,7 +34,7 @@ class AppRouters {
       case Routers.Welcome:
         return MaterialPageRoute(
             builder: (context) => BlocProvider(
-                create: (BuildContext context) => SinginCubit(getIt()),
+                create: (BuildContext context) => SinginCubit(getIt(),getIt()),
                 child: Welcome()));
       case Routers.profile:
         return MaterialPageRoute(builder: (context) => Profile());
@@ -45,7 +46,7 @@ class AppRouters {
       case Routers.singin:
         return MaterialPageRoute(
             builder: (context) => BlocProvider(
-                create: (BuildContext context) => SinginCubit(getIt()),
+                create: (BuildContext context) => SinginCubit(getIt(),getIt()),
                 child: HomeSignIn()));
       case Routers.notification:
         return MaterialPageRoute(
@@ -73,6 +74,11 @@ class AppRouters {
         return MaterialPageRoute(builder: (context) => LessonBodyMe());
       case Routers.introdactionCourse:
         return MaterialPageRoute(builder: (context) => CourseIntrodaction());
+      case Routers.password:
+        return MaterialPageRoute(
+            builder: (context) => BlocProvider(
+                create: (BuildContext context) => SinginCubit(getIt(),getIt()),
+                child: OTP()));
     }
 
     return null;

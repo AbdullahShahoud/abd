@@ -16,6 +16,7 @@ import 'package:learn_programtion/features/notification/logic/repo/notification_
 import 'package:learn_programtion/features/singin/logic/cubit/singin_cubit.dart';
 import 'package:learn_programtion/features/singin/logic/repo/singin_repo.dart';
 
+import '../../features/otp/logic/repo/otp_repo.dart';
 import '../../features/profile/logic/profile_cubit/cubit/profile_and_notification_cubit.dart';
 import '../../features/profile/logic/repo/change_email_repo.dart';
 import '../../features/profile/logic/repo/change_password_repo.dart';
@@ -32,8 +33,9 @@ Future<void> setupGetIt() async {
   getIt.registerFactory<LoginCubit>(() => LoginCubit(getIt()));
 
   getIt.registerLazySingleton<SinginRepo>(() => SinginRepo(getIt()));
-  getIt.registerFactory<SinginCubit>(() => SinginCubit(getIt()));
+  getIt.registerFactory<SinginCubit>(() => SinginCubit(getIt(), getIt()));
 
+  getIt.registerLazySingleton<OtpRepo>(() => OtpRepo(getIt()));
   getIt
       .registerLazySingleton<NotificationRepo>(() => NotificationRepo(getIt()));
   getIt.registerLazySingleton<BookRepo>(() => BookRepo(getIt()));

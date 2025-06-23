@@ -1,16 +1,16 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'singin_response.g.dart';
+part 'otp_response.g.dart';
 
 @JsonSerializable()
-class SinginResponse {
-  String? token;
+class OtpResponse {
+  String? message;
+  String? email_verified;
   User? user;
-  String? account_type;
-  SinginResponse({this.token, this.user, this.account_type});
+  OtpResponse({this.message, this.email_verified, this.user});
 
-  factory SinginResponse.fromJson(Map<String, dynamic> json) =>
-      _$SinginResponseFromJson(json);
+  factory OtpResponse.fromJson(Map<String, dynamic> json) =>
+      _$OtpResponseFromJson(json);
 }
 
 @JsonSerializable()

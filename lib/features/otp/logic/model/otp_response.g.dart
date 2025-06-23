@@ -1,25 +1,24 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'singin_response.dart';
+part of 'otp_response.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-SinginResponse _$SinginResponseFromJson(Map<String, dynamic> json) =>
-    SinginResponse(
-      token: json['token'] as String?,
+OtpResponse _$OtpResponseFromJson(Map<String, dynamic> json) => OtpResponse(
+      message: json['message'] as String?,
+      email_verified: json['email_verified'] as String?,
       user: json['user'] == null
           ? null
           : User.fromJson(json['user'] as Map<String, dynamic>),
-      account_type: json['account_type'] as String?,
     );
 
-Map<String, dynamic> _$SinginResponseToJson(SinginResponse instance) =>
+Map<String, dynamic> _$OtpResponseToJson(OtpResponse instance) =>
     <String, dynamic>{
-      'token': instance.token,
+      'message': instance.message,
+      'email_verified': instance.email_verified,
       'user': instance.user,
-      'account_type': instance.account_type,
     };
 
 User _$UserFromJson(Map<String, dynamic> json) => User(

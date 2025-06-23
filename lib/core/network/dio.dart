@@ -2,36 +2,6 @@ import 'package:dio/dio.dart';
 
 import '../helper/sherdPrefernce.dart';
 
-//
-// class DioFactory {
-//   DioFactory._();
-//
-//   static Dio? dio;
-//   static Dio? getDio() {
-//     Duration timeout = Duration(milliseconds: 30);
-//     if (dio == null) {
-//       dio = Dio();
-//       dio!
-//         ..options.connectTimeout = timeout
-//         ..options.receiveTimeout = timeout;
-//       addDioHeader();
-//       // addDioInterceptor();
-//       return dio;
-//     } else {
-//       return dio;
-//     }
-//   }
-//
-//   static void addDioHeader() async {
-//     dio?.options.headers = {
-//       'Accept': '*/*',
-//       // 'Authorization': 'jjjjjjjjjjjjjjjjjjjj'
-//       // '${await SharedPrefHelper.getString('token')
-//       // }'
-//     };
-//   }
-//
-// }
 class DioFactory {
   DioFactory._();
   static final DioFactory _instance = DioFactory._();
@@ -58,10 +28,8 @@ class DioFactory {
     String? token = await SharedPrefHelper.getString('token');
     _dio?.options.headers = {
       'Content-Type': 'application/json',
-      // 'content-type':
-      //     'multipart/form-data; boundary=<calculated when request is sent>',
       'Accept': '*/*',
-      //if (token != null) 'Authorization': 'Bearer $token',
+      if (token != null) 'Authorization': 'Bearer $token',
     };
   }
 

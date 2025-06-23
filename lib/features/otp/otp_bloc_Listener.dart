@@ -8,21 +8,23 @@ import 'package:learn_programtion/core/theming/font_style.dart';
 import 'package:learn_programtion/features/singin/logic/cubit/singin_cubit.dart';
 import 'package:learn_programtion/features/singin/logic/cubit/singin_stare.dart';
 
-class SinginBlocListener extends StatefulWidget {
-  const SinginBlocListener({super.key});
+import 'logic/model/otp_response.dart';
+
+class OtpBlocListener extends StatefulWidget {
+  const OtpBlocListener({super.key});
 
   @override
-  State<SinginBlocListener> createState() => _SinginBlocListenerState();
+  State<OtpBlocListener> createState() => _SinginBlocListenerState();
 }
 
-class _SinginBlocListenerState extends State<SinginBlocListener> {
+class _SinginBlocListenerState extends State<OtpBlocListener> {
   @override
   Widget build(BuildContext context) {
     return BlocListener<SinginCubit, SinginState>(
       listenWhen: (previous, current) =>
-          current is SinginLoading ||
-          current is SinginError ||
-          current is SinginnSuccess,
+          current is SinginLoadingOtp ||
+          current is SinginErrorOtp ||
+          current is SinginnSuccessOtp,
       listener: (context, state) {
         state.whenOrNull(
           loading: () => showDialog(
@@ -34,8 +36,8 @@ class _SinginBlocListenerState extends State<SinginBlocListener> {
               ),
             ),
           ),
-          success: (data) => SinginSuccess(context),
-          error: (error) => singinError(context),
+          success: (data) => SinginSuccess(context, data),
+          error: (error) => singinError(context, error),
         );
       },
       child: const SizedBox.shrink(),
@@ -43,11 +45,11 @@ class _SinginBlocListenerState extends State<SinginBlocListener> {
   }
 }
 
-void SinginSuccess(BuildContext context) {
+void SinginSuccess(BuildContext context, OtpResponse otp) {
   showDialog(
       context: context,
       builder: (context) => AlertDialog(
-            title: Text('SinginSuccess'),
+            title: Text(otp.message!),
             actions: [
               TextButton(
                   onPressed: () {
@@ -58,7 +60,7 @@ void SinginSuccess(BuildContext context) {
           ));
 }
 
-void singinError(BuildContext context) {
+void singinError(BuildContext context, String error) {
   showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -70,7 +72,7 @@ void singinError(BuildContext context) {
             contentPadding:
                 EdgeInsets.symmetric(horizontal: 30.w, vertical: 10.h),
             content: Text(
-              'error',
+              error,
               style: FontStyleAndText.font_big,
             ),
             actions: [
@@ -79,7 +81,7 @@ void singinError(BuildContext context) {
                   style: ElevatedButton.styleFrom(
                       backgroundColor: ColorManger.primary_ColorBlue),
                   onPressed: () {
-                    context.pushNamed(Routers.password);
+                    context.pushNamed(Routers.home_page);
                   },
                   child: Text('حسناً', style: FontStyleAndText.buttonfonttext),
                 ),
