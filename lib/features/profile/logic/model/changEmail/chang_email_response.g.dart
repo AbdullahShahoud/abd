@@ -9,12 +9,12 @@ part of 'chang_email_response.dart';
 ChangeEmailResponse _$ChangeEmailResponseFromJson(Map<String, dynamic> json) =>
     ChangeEmailResponse(
       email: json['email'] as String?,
-      name: json['name'] as String?,
+      username: json['username'] as String?,
     );
 
 Map<String, dynamic> _$ChangeEmailResponseToJson(
         ChangeEmailResponse instance) =>
     <String, dynamic>{
       'email': instance.email,
-      'name': instance.name,
+      'username': instance.username,
     };

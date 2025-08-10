@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:learn_programtion/core/network/api_error_handler.dart';
 import 'package:learn_programtion/core/network/api_result.dart';
 import 'package:learn_programtion/features/singin/logic/model/singin_reqest.dart';
@@ -12,8 +13,12 @@ class SinginRepo {
     try {
       final response = await _apiService.signup(singinRequest);
       return ApiResult.success(response);
+    } on DioError catch (dioError) {
+      print('Dio Error: ${dioError.response?.data}');
+      return ApiResult.failure(ApiErrorHandler.fromDioError(dioError));
     } catch (error) {
-      return ApiResult.failure(ApiErrorHandler(error));
+      print('Unexpected Error: $error');
+      return ApiResult.failure(ApiErrorHandler.fromGenericError(error));
     }
   }
 }

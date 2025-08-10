@@ -7,15 +7,27 @@ import '../../../core/helper/spacing.dart';
 import 'widget/book_bloc_listener.dart';
 import 'widget/tabBar_book.dart';
 
-class HomeBook extends StatelessWidget {
+class HomeBook extends StatefulWidget {
   const HomeBook({super.key});
+
+  @override
+  State<HomeBook> createState() => _HomeBookState();
+}
+
+class _HomeBookState extends State<HomeBook> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: BlocProvider(
-      create: (context) => ProfileAndNotificationCubit(
-          getIt(), getIt(), getIt(), getIt(), getIt(), getIt()),
+      create: (context) => ProfileAndNotificationCubit(getIt(), getIt(),
+          getIt(), getIt(), getIt(), getIt(), getIt(), getIt())
+        ..emitBook(),
       child: SafeArea(
         child: SingleChildScrollView(
           child: Column(

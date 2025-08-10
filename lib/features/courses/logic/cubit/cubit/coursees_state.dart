@@ -1,10 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:learn_programtion/features/courses/logic/model/courses_me_response.dart';
-
-import '../../model/courses_response.dart';
-
 part 'coursees_state.freezed.dart';
- 
+
 @freezed
 class CoursesState<T> with _$CoursesState<T> {
   const factory CoursesState.initialCoursesMe() = _InitialCoursesMe;
@@ -12,14 +9,6 @@ class CoursesState<T> with _$CoursesState<T> {
   const factory CoursesState.successCoursesMe(T data) = SuccessCoursesMe<T>;
   const factory CoursesState.errorCoursesMe({required String error}) =
       ErrorCoursesMe;
-
-
-
-  const factory CoursesState.courseSelected(CoursesResponse selectedCourse) =
-      CourseSelected;
-  const factory CoursesState.lessonSelected(Lesson selectedlesson) =
-      LessonSelected;
-  const factory CoursesState.levelSelected(Level selectedlevel) = LevelSelected;
 
   const factory CoursesState.courseSelectedMe(
       CoursesMeResponse selectedCourseMe) = CourseSelectedMe;
@@ -46,13 +35,15 @@ class CoursesState<T> with _$CoursesState<T> {
   const factory CoursesState.listCoursesError({required String error}) =
       ListCoursesError;
 
-    const factory CoursesState.checkCoursesLoading() = CheckCoursesLoading;
-  const factory CoursesState.checkCoursesSuccess(T data) = CheckCoursesSuccess<T>;
+  const factory CoursesState.checkCoursesLoading() = CheckCoursesLoading;
+  const factory CoursesState.checkCoursesSuccess(T data) =
+      CheckCoursesSuccess<T>;
   const factory CoursesState.checkCoursesError({required String error}) =
-      CheckCoursesError;  
+      CheckCoursesError;
 
-       const factory CoursesState.deleteCoursesLoading() = DeleteCoursesLoading;
-  const factory CoursesState.deleteCoursesSuccess(T data) = DeleteCoursesSuccess<T>;
+  const factory CoursesState.deleteCoursesLoading() = DeleteCoursesLoading;
+  const factory CoursesState.deleteCoursesSuccess(T data) =
+      DeleteCoursesSuccess<T>;
   const factory CoursesState.deleteCoursesError({required String error}) =
-      DeleteCoursesError; 
+      DeleteCoursesError;
 }

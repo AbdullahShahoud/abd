@@ -7,11 +7,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/theming/color.dart';
 import '../../../../core/theming/font_style.dart';
-import '../../logic/model/notification_response.dart';
 
 class NotificationNormal extends StatelessWidget {
   NotificationNormal(this.notification);
-  List<NotificationItem> notification;
+  List notification;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -28,7 +27,7 @@ class NotificationNormal extends StatelessWidget {
                   Text(
                     textDirection: TextDirection.rtl,
                     maxLines: 3,
-                    notification[index].date!,
+                    notification[index].created_at!,
                     style: FontStyleAndText.fontmedia,
                   ),
                   Row(
@@ -38,7 +37,7 @@ class NotificationNormal extends StatelessWidget {
                       Container(
                         width: MediaQuery.of(context).size.width.w - 100.w,
                         child: Text(
-                          notification[index].text!,
+                          notification[index].message!,
                           textDirection: TextDirection.rtl,
                           style: FontStyleAndText.fontmedia,
                           maxLines: 3,

@@ -22,9 +22,6 @@ mixin _$CoursesState<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -55,9 +52,6 @@ mixin _$CoursesState<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -87,9 +81,6 @@ mixin _$CoursesState<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -120,9 +111,6 @@ mixin _$CoursesState<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -154,9 +142,6 @@ mixin _$CoursesState<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -186,9 +171,6 @@ mixin _$CoursesState<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -276,9 +258,6 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -312,9 +291,6 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -347,9 +323,6 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -386,9 +359,6 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -423,9 +393,6 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -458,9 +425,6 @@ class _$InitialCoursesMeImpl<T> implements _InitialCoursesMe<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -538,9 +502,6 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -574,9 +535,6 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -609,9 +567,6 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -648,9 +603,6 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -685,9 +637,6 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -720,9 +669,6 @@ class _$LoadingCoursesMeImpl<T> implements LoadingCoursesMe<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -827,9 +773,6 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -863,9 +806,6 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -898,9 +838,6 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -937,9 +874,6 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -974,9 +908,6 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -1009,9 +940,6 @@ class _$SuccessCoursesMeImpl<T> implements SuccessCoursesMe<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -1120,9 +1048,6 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -1156,9 +1081,6 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -1191,9 +1113,6 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -1230,9 +1149,6 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -1267,9 +1183,6 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -1302,9 +1215,6 @@ class _$ErrorCoursesMeImpl<T> implements ErrorCoursesMe<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -1342,891 +1252,6 @@ abstract class ErrorCoursesMe<T> implements CoursesState<T> {
   String get error;
   @JsonKey(ignore: true)
   _$$ErrorCoursesMeImplCopyWith<T, _$ErrorCoursesMeImpl<T>> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$CourseSelectedImplCopyWith<T, $Res> {
-  factory _$$CourseSelectedImplCopyWith(_$CourseSelectedImpl<T> value,
-          $Res Function(_$CourseSelectedImpl<T>) then) =
-      __$$CourseSelectedImplCopyWithImpl<T, $Res>;
-  @useResult
-  $Res call({CoursesResponse selectedCourse});
-}
-
-/// @nodoc
-class __$$CourseSelectedImplCopyWithImpl<T, $Res>
-    extends _$CoursesStateCopyWithImpl<T, $Res, _$CourseSelectedImpl<T>>
-    implements _$$CourseSelectedImplCopyWith<T, $Res> {
-  __$$CourseSelectedImplCopyWithImpl(_$CourseSelectedImpl<T> _value,
-      $Res Function(_$CourseSelectedImpl<T>) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? selectedCourse = null,
-  }) {
-    return _then(_$CourseSelectedImpl<T>(
-      null == selectedCourse
-          ? _value.selectedCourse
-          : selectedCourse // ignore: cast_nullable_to_non_nullable
-              as CoursesResponse,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$CourseSelectedImpl<T> implements CourseSelected<T> {
-  const _$CourseSelectedImpl(this.selectedCourse);
-
-  @override
-  final CoursesResponse selectedCourse;
-
-  @override
-  String toString() {
-    return 'CoursesState<$T>.courseSelected(selectedCourse: $selectedCourse)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$CourseSelectedImpl<T> &&
-            (identical(other.selectedCourse, selectedCourse) ||
-                other.selectedCourse == selectedCourse));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, selectedCourse);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$CourseSelectedImplCopyWith<T, _$CourseSelectedImpl<T>> get copyWith =>
-      __$$CourseSelectedImplCopyWithImpl<T, _$CourseSelectedImpl<T>>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initialCoursesMe,
-    required TResult Function() loadingCoursesMe,
-    required TResult Function(T data) successCoursesMe,
-    required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
-    required TResult Function(CoursesMeResponse selectedCourseMe)
-        courseSelectedMe,
-    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
-    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
-    required TResult Function() sendQuationInitial,
-    required TResult Function() sendQuationLoading,
-    required TResult Function(String data) sendQuationSuccess,
-    required TResult Function(String error) sendQuationError,
-    required TResult Function() finishedInitial,
-    required TResult Function() finishedLoading,
-    required TResult Function(String data) finishedSuccess,
-    required TResult Function(String error) finishedError,
-    required TResult Function() listCoursesInitial,
-    required TResult Function() listCoursesLoading,
-    required TResult Function(T data) listCoursesSuccess,
-    required TResult Function(String error) listCoursesError,
-    required TResult Function() checkCoursesLoading,
-    required TResult Function(T data) checkCoursesSuccess,
-    required TResult Function(String error) checkCoursesError,
-    required TResult Function() deleteCoursesLoading,
-    required TResult Function(T data) deleteCoursesSuccess,
-    required TResult Function(String error) deleteCoursesError,
-  }) {
-    return courseSelected(selectedCourse);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCoursesMe,
-    TResult? Function()? loadingCoursesMe,
-    TResult? Function(T data)? successCoursesMe,
-    TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
-    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult? Function()? sendQuationInitial,
-    TResult? Function()? sendQuationLoading,
-    TResult? Function(String data)? sendQuationSuccess,
-    TResult? Function(String error)? sendQuationError,
-    TResult? Function()? finishedInitial,
-    TResult? Function()? finishedLoading,
-    TResult? Function(String data)? finishedSuccess,
-    TResult? Function(String error)? finishedError,
-    TResult? Function()? listCoursesInitial,
-    TResult? Function()? listCoursesLoading,
-    TResult? Function(T data)? listCoursesSuccess,
-    TResult? Function(String error)? listCoursesError,
-    TResult? Function()? checkCoursesLoading,
-    TResult? Function(T data)? checkCoursesSuccess,
-    TResult? Function(String error)? checkCoursesError,
-    TResult? Function()? deleteCoursesLoading,
-    TResult? Function(T data)? deleteCoursesSuccess,
-    TResult? Function(String error)? deleteCoursesError,
-  }) {
-    return courseSelected?.call(selectedCourse);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCoursesMe,
-    TResult Function()? loadingCoursesMe,
-    TResult Function(T data)? successCoursesMe,
-    TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
-    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult Function()? sendQuationInitial,
-    TResult Function()? sendQuationLoading,
-    TResult Function(String data)? sendQuationSuccess,
-    TResult Function(String error)? sendQuationError,
-    TResult Function()? finishedInitial,
-    TResult Function()? finishedLoading,
-    TResult Function(String data)? finishedSuccess,
-    TResult Function(String error)? finishedError,
-    TResult Function()? listCoursesInitial,
-    TResult Function()? listCoursesLoading,
-    TResult Function(T data)? listCoursesSuccess,
-    TResult Function(String error)? listCoursesError,
-    TResult Function()? checkCoursesLoading,
-    TResult Function(T data)? checkCoursesSuccess,
-    TResult Function(String error)? checkCoursesError,
-    TResult Function()? deleteCoursesLoading,
-    TResult Function(T data)? deleteCoursesSuccess,
-    TResult Function(String error)? deleteCoursesError,
-    required TResult orElse(),
-  }) {
-    if (courseSelected != null) {
-      return courseSelected(selectedCourse);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
-    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
-    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
-    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
-    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
-    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
-    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
-    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
-    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
-    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
-    required TResult Function(SendQuationError<T> value) sendQuationError,
-    required TResult Function(_FinishedInitial<T> value) finishedInitial,
-    required TResult Function(FinishedLoading<T> value) finishedLoading,
-    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
-    required TResult Function(FinishedError<T> value) finishedError,
-    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
-    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
-    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
-    required TResult Function(ListCoursesError<T> value) listCoursesError,
-    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
-    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
-    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
-    required TResult Function(DeleteCoursesLoading<T> value)
-        deleteCoursesLoading,
-    required TResult Function(DeleteCoursesSuccess<T> value)
-        deleteCoursesSuccess,
-    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
-  }) {
-    return courseSelected(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
-    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult? Function(SendQuationError<T> value)? sendQuationError,
-    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult? Function(FinishedLoading<T> value)? finishedLoading,
-    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult? Function(FinishedError<T> value)? finishedError,
-    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult? Function(ListCoursesError<T> value)? listCoursesError,
-    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
-    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
-    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
-    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
-    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
-    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
-  }) {
-    return courseSelected?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
-    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult Function(SendQuationError<T> value)? sendQuationError,
-    TResult Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult Function(FinishedLoading<T> value)? finishedLoading,
-    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult Function(FinishedError<T> value)? finishedError,
-    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult Function(ListCoursesError<T> value)? listCoursesError,
-    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
-    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
-    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
-    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
-    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
-    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
-    required TResult orElse(),
-  }) {
-    if (courseSelected != null) {
-      return courseSelected(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class CourseSelected<T> implements CoursesState<T> {
-  const factory CourseSelected(final CoursesResponse selectedCourse) =
-      _$CourseSelectedImpl<T>;
-
-  CoursesResponse get selectedCourse;
-  @JsonKey(ignore: true)
-  _$$CourseSelectedImplCopyWith<T, _$CourseSelectedImpl<T>> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$LessonSelectedImplCopyWith<T, $Res> {
-  factory _$$LessonSelectedImplCopyWith(_$LessonSelectedImpl<T> value,
-          $Res Function(_$LessonSelectedImpl<T>) then) =
-      __$$LessonSelectedImplCopyWithImpl<T, $Res>;
-  @useResult
-  $Res call({Lesson selectedlesson});
-}
-
-/// @nodoc
-class __$$LessonSelectedImplCopyWithImpl<T, $Res>
-    extends _$CoursesStateCopyWithImpl<T, $Res, _$LessonSelectedImpl<T>>
-    implements _$$LessonSelectedImplCopyWith<T, $Res> {
-  __$$LessonSelectedImplCopyWithImpl(_$LessonSelectedImpl<T> _value,
-      $Res Function(_$LessonSelectedImpl<T>) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? selectedlesson = null,
-  }) {
-    return _then(_$LessonSelectedImpl<T>(
-      null == selectedlesson
-          ? _value.selectedlesson
-          : selectedlesson // ignore: cast_nullable_to_non_nullable
-              as Lesson,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$LessonSelectedImpl<T> implements LessonSelected<T> {
-  const _$LessonSelectedImpl(this.selectedlesson);
-
-  @override
-  final Lesson selectedlesson;
-
-  @override
-  String toString() {
-    return 'CoursesState<$T>.lessonSelected(selectedlesson: $selectedlesson)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$LessonSelectedImpl<T> &&
-            (identical(other.selectedlesson, selectedlesson) ||
-                other.selectedlesson == selectedlesson));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, selectedlesson);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$LessonSelectedImplCopyWith<T, _$LessonSelectedImpl<T>> get copyWith =>
-      __$$LessonSelectedImplCopyWithImpl<T, _$LessonSelectedImpl<T>>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initialCoursesMe,
-    required TResult Function() loadingCoursesMe,
-    required TResult Function(T data) successCoursesMe,
-    required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
-    required TResult Function(CoursesMeResponse selectedCourseMe)
-        courseSelectedMe,
-    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
-    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
-    required TResult Function() sendQuationInitial,
-    required TResult Function() sendQuationLoading,
-    required TResult Function(String data) sendQuationSuccess,
-    required TResult Function(String error) sendQuationError,
-    required TResult Function() finishedInitial,
-    required TResult Function() finishedLoading,
-    required TResult Function(String data) finishedSuccess,
-    required TResult Function(String error) finishedError,
-    required TResult Function() listCoursesInitial,
-    required TResult Function() listCoursesLoading,
-    required TResult Function(T data) listCoursesSuccess,
-    required TResult Function(String error) listCoursesError,
-    required TResult Function() checkCoursesLoading,
-    required TResult Function(T data) checkCoursesSuccess,
-    required TResult Function(String error) checkCoursesError,
-    required TResult Function() deleteCoursesLoading,
-    required TResult Function(T data) deleteCoursesSuccess,
-    required TResult Function(String error) deleteCoursesError,
-  }) {
-    return lessonSelected(selectedlesson);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCoursesMe,
-    TResult? Function()? loadingCoursesMe,
-    TResult? Function(T data)? successCoursesMe,
-    TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
-    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult? Function()? sendQuationInitial,
-    TResult? Function()? sendQuationLoading,
-    TResult? Function(String data)? sendQuationSuccess,
-    TResult? Function(String error)? sendQuationError,
-    TResult? Function()? finishedInitial,
-    TResult? Function()? finishedLoading,
-    TResult? Function(String data)? finishedSuccess,
-    TResult? Function(String error)? finishedError,
-    TResult? Function()? listCoursesInitial,
-    TResult? Function()? listCoursesLoading,
-    TResult? Function(T data)? listCoursesSuccess,
-    TResult? Function(String error)? listCoursesError,
-    TResult? Function()? checkCoursesLoading,
-    TResult? Function(T data)? checkCoursesSuccess,
-    TResult? Function(String error)? checkCoursesError,
-    TResult? Function()? deleteCoursesLoading,
-    TResult? Function(T data)? deleteCoursesSuccess,
-    TResult? Function(String error)? deleteCoursesError,
-  }) {
-    return lessonSelected?.call(selectedlesson);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCoursesMe,
-    TResult Function()? loadingCoursesMe,
-    TResult Function(T data)? successCoursesMe,
-    TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
-    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult Function()? sendQuationInitial,
-    TResult Function()? sendQuationLoading,
-    TResult Function(String data)? sendQuationSuccess,
-    TResult Function(String error)? sendQuationError,
-    TResult Function()? finishedInitial,
-    TResult Function()? finishedLoading,
-    TResult Function(String data)? finishedSuccess,
-    TResult Function(String error)? finishedError,
-    TResult Function()? listCoursesInitial,
-    TResult Function()? listCoursesLoading,
-    TResult Function(T data)? listCoursesSuccess,
-    TResult Function(String error)? listCoursesError,
-    TResult Function()? checkCoursesLoading,
-    TResult Function(T data)? checkCoursesSuccess,
-    TResult Function(String error)? checkCoursesError,
-    TResult Function()? deleteCoursesLoading,
-    TResult Function(T data)? deleteCoursesSuccess,
-    TResult Function(String error)? deleteCoursesError,
-    required TResult orElse(),
-  }) {
-    if (lessonSelected != null) {
-      return lessonSelected(selectedlesson);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
-    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
-    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
-    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
-    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
-    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
-    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
-    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
-    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
-    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
-    required TResult Function(SendQuationError<T> value) sendQuationError,
-    required TResult Function(_FinishedInitial<T> value) finishedInitial,
-    required TResult Function(FinishedLoading<T> value) finishedLoading,
-    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
-    required TResult Function(FinishedError<T> value) finishedError,
-    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
-    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
-    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
-    required TResult Function(ListCoursesError<T> value) listCoursesError,
-    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
-    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
-    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
-    required TResult Function(DeleteCoursesLoading<T> value)
-        deleteCoursesLoading,
-    required TResult Function(DeleteCoursesSuccess<T> value)
-        deleteCoursesSuccess,
-    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
-  }) {
-    return lessonSelected(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
-    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult? Function(SendQuationError<T> value)? sendQuationError,
-    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult? Function(FinishedLoading<T> value)? finishedLoading,
-    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult? Function(FinishedError<T> value)? finishedError,
-    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult? Function(ListCoursesError<T> value)? listCoursesError,
-    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
-    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
-    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
-    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
-    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
-    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
-  }) {
-    return lessonSelected?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
-    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult Function(SendQuationError<T> value)? sendQuationError,
-    TResult Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult Function(FinishedLoading<T> value)? finishedLoading,
-    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult Function(FinishedError<T> value)? finishedError,
-    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult Function(ListCoursesError<T> value)? listCoursesError,
-    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
-    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
-    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
-    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
-    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
-    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
-    required TResult orElse(),
-  }) {
-    if (lessonSelected != null) {
-      return lessonSelected(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class LessonSelected<T> implements CoursesState<T> {
-  const factory LessonSelected(final Lesson selectedlesson) =
-      _$LessonSelectedImpl<T>;
-
-  Lesson get selectedlesson;
-  @JsonKey(ignore: true)
-  _$$LessonSelectedImplCopyWith<T, _$LessonSelectedImpl<T>> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$LevelSelectedImplCopyWith<T, $Res> {
-  factory _$$LevelSelectedImplCopyWith(_$LevelSelectedImpl<T> value,
-          $Res Function(_$LevelSelectedImpl<T>) then) =
-      __$$LevelSelectedImplCopyWithImpl<T, $Res>;
-  @useResult
-  $Res call({Level selectedlevel});
-}
-
-/// @nodoc
-class __$$LevelSelectedImplCopyWithImpl<T, $Res>
-    extends _$CoursesStateCopyWithImpl<T, $Res, _$LevelSelectedImpl<T>>
-    implements _$$LevelSelectedImplCopyWith<T, $Res> {
-  __$$LevelSelectedImplCopyWithImpl(_$LevelSelectedImpl<T> _value,
-      $Res Function(_$LevelSelectedImpl<T>) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? selectedlevel = null,
-  }) {
-    return _then(_$LevelSelectedImpl<T>(
-      null == selectedlevel
-          ? _value.selectedlevel
-          : selectedlevel // ignore: cast_nullable_to_non_nullable
-              as Level,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$LevelSelectedImpl<T> implements LevelSelected<T> {
-  const _$LevelSelectedImpl(this.selectedlevel);
-
-  @override
-  final Level selectedlevel;
-
-  @override
-  String toString() {
-    return 'CoursesState<$T>.levelSelected(selectedlevel: $selectedlevel)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$LevelSelectedImpl<T> &&
-            (identical(other.selectedlevel, selectedlevel) ||
-                other.selectedlevel == selectedlevel));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, selectedlevel);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$LevelSelectedImplCopyWith<T, _$LevelSelectedImpl<T>> get copyWith =>
-      __$$LevelSelectedImplCopyWithImpl<T, _$LevelSelectedImpl<T>>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initialCoursesMe,
-    required TResult Function() loadingCoursesMe,
-    required TResult Function(T data) successCoursesMe,
-    required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
-    required TResult Function(CoursesMeResponse selectedCourseMe)
-        courseSelectedMe,
-    required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
-    required TResult Function(LevelMe selectedlevel) levelSelectedMe,
-    required TResult Function() sendQuationInitial,
-    required TResult Function() sendQuationLoading,
-    required TResult Function(String data) sendQuationSuccess,
-    required TResult Function(String error) sendQuationError,
-    required TResult Function() finishedInitial,
-    required TResult Function() finishedLoading,
-    required TResult Function(String data) finishedSuccess,
-    required TResult Function(String error) finishedError,
-    required TResult Function() listCoursesInitial,
-    required TResult Function() listCoursesLoading,
-    required TResult Function(T data) listCoursesSuccess,
-    required TResult Function(String error) listCoursesError,
-    required TResult Function() checkCoursesLoading,
-    required TResult Function(T data) checkCoursesSuccess,
-    required TResult Function(String error) checkCoursesError,
-    required TResult Function() deleteCoursesLoading,
-    required TResult Function(T data) deleteCoursesSuccess,
-    required TResult Function(String error) deleteCoursesError,
-  }) {
-    return levelSelected(selectedlevel);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initialCoursesMe,
-    TResult? Function()? loadingCoursesMe,
-    TResult? Function(T data)? successCoursesMe,
-    TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
-    TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult? Function()? sendQuationInitial,
-    TResult? Function()? sendQuationLoading,
-    TResult? Function(String data)? sendQuationSuccess,
-    TResult? Function(String error)? sendQuationError,
-    TResult? Function()? finishedInitial,
-    TResult? Function()? finishedLoading,
-    TResult? Function(String data)? finishedSuccess,
-    TResult? Function(String error)? finishedError,
-    TResult? Function()? listCoursesInitial,
-    TResult? Function()? listCoursesLoading,
-    TResult? Function(T data)? listCoursesSuccess,
-    TResult? Function(String error)? listCoursesError,
-    TResult? Function()? checkCoursesLoading,
-    TResult? Function(T data)? checkCoursesSuccess,
-    TResult? Function(String error)? checkCoursesError,
-    TResult? Function()? deleteCoursesLoading,
-    TResult? Function(T data)? deleteCoursesSuccess,
-    TResult? Function(String error)? deleteCoursesError,
-  }) {
-    return levelSelected?.call(selectedlevel);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initialCoursesMe,
-    TResult Function()? loadingCoursesMe,
-    TResult Function(T data)? successCoursesMe,
-    TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
-    TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
-    TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
-    TResult Function(LevelMe selectedlevel)? levelSelectedMe,
-    TResult Function()? sendQuationInitial,
-    TResult Function()? sendQuationLoading,
-    TResult Function(String data)? sendQuationSuccess,
-    TResult Function(String error)? sendQuationError,
-    TResult Function()? finishedInitial,
-    TResult Function()? finishedLoading,
-    TResult Function(String data)? finishedSuccess,
-    TResult Function(String error)? finishedError,
-    TResult Function()? listCoursesInitial,
-    TResult Function()? listCoursesLoading,
-    TResult Function(T data)? listCoursesSuccess,
-    TResult Function(String error)? listCoursesError,
-    TResult Function()? checkCoursesLoading,
-    TResult Function(T data)? checkCoursesSuccess,
-    TResult Function(String error)? checkCoursesError,
-    TResult Function()? deleteCoursesLoading,
-    TResult Function(T data)? deleteCoursesSuccess,
-    TResult Function(String error)? deleteCoursesError,
-    required TResult orElse(),
-  }) {
-    if (levelSelected != null) {
-      return levelSelected(selectedlevel);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_InitialCoursesMe<T> value) initialCoursesMe,
-    required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
-    required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
-    required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
-    required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
-    required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
-    required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
-    required TResult Function(_SendQuationInitial<T> value) sendQuationInitial,
-    required TResult Function(SendQuationLoading<T> value) sendQuationLoading,
-    required TResult Function(SendQuationSuccess<T> value) sendQuationSuccess,
-    required TResult Function(SendQuationError<T> value) sendQuationError,
-    required TResult Function(_FinishedInitial<T> value) finishedInitial,
-    required TResult Function(FinishedLoading<T> value) finishedLoading,
-    required TResult Function(FinishedSuccess<T> value) finishedSuccess,
-    required TResult Function(FinishedError<T> value) finishedError,
-    required TResult Function(_ListCoursesInitial<T> value) listCoursesInitial,
-    required TResult Function(ListCoursesLoading<T> value) listCoursesLoading,
-    required TResult Function(ListCoursesSuccess<T> value) listCoursesSuccess,
-    required TResult Function(ListCoursesError<T> value) listCoursesError,
-    required TResult Function(CheckCoursesLoading<T> value) checkCoursesLoading,
-    required TResult Function(CheckCoursesSuccess<T> value) checkCoursesSuccess,
-    required TResult Function(CheckCoursesError<T> value) checkCoursesError,
-    required TResult Function(DeleteCoursesLoading<T> value)
-        deleteCoursesLoading,
-    required TResult Function(DeleteCoursesSuccess<T> value)
-        deleteCoursesSuccess,
-    required TResult Function(DeleteCoursesError<T> value) deleteCoursesError,
-  }) {
-    return levelSelected(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
-    TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult? Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult? Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult? Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult? Function(SendQuationError<T> value)? sendQuationError,
-    TResult? Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult? Function(FinishedLoading<T> value)? finishedLoading,
-    TResult? Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult? Function(FinishedError<T> value)? finishedError,
-    TResult? Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult? Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult? Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult? Function(ListCoursesError<T> value)? listCoursesError,
-    TResult? Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
-    TResult? Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
-    TResult? Function(CheckCoursesError<T> value)? checkCoursesError,
-    TResult? Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
-    TResult? Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
-    TResult? Function(DeleteCoursesError<T> value)? deleteCoursesError,
-  }) {
-    return levelSelected?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InitialCoursesMe<T> value)? initialCoursesMe,
-    TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
-    TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
-    TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
-    TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
-    TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
-    TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
-    TResult Function(_SendQuationInitial<T> value)? sendQuationInitial,
-    TResult Function(SendQuationLoading<T> value)? sendQuationLoading,
-    TResult Function(SendQuationSuccess<T> value)? sendQuationSuccess,
-    TResult Function(SendQuationError<T> value)? sendQuationError,
-    TResult Function(_FinishedInitial<T> value)? finishedInitial,
-    TResult Function(FinishedLoading<T> value)? finishedLoading,
-    TResult Function(FinishedSuccess<T> value)? finishedSuccess,
-    TResult Function(FinishedError<T> value)? finishedError,
-    TResult Function(_ListCoursesInitial<T> value)? listCoursesInitial,
-    TResult Function(ListCoursesLoading<T> value)? listCoursesLoading,
-    TResult Function(ListCoursesSuccess<T> value)? listCoursesSuccess,
-    TResult Function(ListCoursesError<T> value)? listCoursesError,
-    TResult Function(CheckCoursesLoading<T> value)? checkCoursesLoading,
-    TResult Function(CheckCoursesSuccess<T> value)? checkCoursesSuccess,
-    TResult Function(CheckCoursesError<T> value)? checkCoursesError,
-    TResult Function(DeleteCoursesLoading<T> value)? deleteCoursesLoading,
-    TResult Function(DeleteCoursesSuccess<T> value)? deleteCoursesSuccess,
-    TResult Function(DeleteCoursesError<T> value)? deleteCoursesError,
-    required TResult orElse(),
-  }) {
-    if (levelSelected != null) {
-      return levelSelected(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class LevelSelected<T> implements CoursesState<T> {
-  const factory LevelSelected(final Level selectedlevel) =
-      _$LevelSelectedImpl<T>;
-
-  Level get selectedlevel;
-  @JsonKey(ignore: true)
-  _$$LevelSelectedImplCopyWith<T, _$LevelSelectedImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -2300,9 +1325,6 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -2336,9 +1358,6 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -2371,9 +1390,6 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -2410,9 +1426,6 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -2447,9 +1460,6 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -2482,9 +1492,6 @@ class _$CourseSelectedMeImpl<T> implements CourseSelectedMe<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -2595,9 +1602,6 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -2631,9 +1635,6 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -2666,9 +1667,6 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -2705,9 +1703,6 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -2742,9 +1737,6 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -2777,9 +1769,6 @@ class _$LessonSelectedMeImpl<T> implements LessonSelectedMe<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -2890,9 +1879,6 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -2926,9 +1912,6 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -2961,9 +1944,6 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -3000,9 +1980,6 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -3037,9 +2014,6 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -3072,9 +2046,6 @@ class _$LevelSelectedMeImpl<T> implements LevelSelectedMe<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -3158,9 +2129,6 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -3194,9 +2162,6 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -3229,9 +2194,6 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -3268,9 +2230,6 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -3305,9 +2264,6 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -3340,9 +2296,6 @@ class _$SendQuationInitialImpl<T> implements _SendQuationInitial<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -3420,9 +2373,6 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -3456,9 +2406,6 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -3491,9 +2438,6 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -3530,9 +2474,6 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -3567,9 +2508,6 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -3602,9 +2540,6 @@ class _$SendQuationLoadingImpl<T> implements SendQuationLoading<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -3708,9 +2643,6 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -3744,9 +2676,6 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -3779,9 +2708,6 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -3818,9 +2744,6 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -3855,9 +2778,6 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -3890,9 +2810,6 @@ class _$SendQuationSuccessImpl<T> implements SendQuationSuccess<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -4002,9 +2919,6 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -4038,9 +2952,6 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -4073,9 +2984,6 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -4112,9 +3020,6 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -4149,9 +3054,6 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -4184,9 +3086,6 @@ class _$SendQuationErrorImpl<T> implements SendQuationError<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -4269,9 +3168,6 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -4305,9 +3201,6 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -4340,9 +3233,6 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -4379,9 +3269,6 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -4416,9 +3303,6 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -4451,9 +3335,6 @@ class _$FinishedInitialImpl<T> implements _FinishedInitial<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -4530,9 +3411,6 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -4566,9 +3444,6 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -4601,9 +3476,6 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -4640,9 +3512,6 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -4677,9 +3546,6 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -4712,9 +3578,6 @@ class _$FinishedLoadingImpl<T> implements FinishedLoading<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -4818,9 +3681,6 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -4854,9 +3714,6 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -4889,9 +3746,6 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -4928,9 +3782,6 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -4965,9 +3816,6 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -5000,9 +3848,6 @@ class _$FinishedSuccessImpl<T> implements FinishedSuccess<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -5111,9 +3956,6 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -5147,9 +3989,6 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -5182,9 +4021,6 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -5221,9 +4057,6 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -5258,9 +4091,6 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -5293,9 +4123,6 @@ class _$FinishedErrorImpl<T> implements FinishedError<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -5379,9 +4206,6 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -5415,9 +4239,6 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -5450,9 +4271,6 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -5489,9 +4307,6 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -5526,9 +4341,6 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -5561,9 +4373,6 @@ class _$ListCoursesInitialImpl<T> implements _ListCoursesInitial<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -5641,9 +4450,6 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -5677,9 +4483,6 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -5712,9 +4515,6 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -5751,9 +4551,6 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -5788,9 +4585,6 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -5823,9 +4617,6 @@ class _$ListCoursesLoadingImpl<T> implements ListCoursesLoading<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -5930,9 +4721,6 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -5966,9 +4754,6 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -6001,9 +4786,6 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -6040,9 +4822,6 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -6077,9 +4856,6 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -6112,9 +4888,6 @@ class _$ListCoursesSuccessImpl<T> implements ListCoursesSuccess<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -6223,9 +4996,6 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -6259,9 +5029,6 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -6294,9 +5061,6 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -6333,9 +5097,6 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -6370,9 +5131,6 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -6405,9 +5163,6 @@ class _$ListCoursesErrorImpl<T> implements ListCoursesError<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -6491,9 +5246,6 @@ class _$CheckCoursesLoadingImpl<T> implements CheckCoursesLoading<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -6527,9 +5279,6 @@ class _$CheckCoursesLoadingImpl<T> implements CheckCoursesLoading<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -6562,9 +5311,6 @@ class _$CheckCoursesLoadingImpl<T> implements CheckCoursesLoading<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -6601,9 +5347,6 @@ class _$CheckCoursesLoadingImpl<T> implements CheckCoursesLoading<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -6638,9 +5381,6 @@ class _$CheckCoursesLoadingImpl<T> implements CheckCoursesLoading<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -6673,9 +5413,6 @@ class _$CheckCoursesLoadingImpl<T> implements CheckCoursesLoading<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -6780,9 +5517,6 @@ class _$CheckCoursesSuccessImpl<T> implements CheckCoursesSuccess<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -6816,9 +5550,6 @@ class _$CheckCoursesSuccessImpl<T> implements CheckCoursesSuccess<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -6851,9 +5582,6 @@ class _$CheckCoursesSuccessImpl<T> implements CheckCoursesSuccess<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -6890,9 +5618,6 @@ class _$CheckCoursesSuccessImpl<T> implements CheckCoursesSuccess<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -6927,9 +5652,6 @@ class _$CheckCoursesSuccessImpl<T> implements CheckCoursesSuccess<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -6962,9 +5684,6 @@ class _$CheckCoursesSuccessImpl<T> implements CheckCoursesSuccess<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -7075,9 +5794,6 @@ class _$CheckCoursesErrorImpl<T> implements CheckCoursesError<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -7111,9 +5827,6 @@ class _$CheckCoursesErrorImpl<T> implements CheckCoursesError<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -7146,9 +5859,6 @@ class _$CheckCoursesErrorImpl<T> implements CheckCoursesError<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -7185,9 +5895,6 @@ class _$CheckCoursesErrorImpl<T> implements CheckCoursesError<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -7222,9 +5929,6 @@ class _$CheckCoursesErrorImpl<T> implements CheckCoursesError<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -7257,9 +5961,6 @@ class _$CheckCoursesErrorImpl<T> implements CheckCoursesError<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -7344,9 +6045,6 @@ class _$DeleteCoursesLoadingImpl<T> implements DeleteCoursesLoading<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -7380,9 +6078,6 @@ class _$DeleteCoursesLoadingImpl<T> implements DeleteCoursesLoading<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -7415,9 +6110,6 @@ class _$DeleteCoursesLoadingImpl<T> implements DeleteCoursesLoading<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -7454,9 +6146,6 @@ class _$DeleteCoursesLoadingImpl<T> implements DeleteCoursesLoading<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -7491,9 +6180,6 @@ class _$DeleteCoursesLoadingImpl<T> implements DeleteCoursesLoading<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -7526,9 +6212,6 @@ class _$DeleteCoursesLoadingImpl<T> implements DeleteCoursesLoading<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -7634,9 +6317,6 @@ class _$DeleteCoursesSuccessImpl<T> implements DeleteCoursesSuccess<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -7670,9 +6350,6 @@ class _$DeleteCoursesSuccessImpl<T> implements DeleteCoursesSuccess<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -7705,9 +6382,6 @@ class _$DeleteCoursesSuccessImpl<T> implements DeleteCoursesSuccess<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -7744,9 +6418,6 @@ class _$DeleteCoursesSuccessImpl<T> implements DeleteCoursesSuccess<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -7781,9 +6452,6 @@ class _$DeleteCoursesSuccessImpl<T> implements DeleteCoursesSuccess<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -7816,9 +6484,6 @@ class _$DeleteCoursesSuccessImpl<T> implements DeleteCoursesSuccess<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -7928,9 +6593,6 @@ class _$DeleteCoursesErrorImpl<T> implements DeleteCoursesError<T> {
     required TResult Function() loadingCoursesMe,
     required TResult Function(T data) successCoursesMe,
     required TResult Function(String error) errorCoursesMe,
-    required TResult Function(CoursesResponse selectedCourse) courseSelected,
-    required TResult Function(Lesson selectedlesson) lessonSelected,
-    required TResult Function(Level selectedlevel) levelSelected,
     required TResult Function(CoursesMeResponse selectedCourseMe)
         courseSelectedMe,
     required TResult Function(LessonMe selectedlesson) lessonSelectedMe,
@@ -7964,9 +6626,6 @@ class _$DeleteCoursesErrorImpl<T> implements DeleteCoursesError<T> {
     TResult? Function()? loadingCoursesMe,
     TResult? Function(T data)? successCoursesMe,
     TResult? Function(String error)? errorCoursesMe,
-    TResult? Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult? Function(Lesson selectedlesson)? lessonSelected,
-    TResult? Function(Level selectedlevel)? levelSelected,
     TResult? Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult? Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult? Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -7999,9 +6658,6 @@ class _$DeleteCoursesErrorImpl<T> implements DeleteCoursesError<T> {
     TResult Function()? loadingCoursesMe,
     TResult Function(T data)? successCoursesMe,
     TResult Function(String error)? errorCoursesMe,
-    TResult Function(CoursesResponse selectedCourse)? courseSelected,
-    TResult Function(Lesson selectedlesson)? lessonSelected,
-    TResult Function(Level selectedlevel)? levelSelected,
     TResult Function(CoursesMeResponse selectedCourseMe)? courseSelectedMe,
     TResult Function(LessonMe selectedlesson)? lessonSelectedMe,
     TResult Function(LevelMe selectedlevel)? levelSelectedMe,
@@ -8038,9 +6694,6 @@ class _$DeleteCoursesErrorImpl<T> implements DeleteCoursesError<T> {
     required TResult Function(LoadingCoursesMe<T> value) loadingCoursesMe,
     required TResult Function(SuccessCoursesMe<T> value) successCoursesMe,
     required TResult Function(ErrorCoursesMe<T> value) errorCoursesMe,
-    required TResult Function(CourseSelected<T> value) courseSelected,
-    required TResult Function(LessonSelected<T> value) lessonSelected,
-    required TResult Function(LevelSelected<T> value) levelSelected,
     required TResult Function(CourseSelectedMe<T> value) courseSelectedMe,
     required TResult Function(LessonSelectedMe<T> value) lessonSelectedMe,
     required TResult Function(LevelSelectedMe<T> value) levelSelectedMe,
@@ -8075,9 +6728,6 @@ class _$DeleteCoursesErrorImpl<T> implements DeleteCoursesError<T> {
     TResult? Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult? Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult? Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult? Function(CourseSelected<T> value)? courseSelected,
-    TResult? Function(LessonSelected<T> value)? lessonSelected,
-    TResult? Function(LevelSelected<T> value)? levelSelected,
     TResult? Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult? Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult? Function(LevelSelectedMe<T> value)? levelSelectedMe,
@@ -8110,9 +6760,6 @@ class _$DeleteCoursesErrorImpl<T> implements DeleteCoursesError<T> {
     TResult Function(LoadingCoursesMe<T> value)? loadingCoursesMe,
     TResult Function(SuccessCoursesMe<T> value)? successCoursesMe,
     TResult Function(ErrorCoursesMe<T> value)? errorCoursesMe,
-    TResult Function(CourseSelected<T> value)? courseSelected,
-    TResult Function(LessonSelected<T> value)? lessonSelected,
-    TResult Function(LevelSelected<T> value)? levelSelected,
     TResult Function(CourseSelectedMe<T> value)? courseSelectedMe,
     TResult Function(LessonSelectedMe<T> value)? lessonSelectedMe,
     TResult Function(LevelSelectedMe<T> value)? levelSelectedMe,

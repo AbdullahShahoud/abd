@@ -49,6 +49,8 @@ class _PersonInformationState extends State<PersonInformation> {
                                 getIt(),
                                 getIt(),
                                 getIt(),
+                                getIt(),
+                                getIt(),
                                 getIt()),
                             child: bbbb(context));
                       }));
@@ -89,11 +91,10 @@ class _PersonInformationState extends State<PersonInformation> {
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Text(
-                  'البريد الالكتروني',
+                  context.read<ProfileAndNotificationCubit>().email!,
                   textDirection: TextDirection.rtl,
                   style: FontStyleAndText.textfrom,
                   textAlign: TextAlign.right,
-
                 ),
               ),
               verticalBox(10.h),
@@ -112,7 +113,7 @@ class _PersonInformationState extends State<PersonInformation> {
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Text(
-                  'الاسم',
+                  context.read<ProfileAndNotificationCubit>().user_name!,
                   textDirection: TextDirection.rtl,
                   style: FontStyleAndText.textfrom,
                 ),

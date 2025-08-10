@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:learn_programtion/features/singin/Ui/widget/form_singin.dart';
+import 'package:learn_programtion/features/singin/Ui/widget/singin_bloc_listener.dart';
 import 'package:learn_programtion/features/singin/logic/cubit/singin_cubit.dart';
 import 'package:learn_programtion/features/singin/logic/cubit/singin_stare.dart';
 
@@ -51,7 +52,7 @@ class _HomeSignInState extends State<HomeSignIn> {
                     FormSingin(),
                     verticalBox(20.h),
                     YourAccount(),
-                    // SinginBlocListener()
+                    SinginBlocListener()
                   ],
                 ),
               )

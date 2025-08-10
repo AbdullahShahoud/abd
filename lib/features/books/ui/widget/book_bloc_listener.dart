@@ -26,9 +26,6 @@ class _BookBlocListenerState extends State<BookBlocListener> {
             current is ErrorBook,
         builder: ((context, state) {
           return state.maybeWhen(
-            orElse: () {
-              return SizedBox.shrink();
-            },
             successBook: (data) {
               return successGetBook(data);
             },
@@ -37,6 +34,9 @@ class _BookBlocListenerState extends State<BookBlocListener> {
             },
             loadingBook: () {
               return loadingGetBook();
+            },
+            orElse: () {
+              return SizedBox.shrink();
             },
           );
         }));

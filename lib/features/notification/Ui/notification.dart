@@ -19,8 +19,10 @@ class _NotificationsState extends State<Notifications> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => ProfileAndNotificationCubit(
-          getIt(), getIt(), getIt(), getIt(), getIt(), getIt()),
+      create: (context) => ProfileAndNotificationCubit(getIt(), getIt(),
+          getIt(), getIt(), getIt(), getIt(), getIt(), getIt())
+        ..emitNotificationAlert()
+        ..emitNotificationQuation(),
       child: DefaultTabController(
         length: 2,
         child: Scaffold(

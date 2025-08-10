@@ -71,7 +71,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         body: TabBarView(
           physics: NeverScrollableScrollPhysics(),
           controller: _motionTabBarController,
-          children: [Profile(), Home(), HomeBook(), Notifications()],
+          children: [
+            Profile(
+              check: true,
+            ),
+            Home(),
+            HomeBook(),
+            Notifications()
+          ],
         ));
   }
 }

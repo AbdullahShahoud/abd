@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:learn_programtion/features/profile/logic/model/changEmail/chang_email_response.dart';
 
 import '../../../../core/network/api_error_handler.dart';
@@ -13,8 +14,10 @@ class ChangeEmailRepo {
     try {
       final respons = await _apiService.changeEmail(changeEmailRequest);
       return ApiResult.success(respons);
+    } on DioError catch (error) {
+      return ApiResult.failure(ApiErrorHandler.fromDioError(error));
     } catch (error) {
-      return ApiResult.failure(ApiErrorHandler(error));
+      return ApiResult.failure(ApiErrorHandler.fromGenericError(error));
     }
   }
 }

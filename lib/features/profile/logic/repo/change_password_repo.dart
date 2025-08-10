@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:learn_programtion/core/network/api_error_handler.dart';
 import 'package:learn_programtion/core/network/api_result.dart';
 import 'package:learn_programtion/core/network/api_service.dart';
@@ -13,8 +14,10 @@ class ProfileRepoPassword {
     try {
       final respons = await _apiService.changePassword(changePasswordRequest);
       return ApiResult.success(respons);
+    } on DioError catch (error) {
+      return ApiResult.failure(ApiErrorHandler.fromDioError(error));
     } catch (error) {
-      return ApiResult.failure(ApiErrorHandler(error));
+      return ApiResult.failure(ApiErrorHandler.fromGenericError(error));
     }
   }
 }

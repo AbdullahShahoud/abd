@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:learn_programtion/core/network/api_service.dart';
 import 'package:learn_programtion/features/login/logic/model/login_request.dart';
 import 'package:learn_programtion/features/login/logic/model/login_response.dart';
@@ -12,8 +13,10 @@ class LoginRepo {
     try {
       final response = await _apiService.login(loginRequest);
       return ApiResult.success(response);
-    } catch (error) {
-      return ApiResult.failure(ApiErrorHandler(error));
+    } on DioError catch (e) {
+      return ApiResult.failure(ApiErrorHandler.fromDioError(e));
+    } catch (e) {
+      return ApiResult.failure(ApiErrorHandler.fromGenericError(e));
     }
   }
 }

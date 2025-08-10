@@ -6,47 +6,20 @@ part of 'notification_response.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-NotificationResponse _$NotificationResponseFromJson(
+NotificationAlertItem _$NotificationAlertItemFromJson(
         Map<String, dynamic> json) =>
-    NotificationResponse(
-      notificatio: (json['notificatio'] as List<dynamic>)
-          .map((e) => NotificationItem.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      question: (json['question'] as List<dynamic>)
-          .map((e) => QuestionAndResponse.fromJson(e as Map<String, dynamic>))
-          .toList(),
+    NotificationAlertItem(
+      message: json['message'] as String?,
+      created_at: json['created_at'] as String?,
+      id: (json['id'] as num?)?.toInt(),
+      is_read: json['is_read'] as bool?,
     );
 
-Map<String, dynamic> _$NotificationResponseToJson(
-        NotificationResponse instance) =>
+Map<String, dynamic> _$NotificationAlertItemToJson(
+        NotificationAlertItem instance) =>
     <String, dynamic>{
-      'notificatio': instance.notificatio,
-      'question': instance.question,
-    };
-
-NotificationItem _$NotificationItemFromJson(Map<String, dynamic> json) =>
-    NotificationItem(
-      date: json['date'] as String?,
-      text: json['text'] as String?,
-    );
-
-Map<String, dynamic> _$NotificationItemToJson(NotificationItem instance) =>
-    <String, dynamic>{
-      'date': instance.date,
-      'text': instance.text,
-    };
-
-QuestionAndResponse _$QuestionAndResponseFromJson(Map<String, dynamic> json) =>
-    QuestionAndResponse(
-      date: json['date'] as String?,
-      question: json['question'] as String?,
-      response: json['response'] as String?,
-    );
-
-Map<String, dynamic> _$QuestionAndResponseToJson(
-        QuestionAndResponse instance) =>
-    <String, dynamic>{
-      'date': instance.date,
-      'question': instance.question,
-      'response': instance.response,
+      'message': instance.message,
+      'created_at': instance.created_at,
+      'is_read': instance.is_read,
+      'id': instance.id,
     };

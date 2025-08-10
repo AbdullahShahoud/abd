@@ -10,11 +10,9 @@ class LevelItem extends StatefulWidget {
   LevelItem({
     required this.image,
     required this.name,
-    required this.check,
   });
   String image;
   String name;
-  bool check;
 
   @override
   State<LevelItem> createState() => _LessonState();

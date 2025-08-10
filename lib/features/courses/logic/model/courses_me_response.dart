@@ -4,7 +4,7 @@ part 'courses_me_response.g.dart';
 
 @JsonSerializable()
 class CoursesMeResponse {
-  String? id;
+  int? id;
   String? name;
   String? image;
   String? nameTeacher;
@@ -12,19 +12,19 @@ class CoursesMeResponse {
   String? time;
   String? descrip;
   TestMe finalTest;
-  bool? check;
+  bool? checkk;
   List<LevelMe> level;
-  bool finshed;
+  bool finished;
   CoursesMeResponse(
       {this.id,
       this.name,
       this.time,
       this.type,
-      this.check,
+      this.checkk,
       this.image,
       this.nameTeacher,
       this.descrip,
-      required this.finshed,
+      required this.finished,
       required this.level,
       required this.finalTest});
 
@@ -35,14 +35,14 @@ class CoursesMeResponse {
 @JsonSerializable()
 class LevelMe {
   List<LessonMe> lessons;
-  bool check;
-  String id;
+  bool checkk;
+  int id;
   TestMe test;
   String name;
   bool finished;
   LevelMe({
     required this.lessons,
-    required this.check,
+    required this.checkk,
     required this.id,
     required this.finished,
     required this.test,
@@ -55,13 +55,16 @@ class LevelMe {
 
 @JsonSerializable()
 class TestMe {
-  List<QuestionMe> question;
-  List<String> responseCorrect;
-  bool finish;
+  List<QuestionMe> questions;
+  bool? finish;
+  bool? checkk;
+  int? id;
+
   TestMe({
-    required this.question,
+    required this.questions,
     required this.finish,
-    required this.responseCorrect,
+    required this.checkk,
+    required this.id,
   });
 
   factory TestMe.fromJson(Map<String, dynamic> json) => _$TestMeFromJson(json);
@@ -70,15 +73,17 @@ class TestMe {
 @JsonSerializable()
 class QuestionMe {
   String? question;
-  String? responseOne;
-  String? responseTwo;
-  String? responseThree;
+  int? id;
+  String? a;
+  String? b;
+  String? c;
 
   QuestionMe({
     required this.question,
-    required this.responseOne,
-    required this.responseTwo,
-    required this.responseThree,
+    required this.a,
+    required this.b,
+    required this.c,
+    required this.id,
   });
   factory QuestionMe.fromJson(Map<String, dynamic> json) =>
       _$QuestionMeFromJson(json);
@@ -87,17 +92,17 @@ class QuestionMe {
 @JsonSerializable()
 class LessonMe {
   String? name;
-  String? id;
+  int? id;
   String? video;
-  String? descrption;
-  bool? check;
+  String? description;
+  bool? checkk;
   bool finished;
   LessonMe(
       {this.name,
       this.video,
       this.id,
-      this.descrption,
-      this.check,
+      this.description,
+      this.checkk,
       required this.finished});
 
   factory LessonMe.fromJson(Map<String, dynamic> json) =>

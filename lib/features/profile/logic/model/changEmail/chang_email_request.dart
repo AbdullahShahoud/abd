@@ -5,9 +5,9 @@ part 'chang_email_request.g.dart';
 @JsonSerializable()
 class ChangeEmailRequest {
   String? email;
-  String? name;
+  String? username;
 
-  ChangeEmailRequest({required this.email, required this.name});
+  ChangeEmailRequest({required this.email, required this.username});
 
   Map<String, dynamic> toJson() => _$ChangeEmailRequestToJson(this);
 }

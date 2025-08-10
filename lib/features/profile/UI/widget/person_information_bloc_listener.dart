@@ -51,7 +51,7 @@ void succcessInformation(
                 '''
              '\'تم تعديل الاسم والايميل
               ${changeEmailResponse.email} 
-              ${changeEmailResponse.name}
+              ${changeEmailResponse.username}
               ''',
                 textDirection: TextDirection.rtl,
                 style: FontStyleAndText.fontmedia,

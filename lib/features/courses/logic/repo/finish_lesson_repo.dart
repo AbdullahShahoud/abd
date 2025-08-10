@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:learn_programtion/features/courses/logic/model/finish_lesson_response.dart';
 import 'package:learn_programtion/features/courses/logic/model/finish_lesson_ruqest.dart';
 
@@ -13,8 +14,10 @@ class FinishLessonRepo {
     try {
       final response = await _apiService.finishLesson(finishLessonRuqest);
       return ApiResult.success(response);
+    } on DioError catch (error) {
+      return ApiResult.failure(ApiErrorHandler.fromDioError(error));
     } catch (error) {
-      return ApiResult.failure(ApiErrorHandler(error));
+      return ApiResult.failure(ApiErrorHandler.fromGenericError(error));
     }
   }
 }

@@ -8,6 +8,8 @@ import 'package:learn_programtion/core/theming/font_style.dart';
 import 'package:learn_programtion/features/singin/logic/cubit/singin_cubit.dart';
 import 'package:learn_programtion/features/singin/logic/cubit/singin_stare.dart';
 
+import '../../logic/model/singin_response.dart';
+
 class SinginBlocListener extends StatefulWidget {
   const SinginBlocListener({super.key});
 
@@ -34,8 +36,8 @@ class _SinginBlocListenerState extends State<SinginBlocListener> {
               ),
             ),
           ),
-          success: (data) => SinginSuccess(context),
-          error: (error) => singinError(context),
+          success: (data) => SinginSuccess(context, data),
+          error: (error) => singinError(context, error),
         );
       },
       child: const SizedBox.shrink(),
@@ -43,22 +45,23 @@ class _SinginBlocListenerState extends State<SinginBlocListener> {
   }
 }
 
-void SinginSuccess(BuildContext context) {
+void SinginSuccess(BuildContext context, SinginResponse singinResponse) {
   showDialog(
       context: context,
       builder: (context) => AlertDialog(
-            title: Text('SinginSuccess'),
+            title: Text(singinResponse.user!.email!),
+            content: Text(singinResponse.user!.username!),
             actions: [
               TextButton(
                   onPressed: () {
-                    context.pushNamed(Routers.home_page);
+                    context.pushNamed(Routers.login);
                   },
                   child: Text('خروج'))
             ],
           ));
 }
 
-void singinError(BuildContext context) {
+void singinError(BuildContext context, String error) {
   showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -70,7 +73,7 @@ void singinError(BuildContext context) {
             contentPadding:
                 EdgeInsets.symmetric(horizontal: 30.w, vertical: 10.h),
             content: Text(
-              'error',
+              error,
               style: FontStyleAndText.font_big,
             ),
             actions: [
@@ -79,7 +82,7 @@ void singinError(BuildContext context) {
                   style: ElevatedButton.styleFrom(
                       backgroundColor: ColorManger.primary_ColorBlue),
                   onPressed: () {
-                    context.pushNamed(Routers.password);
+                    context.pushNamed(Routers.Welcome);
                   },
                   child: Text('حسناً', style: FontStyleAndText.buttonfonttext),
                 ),

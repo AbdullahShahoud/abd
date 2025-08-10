@@ -1,7 +1,6 @@
 // ignore_for_file: unnecessary_null_comparison
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:learn_programtion/features/courses/logic/cubit/cubit/coursees_cubit.dart';
@@ -34,7 +33,7 @@ class _TabBarhomeState extends State<TabBarhome> {
                 child: Column(
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(top: 5.h,bottom: 5.h),
+                      padding: EdgeInsets.only(top: 5.h, bottom: 5.h),
                       child: Image(
                         image: AssetImage('assets/image/logo.png'),
                         width: 130.w,
@@ -44,13 +43,11 @@ class _TabBarhomeState extends State<TabBarhome> {
                     ),
                     verticalBox(7.h),
                     InkWell(
-                      onTap: (){
+                      onTap: () {
                         showSearch(
                             context: context,
                             delegate: SearchCourseName(
-                                courses:
-                                CourseesCubit.get(context)
-                                    .courses,
+                                courses: CourseesCubit.get(context).courses,
                                 history: ['mm', 'tt', 'yy']));
                       },
                       child: Container(
@@ -61,7 +58,7 @@ class _TabBarhomeState extends State<TabBarhome> {
                           keyboardType: TextInputType.name,
                           validator: (value) {
                             if (value!.isEmpty || value == null) {
-                              return 'الرجاء ادخال البريد الالكتروني';
+                              return 'المدخل خاطئ';
                             }
                             return null;
                           },

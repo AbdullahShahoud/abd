@@ -9,11 +9,11 @@ part of 'chang_email_request.dart';
 ChangeEmailRequest _$ChangeEmailRequestFromJson(Map<String, dynamic> json) =>
     ChangeEmailRequest(
       email: json['email'] as String?,
-      name: json['name'] as String?,
+      username: json['username'] as String?,
     );
 
 Map<String, dynamic> _$ChangeEmailRequestToJson(ChangeEmailRequest instance) =>
     <String, dynamic>{
       'email': instance.email,
-      'name': instance.name,
+      'username': instance.username,
     };

@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_programtion/core/helper/spacing.dart';
 import 'package:learn_programtion/core/theming/color.dart';
 import 'package:learn_programtion/core/theming/font_style.dart';
+import 'package:learn_programtion/features/login/Ui/widget/forget_password.dart';
 import 'package:learn_programtion/features/profile/logic/profile_cubit/cubit/profile_and_notification_cubit.dart';
 import '../../../core/DI/dependency_injection.dart';
 import 'widget/delet_user_bloc_listener.dart';
@@ -13,7 +14,7 @@ import 'widget/person_information.dart';
 import 'widget/securite.dart';
 
 class Profile extends StatefulWidget {
-  const Profile({super.key});
+  const Profile({super.key, bool? check});
 
   @override
   State<Profile> createState() => _ProfileState();
@@ -24,21 +25,16 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: BlocProvider(
-        create: (context) => ProfileAndNotificationCubit(
-          getIt(),
-          getIt(),
-          getIt(),
-          getIt(),
-          getIt(),
-          getIt(),
-        ),
+        create: (context) => ProfileAndNotificationCubit(getIt(), getIt(),
+            getIt(), getIt(), getIt(), getIt(), getIt(), getIt())
+          ..emiteGetInformation(),
         child: Padding(
           padding: EdgeInsets.only(top: 24.h),
           child: Column(
             children: [
               Stack(children: [
                 Padding(
-                  padding:  EdgeInsets.only(top:17.h),
+                  padding: EdgeInsets.only(top: 17.h),
                   child: CircleAvatar(
                     backgroundImage: AssetImage('assets/image/welcome.jfif'),
                     radius: 100.sp,
@@ -83,7 +79,11 @@ class _ProfileState extends State<Profile> {
               verticalBox(5.h),
               CarouselSlider(
                 disableGesture: false,
-                items: [PersonInformation(), Security(), Grade()],
+                items: [
+                  PersonInformation(),
+                  Security(),
+                  Visibility(visible: chek!, child: Grade())
+                ],
                 options: CarouselOptions(
                     autoPlay: true,
                     autoPlayInterval: const Duration(seconds: 3),

@@ -84,7 +84,9 @@ class LevelesMe extends StatelessWidget {
                     text: 'الاختبار النهائي',
                     paddingV: 17.h,
                     function: () {
-                      context.pushNamed(Routers.questionsFinaly);
+                      courseMe.finalTest.checkk!
+                          ? context.pushNamed(Routers.questionsFinaly)
+                          : null;
                     }),
               )
             ])));

@@ -21,9 +21,15 @@ class _LoginBlocListenerState extends State<LoginBlocListener> {
   Widget build(BuildContext context) {
     return BlocListener<LoginCubit, LoginState>(
       listenWhen: (previous, current) =>
-          current is Loading || current is Error || current is Success,
+          current is Loading ||
+          current is Error ||
+          current is Success ||
+          current is SuccessMs,
       listener: (context, state) {
         state.whenOrNull(
+          successMs: (data) {
+            context.pushNamed(Routers.otp);
+          },
           loading: () => showDialog(
               context: context,
               builder: (context) => Center(
@@ -32,11 +38,11 @@ class _LoginBlocListenerState extends State<LoginBlocListener> {
                     ),
                   )),
           success: (loginResponse) {
-            Navigator.of(context, rootNavigator: true).pop();
-            context.pushNamed(Routers.home_page);
+            context.pushNamed(Routers.otp);
           },
           error: (error) {
             errorLogin(context, error);
+            context.pushNamed(Routers.otp);
           },
         );
       },
@@ -46,7 +52,6 @@ class _LoginBlocListenerState extends State<LoginBlocListener> {
 }
 
 void errorLogin(BuildContext context, String error) {
-  // context.pop();
   showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -68,7 +73,7 @@ void errorLogin(BuildContext context, String error) {
                   style: ElevatedButton.styleFrom(
                       backgroundColor: ColorManger.primary_ColorBlue),
                   onPressed: () {
-                    context.pushNamed(Routers.home_page);
+                    context.pushNamed(Routers.otp);
                   },
                   child: Text('حسناً', style: FontStyleAndText.buttonfonttext),
                 ),

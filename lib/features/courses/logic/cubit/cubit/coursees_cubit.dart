@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:learn_programtion/features/courses/logic/cubit/cubit/coursees_state.dart';
-import 'package:learn_programtion/features/courses/logic/model/check_course_ruqest.dart';
+import 'package:learn_programtion/features/courses/logic/model/checkCourser/check_course_ruqest.dart';
 import 'package:learn_programtion/features/courses/logic/model/courses_response.dart';
-import 'package:learn_programtion/features/courses/logic/model/delet_course_ruqest.dart';
-import 'package:learn_programtion/features/courses/logic/model/finish_coures_ruqest.dart';
+import 'package:learn_programtion/features/courses/logic/model/deleteCourse/delet_course_ruqest.dart';
+import 'package:learn_programtion/features/courses/logic/model/finishCourser/finish_coures_ruqest.dart';
 import 'package:learn_programtion/features/courses/logic/model/finish_lesson_ruqest.dart';
-import 'package:learn_programtion/features/courses/logic/model/finish_test_request.dart';
 import 'package:learn_programtion/features/courses/logic/model/send_qaustion_request.dart';
 import 'package:learn_programtion/features/courses/logic/repo/check_course_repo.dart';
 import 'package:learn_programtion/features/courses/logic/repo/courser_me_repo.dart';
@@ -42,6 +41,7 @@ class CourseesCubit extends Cubit<CoursesState> {
   SendQuationsRepo sendQuationsRepo;
   CheckCourseRepo checkCourseRepo;
   String? ca;
+  int? id;
   List<CoursesResponse> courses = [];
   CoursesResponse? selectedcorse;
   LevelMe? selectedlevelMe;
@@ -73,8 +73,8 @@ class CourseesCubit extends Cubit<CoursesState> {
 
   void emitCheckCourses() async {
     emit(CoursesState.checkCoursesLoading());
-    final response = await checkCourseRepo
-        .checkCourses(CheckCourseRuqest(courseId: seletCourseMe!.id!));
+    final response = await checkCourseRepo.checkCourses(
+        CheckCourseRuqest(course: selectedcorse!.id!, student: id));
     response.when(success: (data) {
       emit(CoursesState.checkCoursesSuccess(data.message));
     }, failure: (error) {
@@ -93,10 +93,10 @@ class CourseesCubit extends Cubit<CoursesState> {
     });
   }
 
-  void emitSendQuation(String idCourse, String idLesson, String text) async {
+  void emitSendQuation(int idCourse, int idLesson, String text) async {
     emit(CoursesState.sendQuationLoading());
-    final response = await sendQuationsRepo.sendQuation(
-        SendQautionsRuqest(text: text, courseId: idCourse, lessonId: idLesson));
+    final response = await sendQuationsRepo.sendQuation(SendQautionsRuqest(
+        question_text: text, course: idCourse, lesson: idLesson));
     response.when(success: (sendQautionReesponse) {
       emit(CoursesState.sendQuationSuccess(sendQautionReesponse.massage!));
     }, failure: (error) {
@@ -104,23 +104,23 @@ class CourseesCubit extends Cubit<CoursesState> {
     });
   }
 
-  void emitFinishTest() async {
-    emit(CoursesState.finishedInitial());
-    final response = await finishTestRepo.finishTest(FinishedTestRuqest(
-        courseId: seletCourseMe!.id,
-        levelId: selectedlevelMe!.id,
-        dagre: accountDagre().toString()));
-    response.when(success: (data) {
-      emit(CoursesState.finishedSuccess(data.messsage!));
-    }, failure: (error) {
-      emit(CoursesState.finishedError(error: 'error'));
-    });
-  }
+  // void emitFinishTest() async {
+  //   emit(CoursesState.finishedInitial());
+  //   final response = await finishTestRepo.finishTest(FinishedTestRuqest(
+  //       courseId: seletCourseMe!.id,
+  //       levelId: selectedlevelMe!.id,
+  //       dagre: accountDagre().toString()));
+  //   response.when(success: (data) {
+  //     emit(CoursesState.finishedSuccess(data.messsage!));
+  //   }, failure: (error) {
+  //     emit(CoursesState.finishedError(error: 'error'));
+  //   });
+  // }
 
   void emitFinishLesson() async {
     emit(CoursesState.finishedLoading());
     final response = await finishLessonRepo.finishLesson(FinishLessonRuqest(
-        courseId: seletCourseMe!.id!, lessonId: selectedlessonMe!.id!));
+        course: seletCourseMe!.id!, lesson: selectedlessonMe!.id!));
     response.when(success: (finishLessonResponse) {
       emit(CoursesState.finishedSuccess(finishLessonResponse.message!));
     }, failure: (error) {
@@ -131,28 +131,12 @@ class CourseesCubit extends Cubit<CoursesState> {
   void emitFinishCourse() async {
     emit(CoursesState.finishedLoading());
     final response = await finishCourseRepo
-        .finishCourses(FinishCourseRuqest(courseId: seletCourseMe!.id));
+        .finishCourses(FinishCourseRuqest(course_id: seletCourseMe!.id));
     response.when(success: (data) {
       emit(CoursesState.finishedSuccess(data.message!));
     }, failure: (error) {
       emit(CoursesState.finishedError(error: 'error'));
     });
-  }
-
-  int accountDagre() {
-    int degre = 0;
-
-    for (int i = 0; i < responseUser.length; i++) {
-      if (responseUser[i] == selectedlevelMe?.test.responseCorrect[i]) {
-        degre++;
-      }
-    }
-    return degre;
-  }
-
-  void selectCourse(CoursesResponse course) {
-    selectedcorse = course;
-    emit(CoursesState.courseSelected(course));
   }
 
   void selectCourseMe(CoursesMeResponse course) {

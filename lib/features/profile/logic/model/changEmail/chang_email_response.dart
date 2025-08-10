@@ -5,9 +5,9 @@ part 'chang_email_response.g.dart';
 @JsonSerializable()
 class ChangeEmailResponse {
   String? email;
-  String? name;
+  String? username;
 
-  ChangeEmailResponse({this.email, this.name});
+  ChangeEmailResponse({this.email, this.username});
 
   factory ChangeEmailResponse.fromJson(Map<String, dynamic> json) =>
       _$ChangeEmailResponseFromJson(json);

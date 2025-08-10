@@ -4,8 +4,9 @@ import 'package:learn_programtion/core/helper/extention.dart';
 
 import '../../../core/routing/router.dart';
 import '../../../core/theming/color.dart';
-import '../../home/widget/courses_item.dart';
+import '../../home/widget/courses/courses_item.dart';
 import '../logic/cubit/cubit/coursees_cubit.dart';
+
 List<String> category = ['برمجة', 'تطوير واجهات', 'تصميم', 'php', 'larvel'];
 
 class CoursesAll extends StatefulWidget {
@@ -72,7 +73,7 @@ class _CoursesAllState extends State<CoursesAll> {
                     padding: EdgeInsets.only(bottom: 5.h),
                     child: InkWell(
                       onTap: () {
-                        CourseesCubit.get(context).selectCourse(course);
+                        CourseesCubit.get(context).selectedcorse = course;
                         context.pushNamed(Routers.introdactionCourse);
                       },
                       child: CoursesItem(
@@ -83,7 +84,7 @@ class _CoursesAllState extends State<CoursesAll> {
                         type: course.type,
                         image: course.image,
                         id: course.id,
-                        numberLevel: course.level.length.toString(),
+                        numberLevel: course.level.length,
                       ),
                     ),
                   );

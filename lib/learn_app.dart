@@ -40,8 +40,3 @@ class LearnApp extends StatelessWidget {
         ));
   }
 }
-// void saveToken(){
-//   if(!token!.isEmpty){
-
-//   }
-// }

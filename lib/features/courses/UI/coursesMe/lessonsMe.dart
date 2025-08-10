@@ -60,7 +60,8 @@ class LessonsMe extends StatelessWidget {
                         paddingV: 16.h,
                         paddingH: 140.w,
                         function: () {
-                          context.pushNamed(Routers.questions);
+                          levelMe.finished?
+                          context.pushNamed(Routers.questions):null;
                         })
                   ]),
             );

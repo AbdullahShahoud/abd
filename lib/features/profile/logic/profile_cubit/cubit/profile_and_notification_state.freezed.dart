@@ -33,11 +33,16 @@ mixin _$ProfileAndNotificationState<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,11 +62,16 @@ mixin _$ProfileAndNotificationState<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -81,11 +91,16 @@ mixin _$ProfileAndNotificationState<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -111,13 +126,22 @@ mixin _$ProfileAndNotificationState<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -142,13 +166,20 @@ mixin _$ProfileAndNotificationState<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -172,12 +203,19 @@ mixin _$ProfileAndNotificationState<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -257,11 +295,16 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return initial();
   }
@@ -284,11 +327,16 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return initial?.call();
   }
@@ -311,11 +359,16 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -347,13 +400,22 @@ class _$InitialImpl<T> implements _Initial<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return initial(this);
   }
@@ -381,13 +443,20 @@ class _$InitialImpl<T> implements _Initial<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return initial?.call(this);
   }
@@ -414,12 +483,19 @@ class _$InitialImpl<T> implements _Initial<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -487,11 +563,16 @@ class _$LoadingSecuriteImpl<T> implements LoadingSecurite<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return loadingSecurite();
   }
@@ -514,11 +595,16 @@ class _$LoadingSecuriteImpl<T> implements LoadingSecurite<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return loadingSecurite?.call();
   }
@@ -541,11 +627,16 @@ class _$LoadingSecuriteImpl<T> implements LoadingSecurite<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (loadingSecurite != null) {
@@ -577,13 +668,22 @@ class _$LoadingSecuriteImpl<T> implements LoadingSecurite<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return loadingSecurite(this);
   }
@@ -611,13 +711,20 @@ class _$LoadingSecuriteImpl<T> implements LoadingSecurite<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return loadingSecurite?.call(this);
   }
@@ -644,12 +751,19 @@ class _$LoadingSecuriteImpl<T> implements LoadingSecurite<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (loadingSecurite != null) {
@@ -745,11 +859,16 @@ class _$SuccessSecuriteImpl<T> implements SuccessSecurite<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return successSecurite(data);
   }
@@ -772,11 +891,16 @@ class _$SuccessSecuriteImpl<T> implements SuccessSecurite<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return successSecurite?.call(data);
   }
@@ -799,11 +923,16 @@ class _$SuccessSecuriteImpl<T> implements SuccessSecurite<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (successSecurite != null) {
@@ -835,13 +964,22 @@ class _$SuccessSecuriteImpl<T> implements SuccessSecurite<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return successSecurite(this);
   }
@@ -869,13 +1007,20 @@ class _$SuccessSecuriteImpl<T> implements SuccessSecurite<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return successSecurite?.call(this);
   }
@@ -902,12 +1047,19 @@ class _$SuccessSecuriteImpl<T> implements SuccessSecurite<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (successSecurite != null) {
@@ -1007,11 +1159,16 @@ class _$ErrorSecuriteImpl<T> implements ErrorSecurite<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return errorSecurite(error);
   }
@@ -1034,11 +1191,16 @@ class _$ErrorSecuriteImpl<T> implements ErrorSecurite<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return errorSecurite?.call(error);
   }
@@ -1061,11 +1223,16 @@ class _$ErrorSecuriteImpl<T> implements ErrorSecurite<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (errorSecurite != null) {
@@ -1097,13 +1264,22 @@ class _$ErrorSecuriteImpl<T> implements ErrorSecurite<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return errorSecurite(this);
   }
@@ -1131,13 +1307,20 @@ class _$ErrorSecuriteImpl<T> implements ErrorSecurite<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return errorSecurite?.call(this);
   }
@@ -1164,12 +1347,19 @@ class _$ErrorSecuriteImpl<T> implements ErrorSecurite<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (errorSecurite != null) {
@@ -1247,11 +1437,16 @@ class _$LoadingPersoinInformationImpl<T>
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return loadingPersoinInformation();
   }
@@ -1274,11 +1469,16 @@ class _$LoadingPersoinInformationImpl<T>
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return loadingPersoinInformation?.call();
   }
@@ -1301,11 +1501,16 @@ class _$LoadingPersoinInformationImpl<T>
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (loadingPersoinInformation != null) {
@@ -1337,13 +1542,22 @@ class _$LoadingPersoinInformationImpl<T>
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return loadingPersoinInformation(this);
   }
@@ -1371,13 +1585,20 @@ class _$LoadingPersoinInformationImpl<T>
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return loadingPersoinInformation?.call(this);
   }
@@ -1404,12 +1625,19 @@ class _$LoadingPersoinInformationImpl<T>
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (loadingPersoinInformation != null) {
@@ -1511,11 +1739,16 @@ class _$SuccessPersoinInformationImpl<T>
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return successPersoinInformation(data);
   }
@@ -1538,11 +1771,16 @@ class _$SuccessPersoinInformationImpl<T>
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return successPersoinInformation?.call(data);
   }
@@ -1565,11 +1803,16 @@ class _$SuccessPersoinInformationImpl<T>
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (successPersoinInformation != null) {
@@ -1601,13 +1844,22 @@ class _$SuccessPersoinInformationImpl<T>
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return successPersoinInformation(this);
   }
@@ -1635,13 +1887,20 @@ class _$SuccessPersoinInformationImpl<T>
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return successPersoinInformation?.call(this);
   }
@@ -1668,12 +1927,19 @@ class _$SuccessPersoinInformationImpl<T>
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (successPersoinInformation != null) {
@@ -1778,11 +2044,16 @@ class _$ErrorPersoinInformationImpl<T> implements ErrorPersoinInformation<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return errorPersoinInformation(error);
   }
@@ -1805,11 +2076,16 @@ class _$ErrorPersoinInformationImpl<T> implements ErrorPersoinInformation<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return errorPersoinInformation?.call(error);
   }
@@ -1832,11 +2108,16 @@ class _$ErrorPersoinInformationImpl<T> implements ErrorPersoinInformation<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (errorPersoinInformation != null) {
@@ -1868,13 +2149,22 @@ class _$ErrorPersoinInformationImpl<T> implements ErrorPersoinInformation<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return errorPersoinInformation(this);
   }
@@ -1902,13 +2192,20 @@ class _$ErrorPersoinInformationImpl<T> implements ErrorPersoinInformation<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return errorPersoinInformation?.call(this);
   }
@@ -1935,12 +2232,19 @@ class _$ErrorPersoinInformationImpl<T> implements ErrorPersoinInformation<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (errorPersoinInformation != null) {
@@ -2014,11 +2318,16 @@ class _$LoadingGradeImpl<T> implements LoadingGrade<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return loadingGrade();
   }
@@ -2041,11 +2350,16 @@ class _$LoadingGradeImpl<T> implements LoadingGrade<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return loadingGrade?.call();
   }
@@ -2068,11 +2382,16 @@ class _$LoadingGradeImpl<T> implements LoadingGrade<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (loadingGrade != null) {
@@ -2104,13 +2423,22 @@ class _$LoadingGradeImpl<T> implements LoadingGrade<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return loadingGrade(this);
   }
@@ -2138,13 +2466,20 @@ class _$LoadingGradeImpl<T> implements LoadingGrade<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return loadingGrade?.call(this);
   }
@@ -2171,12 +2506,19 @@ class _$LoadingGradeImpl<T> implements LoadingGrade<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (loadingGrade != null) {
@@ -2271,11 +2613,16 @@ class _$SuccessGradeImpl<T> implements SuccessGrade<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return successGrade(data);
   }
@@ -2298,11 +2645,16 @@ class _$SuccessGradeImpl<T> implements SuccessGrade<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return successGrade?.call(data);
   }
@@ -2325,11 +2677,16 @@ class _$SuccessGradeImpl<T> implements SuccessGrade<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (successGrade != null) {
@@ -2361,13 +2718,22 @@ class _$SuccessGradeImpl<T> implements SuccessGrade<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return successGrade(this);
   }
@@ -2395,13 +2761,20 @@ class _$SuccessGradeImpl<T> implements SuccessGrade<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return successGrade?.call(this);
   }
@@ -2428,12 +2801,19 @@ class _$SuccessGradeImpl<T> implements SuccessGrade<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (successGrade != null) {
@@ -2531,11 +2911,16 @@ class _$ErrorGradeImpl<T> implements ErrorGrade<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return errorGrade(error);
   }
@@ -2558,11 +2943,16 @@ class _$ErrorGradeImpl<T> implements ErrorGrade<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return errorGrade?.call(error);
   }
@@ -2585,11 +2975,16 @@ class _$ErrorGradeImpl<T> implements ErrorGrade<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (errorGrade != null) {
@@ -2621,13 +3016,22 @@ class _$ErrorGradeImpl<T> implements ErrorGrade<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return errorGrade(this);
   }
@@ -2655,13 +3059,20 @@ class _$ErrorGradeImpl<T> implements ErrorGrade<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return errorGrade?.call(this);
   }
@@ -2688,12 +3099,19 @@ class _$ErrorGradeImpl<T> implements ErrorGrade<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (errorGrade != null) {
@@ -2766,11 +3184,16 @@ class _$LoadingDeleteImpl<T> implements LoadingDelete<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return loadingDelete();
   }
@@ -2793,11 +3216,16 @@ class _$LoadingDeleteImpl<T> implements LoadingDelete<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return loadingDelete?.call();
   }
@@ -2820,11 +3248,16 @@ class _$LoadingDeleteImpl<T> implements LoadingDelete<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (loadingDelete != null) {
@@ -2856,13 +3289,22 @@ class _$LoadingDeleteImpl<T> implements LoadingDelete<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return loadingDelete(this);
   }
@@ -2890,13 +3332,20 @@ class _$LoadingDeleteImpl<T> implements LoadingDelete<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return loadingDelete?.call(this);
   }
@@ -2923,12 +3372,19 @@ class _$LoadingDeleteImpl<T> implements LoadingDelete<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (loadingDelete != null) {
@@ -3024,11 +3480,16 @@ class _$SuccessDeleteImpl<T> implements SuccessDelete<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return successDelete(data);
   }
@@ -3051,11 +3512,16 @@ class _$SuccessDeleteImpl<T> implements SuccessDelete<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return successDelete?.call(data);
   }
@@ -3078,11 +3544,16 @@ class _$SuccessDeleteImpl<T> implements SuccessDelete<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (successDelete != null) {
@@ -3114,13 +3585,22 @@ class _$SuccessDeleteImpl<T> implements SuccessDelete<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return successDelete(this);
   }
@@ -3148,13 +3628,20 @@ class _$SuccessDeleteImpl<T> implements SuccessDelete<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return successDelete?.call(this);
   }
@@ -3181,12 +3668,19 @@ class _$SuccessDeleteImpl<T> implements SuccessDelete<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (successDelete != null) {
@@ -3285,11 +3779,16 @@ class _$ErrorDeleteImpl<T> implements ErrorDelete<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return errorDelete(error);
   }
@@ -3312,11 +3811,16 @@ class _$ErrorDeleteImpl<T> implements ErrorDelete<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return errorDelete?.call(error);
   }
@@ -3339,11 +3843,16 @@ class _$ErrorDeleteImpl<T> implements ErrorDelete<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (errorDelete != null) {
@@ -3375,13 +3884,22 @@ class _$ErrorDeleteImpl<T> implements ErrorDelete<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return errorDelete(this);
   }
@@ -3409,13 +3927,20 @@ class _$ErrorDeleteImpl<T> implements ErrorDelete<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return errorDelete?.call(this);
   }
@@ -3442,12 +3967,19 @@ class _$ErrorDeleteImpl<T> implements ErrorDelete<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (errorDelete != null) {
@@ -3525,11 +4057,16 @@ class _$LoadingNotificationNormalImpl<T>
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return loadingNotificationNormal();
   }
@@ -3552,11 +4089,16 @@ class _$LoadingNotificationNormalImpl<T>
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return loadingNotificationNormal?.call();
   }
@@ -3579,11 +4121,16 @@ class _$LoadingNotificationNormalImpl<T>
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (loadingNotificationNormal != null) {
@@ -3615,13 +4162,22 @@ class _$LoadingNotificationNormalImpl<T>
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return loadingNotificationNormal(this);
   }
@@ -3649,13 +4205,20 @@ class _$LoadingNotificationNormalImpl<T>
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return loadingNotificationNormal?.call(this);
   }
@@ -3682,12 +4245,19 @@ class _$LoadingNotificationNormalImpl<T>
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (loadingNotificationNormal != null) {
@@ -3789,11 +4359,16 @@ class _$SuccessNotificationNormalImpl<T>
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return successNotificationNormal(data);
   }
@@ -3816,11 +4391,16 @@ class _$SuccessNotificationNormalImpl<T>
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return successNotificationNormal?.call(data);
   }
@@ -3843,11 +4423,16 @@ class _$SuccessNotificationNormalImpl<T>
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (successNotificationNormal != null) {
@@ -3879,13 +4464,22 @@ class _$SuccessNotificationNormalImpl<T>
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return successNotificationNormal(this);
   }
@@ -3913,13 +4507,20 @@ class _$SuccessNotificationNormalImpl<T>
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return successNotificationNormal?.call(this);
   }
@@ -3946,12 +4547,19 @@ class _$SuccessNotificationNormalImpl<T>
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (successNotificationNormal != null) {
@@ -3970,276 +4578,6 @@ abstract class SuccessNotificationNormal<T>
   @JsonKey(ignore: true)
   _$$SuccessNotificationNormalImplCopyWith<T,
           _$SuccessNotificationNormalImpl<T>>
-      get copyWith => throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$SuccessNotificationQuestionImplCopyWith<T, $Res> {
-  factory _$$SuccessNotificationQuestionImplCopyWith(
-          _$SuccessNotificationQuestionImpl<T> value,
-          $Res Function(_$SuccessNotificationQuestionImpl<T>) then) =
-      __$$SuccessNotificationQuestionImplCopyWithImpl<T, $Res>;
-  @useResult
-  $Res call({T data});
-}
-
-/// @nodoc
-class __$$SuccessNotificationQuestionImplCopyWithImpl<T, $Res>
-    extends _$ProfileAndNotificationStateCopyWithImpl<T, $Res,
-        _$SuccessNotificationQuestionImpl<T>>
-    implements _$$SuccessNotificationQuestionImplCopyWith<T, $Res> {
-  __$$SuccessNotificationQuestionImplCopyWithImpl(
-      _$SuccessNotificationQuestionImpl<T> _value,
-      $Res Function(_$SuccessNotificationQuestionImpl<T>) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? data = freezed,
-  }) {
-    return _then(_$SuccessNotificationQuestionImpl<T>(
-      freezed == data
-          ? _value.data
-          : data // ignore: cast_nullable_to_non_nullable
-              as T,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$SuccessNotificationQuestionImpl<T>
-    implements SuccessNotificationQuestion<T> {
-  const _$SuccessNotificationQuestionImpl(this.data);
-
-  @override
-  final T data;
-
-  @override
-  String toString() {
-    return 'ProfileAndNotificationState<$T>.successNotificationQuestion(data: $data)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SuccessNotificationQuestionImpl<T> &&
-            const DeepCollectionEquality().equals(other.data, data));
-  }
-
-  @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SuccessNotificationQuestionImplCopyWith<T,
-          _$SuccessNotificationQuestionImpl<T>>
-      get copyWith => __$$SuccessNotificationQuestionImplCopyWithImpl<T,
-          _$SuccessNotificationQuestionImpl<T>>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loadingSecurite,
-    required TResult Function(T data) successSecurite,
-    required TResult Function(String error) errorSecurite,
-    required TResult Function() loadingPersoinInformation,
-    required TResult Function(T data) successPersoinInformation,
-    required TResult Function(String error) errorPersoinInformation,
-    required TResult Function() loadingGrade,
-    required TResult Function(T data) successGrade,
-    required TResult Function(String error) errorGrade,
-    required TResult Function() loadingDelete,
-    required TResult Function(T data) successDelete,
-    required TResult Function(String error) errorDelete,
-    required TResult Function() loadingNotificationNormal,
-    required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
-    required TResult Function(String error) errorNotificationNormal,
-    required TResult Function() loadingBook,
-    required TResult Function(T data) successBook,
-    required TResult Function(String error) errorBook,
-  }) {
-    return successNotificationQuestion(data);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loadingSecurite,
-    TResult? Function(T data)? successSecurite,
-    TResult? Function(String error)? errorSecurite,
-    TResult? Function()? loadingPersoinInformation,
-    TResult? Function(T data)? successPersoinInformation,
-    TResult? Function(String error)? errorPersoinInformation,
-    TResult? Function()? loadingGrade,
-    TResult? Function(T data)? successGrade,
-    TResult? Function(String error)? errorGrade,
-    TResult? Function()? loadingDelete,
-    TResult? Function(T data)? successDelete,
-    TResult? Function(String error)? errorDelete,
-    TResult? Function()? loadingNotificationNormal,
-    TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
-    TResult? Function(String error)? errorNotificationNormal,
-    TResult? Function()? loadingBook,
-    TResult? Function(T data)? successBook,
-    TResult? Function(String error)? errorBook,
-  }) {
-    return successNotificationQuestion?.call(data);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loadingSecurite,
-    TResult Function(T data)? successSecurite,
-    TResult Function(String error)? errorSecurite,
-    TResult Function()? loadingPersoinInformation,
-    TResult Function(T data)? successPersoinInformation,
-    TResult Function(String error)? errorPersoinInformation,
-    TResult Function()? loadingGrade,
-    TResult Function(T data)? successGrade,
-    TResult Function(String error)? errorGrade,
-    TResult Function()? loadingDelete,
-    TResult Function(T data)? successDelete,
-    TResult Function(String error)? errorDelete,
-    TResult Function()? loadingNotificationNormal,
-    TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
-    TResult Function(String error)? errorNotificationNormal,
-    TResult Function()? loadingBook,
-    TResult Function(T data)? successBook,
-    TResult Function(String error)? errorBook,
-    required TResult orElse(),
-  }) {
-    if (successNotificationQuestion != null) {
-      return successNotificationQuestion(data);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial<T> value) initial,
-    required TResult Function(LoadingSecurite<T> value) loadingSecurite,
-    required TResult Function(SuccessSecurite<T> value) successSecurite,
-    required TResult Function(ErrorSecurite<T> value) errorSecurite,
-    required TResult Function(LoadingPersoinInformation<T> value)
-        loadingPersoinInformation,
-    required TResult Function(SuccessPersoinInformation<T> value)
-        successPersoinInformation,
-    required TResult Function(ErrorPersoinInformation<T> value)
-        errorPersoinInformation,
-    required TResult Function(LoadingGrade<T> value) loadingGrade,
-    required TResult Function(SuccessGrade<T> value) successGrade,
-    required TResult Function(ErrorGrade<T> value) errorGrade,
-    required TResult Function(LoadingDelete<T> value) loadingDelete,
-    required TResult Function(SuccessDelete<T> value) successDelete,
-    required TResult Function(ErrorDelete<T> value) errorDelete,
-    required TResult Function(LoadingNotificationNormal<T> value)
-        loadingNotificationNormal,
-    required TResult Function(SuccessNotificationNormal<T> value)
-        successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
-    required TResult Function(ErrorNotificationNormal<T> value)
-        errorNotificationNormal,
-    required TResult Function(LoadingBook<T> value) loadingBook,
-    required TResult Function(SuccessBook<T> value) successBook,
-    required TResult Function(ErrorBook<T> value) errorBook,
-  }) {
-    return successNotificationQuestion(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial<T> value)? initial,
-    TResult? Function(LoadingSecurite<T> value)? loadingSecurite,
-    TResult? Function(SuccessSecurite<T> value)? successSecurite,
-    TResult? Function(ErrorSecurite<T> value)? errorSecurite,
-    TResult? Function(LoadingPersoinInformation<T> value)?
-        loadingPersoinInformation,
-    TResult? Function(SuccessPersoinInformation<T> value)?
-        successPersoinInformation,
-    TResult? Function(ErrorPersoinInformation<T> value)?
-        errorPersoinInformation,
-    TResult? Function(LoadingGrade<T> value)? loadingGrade,
-    TResult? Function(SuccessGrade<T> value)? successGrade,
-    TResult? Function(ErrorGrade<T> value)? errorGrade,
-    TResult? Function(LoadingDelete<T> value)? loadingDelete,
-    TResult? Function(SuccessDelete<T> value)? successDelete,
-    TResult? Function(ErrorDelete<T> value)? errorDelete,
-    TResult? Function(LoadingNotificationNormal<T> value)?
-        loadingNotificationNormal,
-    TResult? Function(SuccessNotificationNormal<T> value)?
-        successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
-    TResult? Function(ErrorNotificationNormal<T> value)?
-        errorNotificationNormal,
-    TResult? Function(LoadingBook<T> value)? loadingBook,
-    TResult? Function(SuccessBook<T> value)? successBook,
-    TResult? Function(ErrorBook<T> value)? errorBook,
-  }) {
-    return successNotificationQuestion?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial<T> value)? initial,
-    TResult Function(LoadingSecurite<T> value)? loadingSecurite,
-    TResult Function(SuccessSecurite<T> value)? successSecurite,
-    TResult Function(ErrorSecurite<T> value)? errorSecurite,
-    TResult Function(LoadingPersoinInformation<T> value)?
-        loadingPersoinInformation,
-    TResult Function(SuccessPersoinInformation<T> value)?
-        successPersoinInformation,
-    TResult Function(ErrorPersoinInformation<T> value)? errorPersoinInformation,
-    TResult Function(LoadingGrade<T> value)? loadingGrade,
-    TResult Function(SuccessGrade<T> value)? successGrade,
-    TResult Function(ErrorGrade<T> value)? errorGrade,
-    TResult Function(LoadingDelete<T> value)? loadingDelete,
-    TResult Function(SuccessDelete<T> value)? successDelete,
-    TResult Function(ErrorDelete<T> value)? errorDelete,
-    TResult Function(LoadingNotificationNormal<T> value)?
-        loadingNotificationNormal,
-    TResult Function(SuccessNotificationNormal<T> value)?
-        successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
-    TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
-    TResult Function(LoadingBook<T> value)? loadingBook,
-    TResult Function(SuccessBook<T> value)? successBook,
-    TResult Function(ErrorBook<T> value)? errorBook,
-    required TResult orElse(),
-  }) {
-    if (successNotificationQuestion != null) {
-      return successNotificationQuestion(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class SuccessNotificationQuestion<T>
-    implements ProfileAndNotificationState<T> {
-  const factory SuccessNotificationQuestion(final T data) =
-      _$SuccessNotificationQuestionImpl<T>;
-
-  T get data;
-  @JsonKey(ignore: true)
-  _$$SuccessNotificationQuestionImplCopyWith<T,
-          _$SuccessNotificationQuestionImpl<T>>
       get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -4326,11 +4664,16 @@ class _$ErrorNotificationNormalImpl<T> implements ErrorNotificationNormal<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return errorNotificationNormal(error);
   }
@@ -4353,11 +4696,16 @@ class _$ErrorNotificationNormalImpl<T> implements ErrorNotificationNormal<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return errorNotificationNormal?.call(error);
   }
@@ -4380,11 +4728,16 @@ class _$ErrorNotificationNormalImpl<T> implements ErrorNotificationNormal<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (errorNotificationNormal != null) {
@@ -4416,13 +4769,22 @@ class _$ErrorNotificationNormalImpl<T> implements ErrorNotificationNormal<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return errorNotificationNormal(this);
   }
@@ -4450,13 +4812,20 @@ class _$ErrorNotificationNormalImpl<T> implements ErrorNotificationNormal<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return errorNotificationNormal?.call(this);
   }
@@ -4483,12 +4852,19 @@ class _$ErrorNotificationNormalImpl<T> implements ErrorNotificationNormal<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (errorNotificationNormal != null) {
@@ -4562,11 +4938,16 @@ class _$LoadingBookImpl<T> implements LoadingBook<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return loadingBook();
   }
@@ -4589,11 +4970,16 @@ class _$LoadingBookImpl<T> implements LoadingBook<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return loadingBook?.call();
   }
@@ -4616,11 +5002,16 @@ class _$LoadingBookImpl<T> implements LoadingBook<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (loadingBook != null) {
@@ -4652,13 +5043,22 @@ class _$LoadingBookImpl<T> implements LoadingBook<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return loadingBook(this);
   }
@@ -4686,13 +5086,20 @@ class _$LoadingBookImpl<T> implements LoadingBook<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return loadingBook?.call(this);
   }
@@ -4719,12 +5126,19 @@ class _$LoadingBookImpl<T> implements LoadingBook<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (loadingBook != null) {
@@ -4819,11 +5233,16 @@ class _$SuccessBookImpl<T> implements SuccessBook<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return successBook(data);
   }
@@ -4846,11 +5265,16 @@ class _$SuccessBookImpl<T> implements SuccessBook<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return successBook?.call(data);
   }
@@ -4873,11 +5297,16 @@ class _$SuccessBookImpl<T> implements SuccessBook<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (successBook != null) {
@@ -4909,13 +5338,22 @@ class _$SuccessBookImpl<T> implements SuccessBook<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return successBook(this);
   }
@@ -4943,13 +5381,20 @@ class _$SuccessBookImpl<T> implements SuccessBook<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return successBook?.call(this);
   }
@@ -4976,12 +5421,19 @@ class _$SuccessBookImpl<T> implements SuccessBook<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (successBook != null) {
@@ -5079,11 +5531,16 @@ class _$ErrorBookImpl<T> implements ErrorBook<T> {
     required TResult Function(String error) errorDelete,
     required TResult Function() loadingNotificationNormal,
     required TResult Function(T data) successNotificationNormal,
-    required TResult Function(T data) successNotificationQuestion,
     required TResult Function(String error) errorNotificationNormal,
     required TResult Function() loadingBook,
     required TResult Function(T data) successBook,
     required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
   }) {
     return errorBook(error);
   }
@@ -5106,11 +5563,16 @@ class _$ErrorBookImpl<T> implements ErrorBook<T> {
     TResult? Function(String error)? errorDelete,
     TResult? Function()? loadingNotificationNormal,
     TResult? Function(T data)? successNotificationNormal,
-    TResult? Function(T data)? successNotificationQuestion,
     TResult? Function(String error)? errorNotificationNormal,
     TResult? Function()? loadingBook,
     TResult? Function(T data)? successBook,
     TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
   }) {
     return errorBook?.call(error);
   }
@@ -5133,11 +5595,16 @@ class _$ErrorBookImpl<T> implements ErrorBook<T> {
     TResult Function(String error)? errorDelete,
     TResult Function()? loadingNotificationNormal,
     TResult Function(T data)? successNotificationNormal,
-    TResult Function(T data)? successNotificationQuestion,
     TResult Function(String error)? errorNotificationNormal,
     TResult Function()? loadingBook,
     TResult Function(T data)? successBook,
     TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (errorBook != null) {
@@ -5169,13 +5636,22 @@ class _$ErrorBookImpl<T> implements ErrorBook<T> {
         loadingNotificationNormal,
     required TResult Function(SuccessNotificationNormal<T> value)
         successNotificationNormal,
-    required TResult Function(SuccessNotificationQuestion<T> value)
-        successNotificationQuestion,
     required TResult Function(ErrorNotificationNormal<T> value)
         errorNotificationNormal,
     required TResult Function(LoadingBook<T> value) loadingBook,
     required TResult Function(SuccessBook<T> value) successBook,
     required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
   }) {
     return errorBook(this);
   }
@@ -5203,13 +5679,20 @@ class _$ErrorBookImpl<T> implements ErrorBook<T> {
         loadingNotificationNormal,
     TResult? Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult? Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult? Function(ErrorNotificationNormal<T> value)?
         errorNotificationNormal,
     TResult? Function(LoadingBook<T> value)? loadingBook,
     TResult? Function(SuccessBook<T> value)? successBook,
     TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
   }) {
     return errorBook?.call(this);
   }
@@ -5236,12 +5719,19 @@ class _$ErrorBookImpl<T> implements ErrorBook<T> {
         loadingNotificationNormal,
     TResult Function(SuccessNotificationNormal<T> value)?
         successNotificationNormal,
-    TResult Function(SuccessNotificationQuestion<T> value)?
-        successNotificationQuestion,
     TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
     TResult Function(LoadingBook<T> value)? loadingBook,
     TResult Function(SuccessBook<T> value)? successBook,
     TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
     required TResult orElse(),
   }) {
     if (errorBook != null) {
@@ -5258,4 +5748,1769 @@ abstract class ErrorBook<T> implements ProfileAndNotificationState<T> {
   @JsonKey(ignore: true)
   _$$ErrorBookImplCopyWith<T, _$ErrorBookImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$LoadingNotificationQuationImplCopyWith<T, $Res> {
+  factory _$$LoadingNotificationQuationImplCopyWith(
+          _$LoadingNotificationQuationImpl<T> value,
+          $Res Function(_$LoadingNotificationQuationImpl<T>) then) =
+      __$$LoadingNotificationQuationImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$LoadingNotificationQuationImplCopyWithImpl<T, $Res>
+    extends _$ProfileAndNotificationStateCopyWithImpl<T, $Res,
+        _$LoadingNotificationQuationImpl<T>>
+    implements _$$LoadingNotificationQuationImplCopyWith<T, $Res> {
+  __$$LoadingNotificationQuationImplCopyWithImpl(
+      _$LoadingNotificationQuationImpl<T> _value,
+      $Res Function(_$LoadingNotificationQuationImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$LoadingNotificationQuationImpl<T>
+    implements LoadingNotificationQuation<T> {
+  const _$LoadingNotificationQuationImpl();
+
+  @override
+  String toString() {
+    return 'ProfileAndNotificationState<$T>.loadingNotificationQuation()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$LoadingNotificationQuationImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingSecurite,
+    required TResult Function(T data) successSecurite,
+    required TResult Function(String error) errorSecurite,
+    required TResult Function() loadingPersoinInformation,
+    required TResult Function(T data) successPersoinInformation,
+    required TResult Function(String error) errorPersoinInformation,
+    required TResult Function() loadingGrade,
+    required TResult Function(T data) successGrade,
+    required TResult Function(String error) errorGrade,
+    required TResult Function() loadingDelete,
+    required TResult Function(T data) successDelete,
+    required TResult Function(String error) errorDelete,
+    required TResult Function() loadingNotificationNormal,
+    required TResult Function(T data) successNotificationNormal,
+    required TResult Function(String error) errorNotificationNormal,
+    required TResult Function() loadingBook,
+    required TResult Function(T data) successBook,
+    required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
+  }) {
+    return loadingNotificationQuation();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingSecurite,
+    TResult? Function(T data)? successSecurite,
+    TResult? Function(String error)? errorSecurite,
+    TResult? Function()? loadingPersoinInformation,
+    TResult? Function(T data)? successPersoinInformation,
+    TResult? Function(String error)? errorPersoinInformation,
+    TResult? Function()? loadingGrade,
+    TResult? Function(T data)? successGrade,
+    TResult? Function(String error)? errorGrade,
+    TResult? Function()? loadingDelete,
+    TResult? Function(T data)? successDelete,
+    TResult? Function(String error)? errorDelete,
+    TResult? Function()? loadingNotificationNormal,
+    TResult? Function(T data)? successNotificationNormal,
+    TResult? Function(String error)? errorNotificationNormal,
+    TResult? Function()? loadingBook,
+    TResult? Function(T data)? successBook,
+    TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
+  }) {
+    return loadingNotificationQuation?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingSecurite,
+    TResult Function(T data)? successSecurite,
+    TResult Function(String error)? errorSecurite,
+    TResult Function()? loadingPersoinInformation,
+    TResult Function(T data)? successPersoinInformation,
+    TResult Function(String error)? errorPersoinInformation,
+    TResult Function()? loadingGrade,
+    TResult Function(T data)? successGrade,
+    TResult Function(String error)? errorGrade,
+    TResult Function()? loadingDelete,
+    TResult Function(T data)? successDelete,
+    TResult Function(String error)? errorDelete,
+    TResult Function()? loadingNotificationNormal,
+    TResult Function(T data)? successNotificationNormal,
+    TResult Function(String error)? errorNotificationNormal,
+    TResult Function()? loadingBook,
+    TResult Function(T data)? successBook,
+    TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
+    required TResult orElse(),
+  }) {
+    if (loadingNotificationQuation != null) {
+      return loadingNotificationQuation();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(LoadingSecurite<T> value) loadingSecurite,
+    required TResult Function(SuccessSecurite<T> value) successSecurite,
+    required TResult Function(ErrorSecurite<T> value) errorSecurite,
+    required TResult Function(LoadingPersoinInformation<T> value)
+        loadingPersoinInformation,
+    required TResult Function(SuccessPersoinInformation<T> value)
+        successPersoinInformation,
+    required TResult Function(ErrorPersoinInformation<T> value)
+        errorPersoinInformation,
+    required TResult Function(LoadingGrade<T> value) loadingGrade,
+    required TResult Function(SuccessGrade<T> value) successGrade,
+    required TResult Function(ErrorGrade<T> value) errorGrade,
+    required TResult Function(LoadingDelete<T> value) loadingDelete,
+    required TResult Function(SuccessDelete<T> value) successDelete,
+    required TResult Function(ErrorDelete<T> value) errorDelete,
+    required TResult Function(LoadingNotificationNormal<T> value)
+        loadingNotificationNormal,
+    required TResult Function(SuccessNotificationNormal<T> value)
+        successNotificationNormal,
+    required TResult Function(ErrorNotificationNormal<T> value)
+        errorNotificationNormal,
+    required TResult Function(LoadingBook<T> value) loadingBook,
+    required TResult Function(SuccessBook<T> value) successBook,
+    required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
+  }) {
+    return loadingNotificationQuation(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(LoadingSecurite<T> value)? loadingSecurite,
+    TResult? Function(SuccessSecurite<T> value)? successSecurite,
+    TResult? Function(ErrorSecurite<T> value)? errorSecurite,
+    TResult? Function(LoadingPersoinInformation<T> value)?
+        loadingPersoinInformation,
+    TResult? Function(SuccessPersoinInformation<T> value)?
+        successPersoinInformation,
+    TResult? Function(ErrorPersoinInformation<T> value)?
+        errorPersoinInformation,
+    TResult? Function(LoadingGrade<T> value)? loadingGrade,
+    TResult? Function(SuccessGrade<T> value)? successGrade,
+    TResult? Function(ErrorGrade<T> value)? errorGrade,
+    TResult? Function(LoadingDelete<T> value)? loadingDelete,
+    TResult? Function(SuccessDelete<T> value)? successDelete,
+    TResult? Function(ErrorDelete<T> value)? errorDelete,
+    TResult? Function(LoadingNotificationNormal<T> value)?
+        loadingNotificationNormal,
+    TResult? Function(SuccessNotificationNormal<T> value)?
+        successNotificationNormal,
+    TResult? Function(ErrorNotificationNormal<T> value)?
+        errorNotificationNormal,
+    TResult? Function(LoadingBook<T> value)? loadingBook,
+    TResult? Function(SuccessBook<T> value)? successBook,
+    TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
+  }) {
+    return loadingNotificationQuation?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(LoadingSecurite<T> value)? loadingSecurite,
+    TResult Function(SuccessSecurite<T> value)? successSecurite,
+    TResult Function(ErrorSecurite<T> value)? errorSecurite,
+    TResult Function(LoadingPersoinInformation<T> value)?
+        loadingPersoinInformation,
+    TResult Function(SuccessPersoinInformation<T> value)?
+        successPersoinInformation,
+    TResult Function(ErrorPersoinInformation<T> value)? errorPersoinInformation,
+    TResult Function(LoadingGrade<T> value)? loadingGrade,
+    TResult Function(SuccessGrade<T> value)? successGrade,
+    TResult Function(ErrorGrade<T> value)? errorGrade,
+    TResult Function(LoadingDelete<T> value)? loadingDelete,
+    TResult Function(SuccessDelete<T> value)? successDelete,
+    TResult Function(ErrorDelete<T> value)? errorDelete,
+    TResult Function(LoadingNotificationNormal<T> value)?
+        loadingNotificationNormal,
+    TResult Function(SuccessNotificationNormal<T> value)?
+        successNotificationNormal,
+    TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
+    TResult Function(LoadingBook<T> value)? loadingBook,
+    TResult Function(SuccessBook<T> value)? successBook,
+    TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
+    required TResult orElse(),
+  }) {
+    if (loadingNotificationQuation != null) {
+      return loadingNotificationQuation(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LoadingNotificationQuation<T>
+    implements ProfileAndNotificationState<T> {
+  const factory LoadingNotificationQuation() =
+      _$LoadingNotificationQuationImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$SuccessNotificationQuationImplCopyWith<T, $Res> {
+  factory _$$SuccessNotificationQuationImplCopyWith(
+          _$SuccessNotificationQuationImpl<T> value,
+          $Res Function(_$SuccessNotificationQuationImpl<T>) then) =
+      __$$SuccessNotificationQuationImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({T data});
+}
+
+/// @nodoc
+class __$$SuccessNotificationQuationImplCopyWithImpl<T, $Res>
+    extends _$ProfileAndNotificationStateCopyWithImpl<T, $Res,
+        _$SuccessNotificationQuationImpl<T>>
+    implements _$$SuccessNotificationQuationImplCopyWith<T, $Res> {
+  __$$SuccessNotificationQuationImplCopyWithImpl(
+      _$SuccessNotificationQuationImpl<T> _value,
+      $Res Function(_$SuccessNotificationQuationImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$SuccessNotificationQuationImpl<T>(
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as T,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$SuccessNotificationQuationImpl<T>
+    implements SuccessNotificationQuation<T> {
+  const _$SuccessNotificationQuationImpl(this.data);
+
+  @override
+  final T data;
+
+  @override
+  String toString() {
+    return 'ProfileAndNotificationState<$T>.successNotificationQuation(data: $data)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SuccessNotificationQuationImpl<T> &&
+            const DeepCollectionEquality().equals(other.data, data));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SuccessNotificationQuationImplCopyWith<T,
+          _$SuccessNotificationQuationImpl<T>>
+      get copyWith => __$$SuccessNotificationQuationImplCopyWithImpl<T,
+          _$SuccessNotificationQuationImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingSecurite,
+    required TResult Function(T data) successSecurite,
+    required TResult Function(String error) errorSecurite,
+    required TResult Function() loadingPersoinInformation,
+    required TResult Function(T data) successPersoinInformation,
+    required TResult Function(String error) errorPersoinInformation,
+    required TResult Function() loadingGrade,
+    required TResult Function(T data) successGrade,
+    required TResult Function(String error) errorGrade,
+    required TResult Function() loadingDelete,
+    required TResult Function(T data) successDelete,
+    required TResult Function(String error) errorDelete,
+    required TResult Function() loadingNotificationNormal,
+    required TResult Function(T data) successNotificationNormal,
+    required TResult Function(String error) errorNotificationNormal,
+    required TResult Function() loadingBook,
+    required TResult Function(T data) successBook,
+    required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
+  }) {
+    return successNotificationQuation(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingSecurite,
+    TResult? Function(T data)? successSecurite,
+    TResult? Function(String error)? errorSecurite,
+    TResult? Function()? loadingPersoinInformation,
+    TResult? Function(T data)? successPersoinInformation,
+    TResult? Function(String error)? errorPersoinInformation,
+    TResult? Function()? loadingGrade,
+    TResult? Function(T data)? successGrade,
+    TResult? Function(String error)? errorGrade,
+    TResult? Function()? loadingDelete,
+    TResult? Function(T data)? successDelete,
+    TResult? Function(String error)? errorDelete,
+    TResult? Function()? loadingNotificationNormal,
+    TResult? Function(T data)? successNotificationNormal,
+    TResult? Function(String error)? errorNotificationNormal,
+    TResult? Function()? loadingBook,
+    TResult? Function(T data)? successBook,
+    TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
+  }) {
+    return successNotificationQuation?.call(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingSecurite,
+    TResult Function(T data)? successSecurite,
+    TResult Function(String error)? errorSecurite,
+    TResult Function()? loadingPersoinInformation,
+    TResult Function(T data)? successPersoinInformation,
+    TResult Function(String error)? errorPersoinInformation,
+    TResult Function()? loadingGrade,
+    TResult Function(T data)? successGrade,
+    TResult Function(String error)? errorGrade,
+    TResult Function()? loadingDelete,
+    TResult Function(T data)? successDelete,
+    TResult Function(String error)? errorDelete,
+    TResult Function()? loadingNotificationNormal,
+    TResult Function(T data)? successNotificationNormal,
+    TResult Function(String error)? errorNotificationNormal,
+    TResult Function()? loadingBook,
+    TResult Function(T data)? successBook,
+    TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
+    required TResult orElse(),
+  }) {
+    if (successNotificationQuation != null) {
+      return successNotificationQuation(data);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(LoadingSecurite<T> value) loadingSecurite,
+    required TResult Function(SuccessSecurite<T> value) successSecurite,
+    required TResult Function(ErrorSecurite<T> value) errorSecurite,
+    required TResult Function(LoadingPersoinInformation<T> value)
+        loadingPersoinInformation,
+    required TResult Function(SuccessPersoinInformation<T> value)
+        successPersoinInformation,
+    required TResult Function(ErrorPersoinInformation<T> value)
+        errorPersoinInformation,
+    required TResult Function(LoadingGrade<T> value) loadingGrade,
+    required TResult Function(SuccessGrade<T> value) successGrade,
+    required TResult Function(ErrorGrade<T> value) errorGrade,
+    required TResult Function(LoadingDelete<T> value) loadingDelete,
+    required TResult Function(SuccessDelete<T> value) successDelete,
+    required TResult Function(ErrorDelete<T> value) errorDelete,
+    required TResult Function(LoadingNotificationNormal<T> value)
+        loadingNotificationNormal,
+    required TResult Function(SuccessNotificationNormal<T> value)
+        successNotificationNormal,
+    required TResult Function(ErrorNotificationNormal<T> value)
+        errorNotificationNormal,
+    required TResult Function(LoadingBook<T> value) loadingBook,
+    required TResult Function(SuccessBook<T> value) successBook,
+    required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
+  }) {
+    return successNotificationQuation(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(LoadingSecurite<T> value)? loadingSecurite,
+    TResult? Function(SuccessSecurite<T> value)? successSecurite,
+    TResult? Function(ErrorSecurite<T> value)? errorSecurite,
+    TResult? Function(LoadingPersoinInformation<T> value)?
+        loadingPersoinInformation,
+    TResult? Function(SuccessPersoinInformation<T> value)?
+        successPersoinInformation,
+    TResult? Function(ErrorPersoinInformation<T> value)?
+        errorPersoinInformation,
+    TResult? Function(LoadingGrade<T> value)? loadingGrade,
+    TResult? Function(SuccessGrade<T> value)? successGrade,
+    TResult? Function(ErrorGrade<T> value)? errorGrade,
+    TResult? Function(LoadingDelete<T> value)? loadingDelete,
+    TResult? Function(SuccessDelete<T> value)? successDelete,
+    TResult? Function(ErrorDelete<T> value)? errorDelete,
+    TResult? Function(LoadingNotificationNormal<T> value)?
+        loadingNotificationNormal,
+    TResult? Function(SuccessNotificationNormal<T> value)?
+        successNotificationNormal,
+    TResult? Function(ErrorNotificationNormal<T> value)?
+        errorNotificationNormal,
+    TResult? Function(LoadingBook<T> value)? loadingBook,
+    TResult? Function(SuccessBook<T> value)? successBook,
+    TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
+  }) {
+    return successNotificationQuation?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(LoadingSecurite<T> value)? loadingSecurite,
+    TResult Function(SuccessSecurite<T> value)? successSecurite,
+    TResult Function(ErrorSecurite<T> value)? errorSecurite,
+    TResult Function(LoadingPersoinInformation<T> value)?
+        loadingPersoinInformation,
+    TResult Function(SuccessPersoinInformation<T> value)?
+        successPersoinInformation,
+    TResult Function(ErrorPersoinInformation<T> value)? errorPersoinInformation,
+    TResult Function(LoadingGrade<T> value)? loadingGrade,
+    TResult Function(SuccessGrade<T> value)? successGrade,
+    TResult Function(ErrorGrade<T> value)? errorGrade,
+    TResult Function(LoadingDelete<T> value)? loadingDelete,
+    TResult Function(SuccessDelete<T> value)? successDelete,
+    TResult Function(ErrorDelete<T> value)? errorDelete,
+    TResult Function(LoadingNotificationNormal<T> value)?
+        loadingNotificationNormal,
+    TResult Function(SuccessNotificationNormal<T> value)?
+        successNotificationNormal,
+    TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
+    TResult Function(LoadingBook<T> value)? loadingBook,
+    TResult Function(SuccessBook<T> value)? successBook,
+    TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
+    required TResult orElse(),
+  }) {
+    if (successNotificationQuation != null) {
+      return successNotificationQuation(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessNotificationQuation<T>
+    implements ProfileAndNotificationState<T> {
+  const factory SuccessNotificationQuation(final T data) =
+      _$SuccessNotificationQuationImpl<T>;
+
+  T get data;
+  @JsonKey(ignore: true)
+  _$$SuccessNotificationQuationImplCopyWith<T,
+          _$SuccessNotificationQuationImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$ErrorNotificationQuationImplCopyWith<T, $Res> {
+  factory _$$ErrorNotificationQuationImplCopyWith(
+          _$ErrorNotificationQuationImpl<T> value,
+          $Res Function(_$ErrorNotificationQuationImpl<T>) then) =
+      __$$ErrorNotificationQuationImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String error});
+}
+
+/// @nodoc
+class __$$ErrorNotificationQuationImplCopyWithImpl<T, $Res>
+    extends _$ProfileAndNotificationStateCopyWithImpl<T, $Res,
+        _$ErrorNotificationQuationImpl<T>>
+    implements _$$ErrorNotificationQuationImplCopyWith<T, $Res> {
+  __$$ErrorNotificationQuationImplCopyWithImpl(
+      _$ErrorNotificationQuationImpl<T> _value,
+      $Res Function(_$ErrorNotificationQuationImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+  }) {
+    return _then(_$ErrorNotificationQuationImpl<T>(
+      error: null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorNotificationQuationImpl<T> implements ErrorNotificationQuation<T> {
+  const _$ErrorNotificationQuationImpl({required this.error});
+
+  @override
+  final String error;
+
+  @override
+  String toString() {
+    return 'ProfileAndNotificationState<$T>.errorNotificationQuation(error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorNotificationQuationImpl<T> &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, error);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorNotificationQuationImplCopyWith<T, _$ErrorNotificationQuationImpl<T>>
+      get copyWith => __$$ErrorNotificationQuationImplCopyWithImpl<T,
+          _$ErrorNotificationQuationImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingSecurite,
+    required TResult Function(T data) successSecurite,
+    required TResult Function(String error) errorSecurite,
+    required TResult Function() loadingPersoinInformation,
+    required TResult Function(T data) successPersoinInformation,
+    required TResult Function(String error) errorPersoinInformation,
+    required TResult Function() loadingGrade,
+    required TResult Function(T data) successGrade,
+    required TResult Function(String error) errorGrade,
+    required TResult Function() loadingDelete,
+    required TResult Function(T data) successDelete,
+    required TResult Function(String error) errorDelete,
+    required TResult Function() loadingNotificationNormal,
+    required TResult Function(T data) successNotificationNormal,
+    required TResult Function(String error) errorNotificationNormal,
+    required TResult Function() loadingBook,
+    required TResult Function(T data) successBook,
+    required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
+  }) {
+    return errorNotificationQuation(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingSecurite,
+    TResult? Function(T data)? successSecurite,
+    TResult? Function(String error)? errorSecurite,
+    TResult? Function()? loadingPersoinInformation,
+    TResult? Function(T data)? successPersoinInformation,
+    TResult? Function(String error)? errorPersoinInformation,
+    TResult? Function()? loadingGrade,
+    TResult? Function(T data)? successGrade,
+    TResult? Function(String error)? errorGrade,
+    TResult? Function()? loadingDelete,
+    TResult? Function(T data)? successDelete,
+    TResult? Function(String error)? errorDelete,
+    TResult? Function()? loadingNotificationNormal,
+    TResult? Function(T data)? successNotificationNormal,
+    TResult? Function(String error)? errorNotificationNormal,
+    TResult? Function()? loadingBook,
+    TResult? Function(T data)? successBook,
+    TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
+  }) {
+    return errorNotificationQuation?.call(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingSecurite,
+    TResult Function(T data)? successSecurite,
+    TResult Function(String error)? errorSecurite,
+    TResult Function()? loadingPersoinInformation,
+    TResult Function(T data)? successPersoinInformation,
+    TResult Function(String error)? errorPersoinInformation,
+    TResult Function()? loadingGrade,
+    TResult Function(T data)? successGrade,
+    TResult Function(String error)? errorGrade,
+    TResult Function()? loadingDelete,
+    TResult Function(T data)? successDelete,
+    TResult Function(String error)? errorDelete,
+    TResult Function()? loadingNotificationNormal,
+    TResult Function(T data)? successNotificationNormal,
+    TResult Function(String error)? errorNotificationNormal,
+    TResult Function()? loadingBook,
+    TResult Function(T data)? successBook,
+    TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
+    required TResult orElse(),
+  }) {
+    if (errorNotificationQuation != null) {
+      return errorNotificationQuation(error);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(LoadingSecurite<T> value) loadingSecurite,
+    required TResult Function(SuccessSecurite<T> value) successSecurite,
+    required TResult Function(ErrorSecurite<T> value) errorSecurite,
+    required TResult Function(LoadingPersoinInformation<T> value)
+        loadingPersoinInformation,
+    required TResult Function(SuccessPersoinInformation<T> value)
+        successPersoinInformation,
+    required TResult Function(ErrorPersoinInformation<T> value)
+        errorPersoinInformation,
+    required TResult Function(LoadingGrade<T> value) loadingGrade,
+    required TResult Function(SuccessGrade<T> value) successGrade,
+    required TResult Function(ErrorGrade<T> value) errorGrade,
+    required TResult Function(LoadingDelete<T> value) loadingDelete,
+    required TResult Function(SuccessDelete<T> value) successDelete,
+    required TResult Function(ErrorDelete<T> value) errorDelete,
+    required TResult Function(LoadingNotificationNormal<T> value)
+        loadingNotificationNormal,
+    required TResult Function(SuccessNotificationNormal<T> value)
+        successNotificationNormal,
+    required TResult Function(ErrorNotificationNormal<T> value)
+        errorNotificationNormal,
+    required TResult Function(LoadingBook<T> value) loadingBook,
+    required TResult Function(SuccessBook<T> value) successBook,
+    required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
+  }) {
+    return errorNotificationQuation(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(LoadingSecurite<T> value)? loadingSecurite,
+    TResult? Function(SuccessSecurite<T> value)? successSecurite,
+    TResult? Function(ErrorSecurite<T> value)? errorSecurite,
+    TResult? Function(LoadingPersoinInformation<T> value)?
+        loadingPersoinInformation,
+    TResult? Function(SuccessPersoinInformation<T> value)?
+        successPersoinInformation,
+    TResult? Function(ErrorPersoinInformation<T> value)?
+        errorPersoinInformation,
+    TResult? Function(LoadingGrade<T> value)? loadingGrade,
+    TResult? Function(SuccessGrade<T> value)? successGrade,
+    TResult? Function(ErrorGrade<T> value)? errorGrade,
+    TResult? Function(LoadingDelete<T> value)? loadingDelete,
+    TResult? Function(SuccessDelete<T> value)? successDelete,
+    TResult? Function(ErrorDelete<T> value)? errorDelete,
+    TResult? Function(LoadingNotificationNormal<T> value)?
+        loadingNotificationNormal,
+    TResult? Function(SuccessNotificationNormal<T> value)?
+        successNotificationNormal,
+    TResult? Function(ErrorNotificationNormal<T> value)?
+        errorNotificationNormal,
+    TResult? Function(LoadingBook<T> value)? loadingBook,
+    TResult? Function(SuccessBook<T> value)? successBook,
+    TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
+  }) {
+    return errorNotificationQuation?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(LoadingSecurite<T> value)? loadingSecurite,
+    TResult Function(SuccessSecurite<T> value)? successSecurite,
+    TResult Function(ErrorSecurite<T> value)? errorSecurite,
+    TResult Function(LoadingPersoinInformation<T> value)?
+        loadingPersoinInformation,
+    TResult Function(SuccessPersoinInformation<T> value)?
+        successPersoinInformation,
+    TResult Function(ErrorPersoinInformation<T> value)? errorPersoinInformation,
+    TResult Function(LoadingGrade<T> value)? loadingGrade,
+    TResult Function(SuccessGrade<T> value)? successGrade,
+    TResult Function(ErrorGrade<T> value)? errorGrade,
+    TResult Function(LoadingDelete<T> value)? loadingDelete,
+    TResult Function(SuccessDelete<T> value)? successDelete,
+    TResult Function(ErrorDelete<T> value)? errorDelete,
+    TResult Function(LoadingNotificationNormal<T> value)?
+        loadingNotificationNormal,
+    TResult Function(SuccessNotificationNormal<T> value)?
+        successNotificationNormal,
+    TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
+    TResult Function(LoadingBook<T> value)? loadingBook,
+    TResult Function(SuccessBook<T> value)? successBook,
+    TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
+    required TResult orElse(),
+  }) {
+    if (errorNotificationQuation != null) {
+      return errorNotificationQuation(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorNotificationQuation<T>
+    implements ProfileAndNotificationState<T> {
+  const factory ErrorNotificationQuation({required final String error}) =
+      _$ErrorNotificationQuationImpl<T>;
+
+  String get error;
+  @JsonKey(ignore: true)
+  _$$ErrorNotificationQuationImplCopyWith<T, _$ErrorNotificationQuationImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$LoadingGetInformationImplCopyWith<T, $Res> {
+  factory _$$LoadingGetInformationImplCopyWith(
+          _$LoadingGetInformationImpl<T> value,
+          $Res Function(_$LoadingGetInformationImpl<T>) then) =
+      __$$LoadingGetInformationImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$LoadingGetInformationImplCopyWithImpl<T, $Res>
+    extends _$ProfileAndNotificationStateCopyWithImpl<T, $Res,
+        _$LoadingGetInformationImpl<T>>
+    implements _$$LoadingGetInformationImplCopyWith<T, $Res> {
+  __$$LoadingGetInformationImplCopyWithImpl(
+      _$LoadingGetInformationImpl<T> _value,
+      $Res Function(_$LoadingGetInformationImpl<T>) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$LoadingGetInformationImpl<T> implements LoadingGetInformation<T> {
+  const _$LoadingGetInformationImpl();
+
+  @override
+  String toString() {
+    return 'ProfileAndNotificationState<$T>.loadingGetInformation()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$LoadingGetInformationImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingSecurite,
+    required TResult Function(T data) successSecurite,
+    required TResult Function(String error) errorSecurite,
+    required TResult Function() loadingPersoinInformation,
+    required TResult Function(T data) successPersoinInformation,
+    required TResult Function(String error) errorPersoinInformation,
+    required TResult Function() loadingGrade,
+    required TResult Function(T data) successGrade,
+    required TResult Function(String error) errorGrade,
+    required TResult Function() loadingDelete,
+    required TResult Function(T data) successDelete,
+    required TResult Function(String error) errorDelete,
+    required TResult Function() loadingNotificationNormal,
+    required TResult Function(T data) successNotificationNormal,
+    required TResult Function(String error) errorNotificationNormal,
+    required TResult Function() loadingBook,
+    required TResult Function(T data) successBook,
+    required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
+  }) {
+    return loadingGetInformation();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingSecurite,
+    TResult? Function(T data)? successSecurite,
+    TResult? Function(String error)? errorSecurite,
+    TResult? Function()? loadingPersoinInformation,
+    TResult? Function(T data)? successPersoinInformation,
+    TResult? Function(String error)? errorPersoinInformation,
+    TResult? Function()? loadingGrade,
+    TResult? Function(T data)? successGrade,
+    TResult? Function(String error)? errorGrade,
+    TResult? Function()? loadingDelete,
+    TResult? Function(T data)? successDelete,
+    TResult? Function(String error)? errorDelete,
+    TResult? Function()? loadingNotificationNormal,
+    TResult? Function(T data)? successNotificationNormal,
+    TResult? Function(String error)? errorNotificationNormal,
+    TResult? Function()? loadingBook,
+    TResult? Function(T data)? successBook,
+    TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
+  }) {
+    return loadingGetInformation?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingSecurite,
+    TResult Function(T data)? successSecurite,
+    TResult Function(String error)? errorSecurite,
+    TResult Function()? loadingPersoinInformation,
+    TResult Function(T data)? successPersoinInformation,
+    TResult Function(String error)? errorPersoinInformation,
+    TResult Function()? loadingGrade,
+    TResult Function(T data)? successGrade,
+    TResult Function(String error)? errorGrade,
+    TResult Function()? loadingDelete,
+    TResult Function(T data)? successDelete,
+    TResult Function(String error)? errorDelete,
+    TResult Function()? loadingNotificationNormal,
+    TResult Function(T data)? successNotificationNormal,
+    TResult Function(String error)? errorNotificationNormal,
+    TResult Function()? loadingBook,
+    TResult Function(T data)? successBook,
+    TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
+    required TResult orElse(),
+  }) {
+    if (loadingGetInformation != null) {
+      return loadingGetInformation();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(LoadingSecurite<T> value) loadingSecurite,
+    required TResult Function(SuccessSecurite<T> value) successSecurite,
+    required TResult Function(ErrorSecurite<T> value) errorSecurite,
+    required TResult Function(LoadingPersoinInformation<T> value)
+        loadingPersoinInformation,
+    required TResult Function(SuccessPersoinInformation<T> value)
+        successPersoinInformation,
+    required TResult Function(ErrorPersoinInformation<T> value)
+        errorPersoinInformation,
+    required TResult Function(LoadingGrade<T> value) loadingGrade,
+    required TResult Function(SuccessGrade<T> value) successGrade,
+    required TResult Function(ErrorGrade<T> value) errorGrade,
+    required TResult Function(LoadingDelete<T> value) loadingDelete,
+    required TResult Function(SuccessDelete<T> value) successDelete,
+    required TResult Function(ErrorDelete<T> value) errorDelete,
+    required TResult Function(LoadingNotificationNormal<T> value)
+        loadingNotificationNormal,
+    required TResult Function(SuccessNotificationNormal<T> value)
+        successNotificationNormal,
+    required TResult Function(ErrorNotificationNormal<T> value)
+        errorNotificationNormal,
+    required TResult Function(LoadingBook<T> value) loadingBook,
+    required TResult Function(SuccessBook<T> value) successBook,
+    required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
+  }) {
+    return loadingGetInformation(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(LoadingSecurite<T> value)? loadingSecurite,
+    TResult? Function(SuccessSecurite<T> value)? successSecurite,
+    TResult? Function(ErrorSecurite<T> value)? errorSecurite,
+    TResult? Function(LoadingPersoinInformation<T> value)?
+        loadingPersoinInformation,
+    TResult? Function(SuccessPersoinInformation<T> value)?
+        successPersoinInformation,
+    TResult? Function(ErrorPersoinInformation<T> value)?
+        errorPersoinInformation,
+    TResult? Function(LoadingGrade<T> value)? loadingGrade,
+    TResult? Function(SuccessGrade<T> value)? successGrade,
+    TResult? Function(ErrorGrade<T> value)? errorGrade,
+    TResult? Function(LoadingDelete<T> value)? loadingDelete,
+    TResult? Function(SuccessDelete<T> value)? successDelete,
+    TResult? Function(ErrorDelete<T> value)? errorDelete,
+    TResult? Function(LoadingNotificationNormal<T> value)?
+        loadingNotificationNormal,
+    TResult? Function(SuccessNotificationNormal<T> value)?
+        successNotificationNormal,
+    TResult? Function(ErrorNotificationNormal<T> value)?
+        errorNotificationNormal,
+    TResult? Function(LoadingBook<T> value)? loadingBook,
+    TResult? Function(SuccessBook<T> value)? successBook,
+    TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
+  }) {
+    return loadingGetInformation?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(LoadingSecurite<T> value)? loadingSecurite,
+    TResult Function(SuccessSecurite<T> value)? successSecurite,
+    TResult Function(ErrorSecurite<T> value)? errorSecurite,
+    TResult Function(LoadingPersoinInformation<T> value)?
+        loadingPersoinInformation,
+    TResult Function(SuccessPersoinInformation<T> value)?
+        successPersoinInformation,
+    TResult Function(ErrorPersoinInformation<T> value)? errorPersoinInformation,
+    TResult Function(LoadingGrade<T> value)? loadingGrade,
+    TResult Function(SuccessGrade<T> value)? successGrade,
+    TResult Function(ErrorGrade<T> value)? errorGrade,
+    TResult Function(LoadingDelete<T> value)? loadingDelete,
+    TResult Function(SuccessDelete<T> value)? successDelete,
+    TResult Function(ErrorDelete<T> value)? errorDelete,
+    TResult Function(LoadingNotificationNormal<T> value)?
+        loadingNotificationNormal,
+    TResult Function(SuccessNotificationNormal<T> value)?
+        successNotificationNormal,
+    TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
+    TResult Function(LoadingBook<T> value)? loadingBook,
+    TResult Function(SuccessBook<T> value)? successBook,
+    TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
+    required TResult orElse(),
+  }) {
+    if (loadingGetInformation != null) {
+      return loadingGetInformation(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LoadingGetInformation<T>
+    implements ProfileAndNotificationState<T> {
+  const factory LoadingGetInformation() = _$LoadingGetInformationImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$SuccessGetInformationImplCopyWith<T, $Res> {
+  factory _$$SuccessGetInformationImplCopyWith(
+          _$SuccessGetInformationImpl<T> value,
+          $Res Function(_$SuccessGetInformationImpl<T>) then) =
+      __$$SuccessGetInformationImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({T data});
+}
+
+/// @nodoc
+class __$$SuccessGetInformationImplCopyWithImpl<T, $Res>
+    extends _$ProfileAndNotificationStateCopyWithImpl<T, $Res,
+        _$SuccessGetInformationImpl<T>>
+    implements _$$SuccessGetInformationImplCopyWith<T, $Res> {
+  __$$SuccessGetInformationImplCopyWithImpl(
+      _$SuccessGetInformationImpl<T> _value,
+      $Res Function(_$SuccessGetInformationImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$SuccessGetInformationImpl<T>(
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as T,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$SuccessGetInformationImpl<T> implements SuccessGetInformation<T> {
+  const _$SuccessGetInformationImpl(this.data);
+
+  @override
+  final T data;
+
+  @override
+  String toString() {
+    return 'ProfileAndNotificationState<$T>.successGetInformation(data: $data)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SuccessGetInformationImpl<T> &&
+            const DeepCollectionEquality().equals(other.data, data));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(data));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SuccessGetInformationImplCopyWith<T, _$SuccessGetInformationImpl<T>>
+      get copyWith => __$$SuccessGetInformationImplCopyWithImpl<T,
+          _$SuccessGetInformationImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingSecurite,
+    required TResult Function(T data) successSecurite,
+    required TResult Function(String error) errorSecurite,
+    required TResult Function() loadingPersoinInformation,
+    required TResult Function(T data) successPersoinInformation,
+    required TResult Function(String error) errorPersoinInformation,
+    required TResult Function() loadingGrade,
+    required TResult Function(T data) successGrade,
+    required TResult Function(String error) errorGrade,
+    required TResult Function() loadingDelete,
+    required TResult Function(T data) successDelete,
+    required TResult Function(String error) errorDelete,
+    required TResult Function() loadingNotificationNormal,
+    required TResult Function(T data) successNotificationNormal,
+    required TResult Function(String error) errorNotificationNormal,
+    required TResult Function() loadingBook,
+    required TResult Function(T data) successBook,
+    required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
+  }) {
+    return successGetInformation(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingSecurite,
+    TResult? Function(T data)? successSecurite,
+    TResult? Function(String error)? errorSecurite,
+    TResult? Function()? loadingPersoinInformation,
+    TResult? Function(T data)? successPersoinInformation,
+    TResult? Function(String error)? errorPersoinInformation,
+    TResult? Function()? loadingGrade,
+    TResult? Function(T data)? successGrade,
+    TResult? Function(String error)? errorGrade,
+    TResult? Function()? loadingDelete,
+    TResult? Function(T data)? successDelete,
+    TResult? Function(String error)? errorDelete,
+    TResult? Function()? loadingNotificationNormal,
+    TResult? Function(T data)? successNotificationNormal,
+    TResult? Function(String error)? errorNotificationNormal,
+    TResult? Function()? loadingBook,
+    TResult? Function(T data)? successBook,
+    TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
+  }) {
+    return successGetInformation?.call(data);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingSecurite,
+    TResult Function(T data)? successSecurite,
+    TResult Function(String error)? errorSecurite,
+    TResult Function()? loadingPersoinInformation,
+    TResult Function(T data)? successPersoinInformation,
+    TResult Function(String error)? errorPersoinInformation,
+    TResult Function()? loadingGrade,
+    TResult Function(T data)? successGrade,
+    TResult Function(String error)? errorGrade,
+    TResult Function()? loadingDelete,
+    TResult Function(T data)? successDelete,
+    TResult Function(String error)? errorDelete,
+    TResult Function()? loadingNotificationNormal,
+    TResult Function(T data)? successNotificationNormal,
+    TResult Function(String error)? errorNotificationNormal,
+    TResult Function()? loadingBook,
+    TResult Function(T data)? successBook,
+    TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
+    required TResult orElse(),
+  }) {
+    if (successGetInformation != null) {
+      return successGetInformation(data);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(LoadingSecurite<T> value) loadingSecurite,
+    required TResult Function(SuccessSecurite<T> value) successSecurite,
+    required TResult Function(ErrorSecurite<T> value) errorSecurite,
+    required TResult Function(LoadingPersoinInformation<T> value)
+        loadingPersoinInformation,
+    required TResult Function(SuccessPersoinInformation<T> value)
+        successPersoinInformation,
+    required TResult Function(ErrorPersoinInformation<T> value)
+        errorPersoinInformation,
+    required TResult Function(LoadingGrade<T> value) loadingGrade,
+    required TResult Function(SuccessGrade<T> value) successGrade,
+    required TResult Function(ErrorGrade<T> value) errorGrade,
+    required TResult Function(LoadingDelete<T> value) loadingDelete,
+    required TResult Function(SuccessDelete<T> value) successDelete,
+    required TResult Function(ErrorDelete<T> value) errorDelete,
+    required TResult Function(LoadingNotificationNormal<T> value)
+        loadingNotificationNormal,
+    required TResult Function(SuccessNotificationNormal<T> value)
+        successNotificationNormal,
+    required TResult Function(ErrorNotificationNormal<T> value)
+        errorNotificationNormal,
+    required TResult Function(LoadingBook<T> value) loadingBook,
+    required TResult Function(SuccessBook<T> value) successBook,
+    required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
+  }) {
+    return successGetInformation(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(LoadingSecurite<T> value)? loadingSecurite,
+    TResult? Function(SuccessSecurite<T> value)? successSecurite,
+    TResult? Function(ErrorSecurite<T> value)? errorSecurite,
+    TResult? Function(LoadingPersoinInformation<T> value)?
+        loadingPersoinInformation,
+    TResult? Function(SuccessPersoinInformation<T> value)?
+        successPersoinInformation,
+    TResult? Function(ErrorPersoinInformation<T> value)?
+        errorPersoinInformation,
+    TResult? Function(LoadingGrade<T> value)? loadingGrade,
+    TResult? Function(SuccessGrade<T> value)? successGrade,
+    TResult? Function(ErrorGrade<T> value)? errorGrade,
+    TResult? Function(LoadingDelete<T> value)? loadingDelete,
+    TResult? Function(SuccessDelete<T> value)? successDelete,
+    TResult? Function(ErrorDelete<T> value)? errorDelete,
+    TResult? Function(LoadingNotificationNormal<T> value)?
+        loadingNotificationNormal,
+    TResult? Function(SuccessNotificationNormal<T> value)?
+        successNotificationNormal,
+    TResult? Function(ErrorNotificationNormal<T> value)?
+        errorNotificationNormal,
+    TResult? Function(LoadingBook<T> value)? loadingBook,
+    TResult? Function(SuccessBook<T> value)? successBook,
+    TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
+  }) {
+    return successGetInformation?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(LoadingSecurite<T> value)? loadingSecurite,
+    TResult Function(SuccessSecurite<T> value)? successSecurite,
+    TResult Function(ErrorSecurite<T> value)? errorSecurite,
+    TResult Function(LoadingPersoinInformation<T> value)?
+        loadingPersoinInformation,
+    TResult Function(SuccessPersoinInformation<T> value)?
+        successPersoinInformation,
+    TResult Function(ErrorPersoinInformation<T> value)? errorPersoinInformation,
+    TResult Function(LoadingGrade<T> value)? loadingGrade,
+    TResult Function(SuccessGrade<T> value)? successGrade,
+    TResult Function(ErrorGrade<T> value)? errorGrade,
+    TResult Function(LoadingDelete<T> value)? loadingDelete,
+    TResult Function(SuccessDelete<T> value)? successDelete,
+    TResult Function(ErrorDelete<T> value)? errorDelete,
+    TResult Function(LoadingNotificationNormal<T> value)?
+        loadingNotificationNormal,
+    TResult Function(SuccessNotificationNormal<T> value)?
+        successNotificationNormal,
+    TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
+    TResult Function(LoadingBook<T> value)? loadingBook,
+    TResult Function(SuccessBook<T> value)? successBook,
+    TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
+    required TResult orElse(),
+  }) {
+    if (successGetInformation != null) {
+      return successGetInformation(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessGetInformation<T>
+    implements ProfileAndNotificationState<T> {
+  const factory SuccessGetInformation(final T data) =
+      _$SuccessGetInformationImpl<T>;
+
+  T get data;
+  @JsonKey(ignore: true)
+  _$$SuccessGetInformationImplCopyWith<T, _$SuccessGetInformationImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$ErrorGetInformationImplCopyWith<T, $Res> {
+  factory _$$ErrorGetInformationImplCopyWith(_$ErrorGetInformationImpl<T> value,
+          $Res Function(_$ErrorGetInformationImpl<T>) then) =
+      __$$ErrorGetInformationImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String error});
+}
+
+/// @nodoc
+class __$$ErrorGetInformationImplCopyWithImpl<T, $Res>
+    extends _$ProfileAndNotificationStateCopyWithImpl<T, $Res,
+        _$ErrorGetInformationImpl<T>>
+    implements _$$ErrorGetInformationImplCopyWith<T, $Res> {
+  __$$ErrorGetInformationImplCopyWithImpl(_$ErrorGetInformationImpl<T> _value,
+      $Res Function(_$ErrorGetInformationImpl<T>) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? error = null,
+  }) {
+    return _then(_$ErrorGetInformationImpl<T>(
+      error: null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorGetInformationImpl<T> implements ErrorGetInformation<T> {
+  const _$ErrorGetInformationImpl({required this.error});
+
+  @override
+  final String error;
+
+  @override
+  String toString() {
+    return 'ProfileAndNotificationState<$T>.errorGetInformation(error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorGetInformationImpl<T> &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, error);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorGetInformationImplCopyWith<T, _$ErrorGetInformationImpl<T>>
+      get copyWith => __$$ErrorGetInformationImplCopyWithImpl<T,
+          _$ErrorGetInformationImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingSecurite,
+    required TResult Function(T data) successSecurite,
+    required TResult Function(String error) errorSecurite,
+    required TResult Function() loadingPersoinInformation,
+    required TResult Function(T data) successPersoinInformation,
+    required TResult Function(String error) errorPersoinInformation,
+    required TResult Function() loadingGrade,
+    required TResult Function(T data) successGrade,
+    required TResult Function(String error) errorGrade,
+    required TResult Function() loadingDelete,
+    required TResult Function(T data) successDelete,
+    required TResult Function(String error) errorDelete,
+    required TResult Function() loadingNotificationNormal,
+    required TResult Function(T data) successNotificationNormal,
+    required TResult Function(String error) errorNotificationNormal,
+    required TResult Function() loadingBook,
+    required TResult Function(T data) successBook,
+    required TResult Function(String error) errorBook,
+    required TResult Function() loadingNotificationQuation,
+    required TResult Function(T data) successNotificationQuation,
+    required TResult Function(String error) errorNotificationQuation,
+    required TResult Function() loadingGetInformation,
+    required TResult Function(T data) successGetInformation,
+    required TResult Function(String error) errorGetInformation,
+  }) {
+    return errorGetInformation(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingSecurite,
+    TResult? Function(T data)? successSecurite,
+    TResult? Function(String error)? errorSecurite,
+    TResult? Function()? loadingPersoinInformation,
+    TResult? Function(T data)? successPersoinInformation,
+    TResult? Function(String error)? errorPersoinInformation,
+    TResult? Function()? loadingGrade,
+    TResult? Function(T data)? successGrade,
+    TResult? Function(String error)? errorGrade,
+    TResult? Function()? loadingDelete,
+    TResult? Function(T data)? successDelete,
+    TResult? Function(String error)? errorDelete,
+    TResult? Function()? loadingNotificationNormal,
+    TResult? Function(T data)? successNotificationNormal,
+    TResult? Function(String error)? errorNotificationNormal,
+    TResult? Function()? loadingBook,
+    TResult? Function(T data)? successBook,
+    TResult? Function(String error)? errorBook,
+    TResult? Function()? loadingNotificationQuation,
+    TResult? Function(T data)? successNotificationQuation,
+    TResult? Function(String error)? errorNotificationQuation,
+    TResult? Function()? loadingGetInformation,
+    TResult? Function(T data)? successGetInformation,
+    TResult? Function(String error)? errorGetInformation,
+  }) {
+    return errorGetInformation?.call(error);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingSecurite,
+    TResult Function(T data)? successSecurite,
+    TResult Function(String error)? errorSecurite,
+    TResult Function()? loadingPersoinInformation,
+    TResult Function(T data)? successPersoinInformation,
+    TResult Function(String error)? errorPersoinInformation,
+    TResult Function()? loadingGrade,
+    TResult Function(T data)? successGrade,
+    TResult Function(String error)? errorGrade,
+    TResult Function()? loadingDelete,
+    TResult Function(T data)? successDelete,
+    TResult Function(String error)? errorDelete,
+    TResult Function()? loadingNotificationNormal,
+    TResult Function(T data)? successNotificationNormal,
+    TResult Function(String error)? errorNotificationNormal,
+    TResult Function()? loadingBook,
+    TResult Function(T data)? successBook,
+    TResult Function(String error)? errorBook,
+    TResult Function()? loadingNotificationQuation,
+    TResult Function(T data)? successNotificationQuation,
+    TResult Function(String error)? errorNotificationQuation,
+    TResult Function()? loadingGetInformation,
+    TResult Function(T data)? successGetInformation,
+    TResult Function(String error)? errorGetInformation,
+    required TResult orElse(),
+  }) {
+    if (errorGetInformation != null) {
+      return errorGetInformation(error);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(LoadingSecurite<T> value) loadingSecurite,
+    required TResult Function(SuccessSecurite<T> value) successSecurite,
+    required TResult Function(ErrorSecurite<T> value) errorSecurite,
+    required TResult Function(LoadingPersoinInformation<T> value)
+        loadingPersoinInformation,
+    required TResult Function(SuccessPersoinInformation<T> value)
+        successPersoinInformation,
+    required TResult Function(ErrorPersoinInformation<T> value)
+        errorPersoinInformation,
+    required TResult Function(LoadingGrade<T> value) loadingGrade,
+    required TResult Function(SuccessGrade<T> value) successGrade,
+    required TResult Function(ErrorGrade<T> value) errorGrade,
+    required TResult Function(LoadingDelete<T> value) loadingDelete,
+    required TResult Function(SuccessDelete<T> value) successDelete,
+    required TResult Function(ErrorDelete<T> value) errorDelete,
+    required TResult Function(LoadingNotificationNormal<T> value)
+        loadingNotificationNormal,
+    required TResult Function(SuccessNotificationNormal<T> value)
+        successNotificationNormal,
+    required TResult Function(ErrorNotificationNormal<T> value)
+        errorNotificationNormal,
+    required TResult Function(LoadingBook<T> value) loadingBook,
+    required TResult Function(SuccessBook<T> value) successBook,
+    required TResult Function(ErrorBook<T> value) errorBook,
+    required TResult Function(LoadingNotificationQuation<T> value)
+        loadingNotificationQuation,
+    required TResult Function(SuccessNotificationQuation<T> value)
+        successNotificationQuation,
+    required TResult Function(ErrorNotificationQuation<T> value)
+        errorNotificationQuation,
+    required TResult Function(LoadingGetInformation<T> value)
+        loadingGetInformation,
+    required TResult Function(SuccessGetInformation<T> value)
+        successGetInformation,
+    required TResult Function(ErrorGetInformation<T> value) errorGetInformation,
+  }) {
+    return errorGetInformation(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(LoadingSecurite<T> value)? loadingSecurite,
+    TResult? Function(SuccessSecurite<T> value)? successSecurite,
+    TResult? Function(ErrorSecurite<T> value)? errorSecurite,
+    TResult? Function(LoadingPersoinInformation<T> value)?
+        loadingPersoinInformation,
+    TResult? Function(SuccessPersoinInformation<T> value)?
+        successPersoinInformation,
+    TResult? Function(ErrorPersoinInformation<T> value)?
+        errorPersoinInformation,
+    TResult? Function(LoadingGrade<T> value)? loadingGrade,
+    TResult? Function(SuccessGrade<T> value)? successGrade,
+    TResult? Function(ErrorGrade<T> value)? errorGrade,
+    TResult? Function(LoadingDelete<T> value)? loadingDelete,
+    TResult? Function(SuccessDelete<T> value)? successDelete,
+    TResult? Function(ErrorDelete<T> value)? errorDelete,
+    TResult? Function(LoadingNotificationNormal<T> value)?
+        loadingNotificationNormal,
+    TResult? Function(SuccessNotificationNormal<T> value)?
+        successNotificationNormal,
+    TResult? Function(ErrorNotificationNormal<T> value)?
+        errorNotificationNormal,
+    TResult? Function(LoadingBook<T> value)? loadingBook,
+    TResult? Function(SuccessBook<T> value)? successBook,
+    TResult? Function(ErrorBook<T> value)? errorBook,
+    TResult? Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult? Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult? Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult? Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult? Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult? Function(ErrorGetInformation<T> value)? errorGetInformation,
+  }) {
+    return errorGetInformation?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(LoadingSecurite<T> value)? loadingSecurite,
+    TResult Function(SuccessSecurite<T> value)? successSecurite,
+    TResult Function(ErrorSecurite<T> value)? errorSecurite,
+    TResult Function(LoadingPersoinInformation<T> value)?
+        loadingPersoinInformation,
+    TResult Function(SuccessPersoinInformation<T> value)?
+        successPersoinInformation,
+    TResult Function(ErrorPersoinInformation<T> value)? errorPersoinInformation,
+    TResult Function(LoadingGrade<T> value)? loadingGrade,
+    TResult Function(SuccessGrade<T> value)? successGrade,
+    TResult Function(ErrorGrade<T> value)? errorGrade,
+    TResult Function(LoadingDelete<T> value)? loadingDelete,
+    TResult Function(SuccessDelete<T> value)? successDelete,
+    TResult Function(ErrorDelete<T> value)? errorDelete,
+    TResult Function(LoadingNotificationNormal<T> value)?
+        loadingNotificationNormal,
+    TResult Function(SuccessNotificationNormal<T> value)?
+        successNotificationNormal,
+    TResult Function(ErrorNotificationNormal<T> value)? errorNotificationNormal,
+    TResult Function(LoadingBook<T> value)? loadingBook,
+    TResult Function(SuccessBook<T> value)? successBook,
+    TResult Function(ErrorBook<T> value)? errorBook,
+    TResult Function(LoadingNotificationQuation<T> value)?
+        loadingNotificationQuation,
+    TResult Function(SuccessNotificationQuation<T> value)?
+        successNotificationQuation,
+    TResult Function(ErrorNotificationQuation<T> value)?
+        errorNotificationQuation,
+    TResult Function(LoadingGetInformation<T> value)? loadingGetInformation,
+    TResult Function(SuccessGetInformation<T> value)? successGetInformation,
+    TResult Function(ErrorGetInformation<T> value)? errorGetInformation,
+    required TResult orElse(),
+  }) {
+    if (errorGetInformation != null) {
+      return errorGetInformation(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorGetInformation<T>
+    implements ProfileAndNotificationState<T> {
+  const factory ErrorGetInformation({required final String error}) =
+      _$ErrorGetInformationImpl<T>;
+
+  String get error;
+  @JsonKey(ignore: true)
+  _$$ErrorGetInformationImplCopyWith<T, _$ErrorGetInformationImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
 }

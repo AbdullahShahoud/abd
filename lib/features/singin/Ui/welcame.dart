@@ -146,8 +146,7 @@ class _WelcomeState extends State<Welcome> {
                   paddingV: 20.h,
                   paddingH: 100.w,
                   function: () {
-                    print(ApiConstant.BaseUrl);
-                    context.pushNamed(Routers.login);
+                    context.pushNamed(Routers.home_page_teacher);
                   },
                 )
               ],

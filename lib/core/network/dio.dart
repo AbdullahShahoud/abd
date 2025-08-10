@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 
 import '../helper/sherdPrefernce.dart';
 
@@ -13,23 +14,27 @@ class DioFactory {
     if (_dio == null) {
       _dio = Dio()
         ..options = BaseOptions(
-          connectTimeout: Duration(seconds: 30),
-          receiveTimeout: Duration(seconds: 30),
-          sendTimeout: const Duration(seconds: 10),
-        );
+            connectTimeout: Duration(seconds: 30),
+            receiveTimeout: Duration(seconds: 30),
+            sendTimeout: Duration(seconds: 20));
 
       await _addDioHeader();
       _addInterceptor();
+      if (!kIsWeb) {
+        _dio!.interceptors.add(LogInterceptor());
+      }
     }
+
     return _dio!;
   }
 
   static Future<void> _addDioHeader() async {
-    String? token = await SharedPrefHelper.getString('token');
+    // String? token = await SharedPrefHelper.getString('token');
     _dio?.options.headers = {
       'Content-Type': 'application/json',
       'Accept': '*/*',
-      if (token != null) 'Authorization': 'Bearer $token',
+      // if (await SharedPrefHelper.getString('token') != null)
+      'Authorization': 'Token ${await SharedPrefHelper.getString('token')}',
     };
   }
 
@@ -37,12 +42,16 @@ class DioFactory {
     _dio?.interceptors.add(
       InterceptorsWrapper(
         onRequest: (options, handler) {
+          // if (options.uri.path.endsWith('/register/') &&
+          //     options.uri.path.endsWith('/login/')) {
+          //   options.headers.remove('Authorization');
+          // }
           print("🔵 Request:");
           print("➡️ URL: ${options.uri}");
           print("➡️ Method: ${options.method}");
           print("➡️ Headers: ${options.headers}");
           print("➡️ Body: ${options.data}");
-          handler.next(options); // استمر في الطلب
+          handler.next(options);
         },
         onResponse: (response, handler) {
           print("🟢 Response:");

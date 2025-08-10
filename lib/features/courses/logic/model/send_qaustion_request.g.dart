@@ -8,14 +8,14 @@ part of 'send_qaustion_request.dart';
 
 SendQautionsRuqest _$SendQautionsRuqestFromJson(Map<String, dynamic> json) =>
     SendQautionsRuqest(
-      text: json['text'] as String?,
-      courseId: json['courseId'] as String?,
-      lessonId: json['lessonId'] as String?,
+      question_text: json['question_text'] as String?,
+      course: (json['course'] as num?)?.toInt(),
+      lesson: (json['lesson'] as num?)?.toInt(),
     );
 
 Map<String, dynamic> _$SendQautionsRuqestToJson(SendQautionsRuqest instance) =>
     <String, dynamic>{
-      'text': instance.text,
-      'courseId': instance.courseId,
-      'lessonId': instance.lessonId,
+      'question_text': instance.question_text,
+      'course': instance.course,
+      'lesson': instance.lesson,
     };

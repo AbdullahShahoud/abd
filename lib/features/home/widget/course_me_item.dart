@@ -12,7 +12,7 @@ Widget CourseMeItem(
         required String? name,
         required String? nameTeacher,
         required int s,
-        required String? id}) =>
+        required int? id}) =>
     Padding(
       padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 0),
       child: Stack(children: [

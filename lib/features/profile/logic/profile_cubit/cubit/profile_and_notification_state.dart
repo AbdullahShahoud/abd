@@ -33,8 +33,6 @@ class ProfileAndNotificationState<T> with _$ProfileAndNotificationState<T> {
        const factory ProfileAndNotificationState.loadingNotificationNormal() = LoadingNotificationNormal;
   const factory ProfileAndNotificationState.successNotificationNormal(T data) =
       SuccessNotificationNormal<T>;
-       const factory ProfileAndNotificationState.successNotificationQuestion(T data) =
-      SuccessNotificationQuestion<T>;
   const factory ProfileAndNotificationState.errorNotificationNormal(
       {required String error}) = ErrorNotificationNormal;
 
@@ -43,4 +41,16 @@ class ProfileAndNotificationState<T> with _$ProfileAndNotificationState<T> {
       SuccessBook<T>;
   const factory ProfileAndNotificationState.errorBook(
       {required String error}) = ErrorBook;
+
+ const factory ProfileAndNotificationState.loadingNotificationQuation() = LoadingNotificationQuation;
+  const factory ProfileAndNotificationState.successNotificationQuation(T data) =
+      SuccessNotificationQuation<T>;
+  const factory ProfileAndNotificationState.errorNotificationQuation(
+      {required String error}) = ErrorNotificationQuation;
+
+ const factory ProfileAndNotificationState.loadingGetInformation() = LoadingGetInformation;
+  const factory ProfileAndNotificationState.successGetInformation(T data) =
+      SuccessGetInformation<T>;
+  const factory ProfileAndNotificationState.errorGetInformation(
+      {required String error}) = ErrorGetInformation;
 }

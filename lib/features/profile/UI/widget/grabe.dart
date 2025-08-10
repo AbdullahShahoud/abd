@@ -60,13 +60,14 @@ class _GradeState extends State<Grade> {
                     builder: ((context) {
                       return BlocProvider(
                         create: (context) => ProfileAndNotificationCubit(
-                          getIt(),
-                          getIt(),
-                          getIt(),
-                          getIt(),
-                          getIt(),
-                          getIt(),
-                        ),
+                            getIt(),
+                            getIt(),
+                            getIt(),
+                            getIt(),
+                            getIt(),
+                            getIt(),
+                            getIt(),
+                            getIt()),
                         child: GradeBlocListener(),
                       );
                     }));

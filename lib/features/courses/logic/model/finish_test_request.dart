@@ -8,7 +8,8 @@ class FinishedTestRuqest {
   String? levelId;
   String? dagre;
 
-  FinishedTestRuqest({required this.courseId, required this.levelId,required this.dagre});
+  FinishedTestRuqest(
+      {required this.courseId, required this.levelId, required this.dagre});
 
   Map<String, dynamic> toJson() => _$FinishedTestRuqestToJson(this);
 }

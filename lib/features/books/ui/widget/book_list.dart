@@ -30,17 +30,17 @@ class BookList extends StatelessWidget {
                   books.length,
                   (index) => InkWell(
                     onTap: () async {
-                      final Uri _url = Uri.parse(books[index].url);
+                      final Uri _url = Uri.parse(books[index].link);
                       if (!await launchUrl(_url)) {
                         throw Exception('Could not launch $_url');
                       }
                     },
                     child: BookItem(
                       id: books[index].id,
-                      image: books[index].image,
-                      name: books[index].name,
-                      url: books[index].url,
-                      auth: books[index].authr,
+                      // image: books[index].image,
+                      name: books[index].title,
+                      url: books[index].link,
+                      auth: books[index].author,
                     ),
                   ),
                 )));

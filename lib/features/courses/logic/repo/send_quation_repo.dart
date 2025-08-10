@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:learn_programtion/features/courses/logic/model/send_qaustion_request.dart';
 import 'package:learn_programtion/features/courses/logic/model/send_qaustion_response.dart';
 
@@ -13,8 +14,10 @@ class SendQuationsRepo {
     try {
       final response = await _apiService.sendQautions(sendQautionsRuqest);
       return ApiResult.success(response);
+    } on DioError catch (error) {
+      return ApiResult.failure(ApiErrorHandler.fromDioError(error));
     } catch (error) {
-      return ApiResult.failure(ApiErrorHandler(error));
+      return ApiResult.failure(ApiErrorHandler.fromGenericError(error));
     }
   }
 }

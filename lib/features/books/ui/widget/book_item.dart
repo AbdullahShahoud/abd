@@ -7,7 +7,7 @@ Widget BookItem({
   required String auth,
   required String url,
   required int id,
-  required String image,
+  // required String image,
 }) {
   return Container(
     height: 250.h,
@@ -15,7 +15,7 @@ Widget BookItem({
     decoration: BoxDecoration(
       image: DecorationImage(
           image: AssetImage(
-            image,
+            'assets/image/images.png'
           ),
           fit: BoxFit.cover),
       borderRadius: BorderRadius.circular(25),

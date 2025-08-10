@@ -4,12 +4,12 @@ part 'send_qaustion_request.g.dart';
 
 @JsonSerializable()
 class SendQautionsRuqest {
-  String? text;
-  String? courseId;
-  String? lessonId;
+  String? question_text;
+  int? course;
+  int? lesson;
 
   SendQautionsRuqest(
-      {required this.text, required this.courseId, required this.lessonId});
+      {required this.question_text, required this.course, required this.lesson});
 
   Map<String, dynamic> toJson() => _$SendQautionsRuqestToJson(this);
 }

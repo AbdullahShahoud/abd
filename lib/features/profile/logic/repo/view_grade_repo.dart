@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:learn_programtion/core/network/api_error_handler.dart';
 import 'package:learn_programtion/core/network/api_result.dart';
 
@@ -11,8 +12,10 @@ class ViewGradeRepo {
     try {
       final response = await _apiService.getView();
       return ApiResult.success(response);
+    } on DioError catch (error) {
+      return ApiResult.failure(ApiErrorHandler.fromDioError(error));
     } catch (error) {
-      return ApiResult.failure(ApiErrorHandler(error));
+      return ApiResult.failure(ApiErrorHandler.fromGenericError(error));
     }
   }
 }

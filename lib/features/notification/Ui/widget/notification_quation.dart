@@ -6,7 +6,7 @@ import 'package:learn_programtion/core/theming/color.dart';
 
 import '../../../../core/helper/spacing.dart';
 import '../../../../core/theming/font_style.dart';
-import '../../logic/model/notification_response.dart';
+import '../../logic/model/notification_question_response.dart';
 
 class NotificationQuations extends StatelessWidget {
   NotificationQuations(this.questionAndResponse);
@@ -26,7 +26,7 @@ class NotificationQuations extends StatelessWidget {
                   child: Align(
                     alignment: Alignment.topLeft,
                     child: Text(
-                      questionAndResponse[index].date!,
+                      questionAndResponse[index].course_title!,
                       textDirection: TextDirection.rtl,
                       style: FontStyleAndText.fontmedia,
                     ),
@@ -39,7 +39,7 @@ class NotificationQuations extends StatelessWidget {
                 ),
                 verticalBox(8.h),
                 Text(
-                  questionAndResponse[index].question!,
+                  questionAndResponse[index].question_text!,
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                   style: FontStyleAndText.fontmedia,
@@ -62,7 +62,9 @@ class NotificationQuations extends StatelessWidget {
                           ),
                           Text(
                             textDirection: TextDirection.rtl,
-                            questionAndResponse[index].response!,
+                            questionAndResponse[index].answer_text == null
+                                ? ''
+                                : questionAndResponse[index].answer_text!,
                             maxLines: 4,
                             textAlign: TextAlign.center,
                           ),

@@ -1,6 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:learn_programtion/features/notification/logic/model/notification_question_response.dart';
+import 'package:learn_programtion/features/notification/logic/repo/notification_repo_quation.dart';
 import 'package:learn_programtion/features/profile/logic/profile_cubit/cubit/profile_and_notification_state.dart';
 import '../../../../books/logic/model/book_response.dart';
 import '../../../../books/logic/repo/book_repo.dart';
@@ -8,31 +10,39 @@ import '../../../../notification/logic/model/notification_response.dart';
 import '../../../../notification/logic/repo/notification_repo.dart';
 import '../../model/changEmail/chang_email_request.dart';
 import '../../model/changePassord/chang_password_request.dart';
-import '../../model/delet_user_ruqest.dart';
 import '../../repo/change_email_repo.dart';
 import '../../repo/change_password_repo.dart';
 import '../../repo/delet_repo.dart';
+import '../../repo/information_repo.dart';
 import '../../repo/view_grade_repo.dart';
 
 class ProfileAndNotificationCubit extends Cubit<ProfileAndNotificationState> {
-  ProfileAndNotificationCubit(this.profileRepoPassword, this.changeEmailRepo,
-      this.deletRepo, this.viewGradeRepo, this.bookRepo, this.notificationRepo)
+  ProfileAndNotificationCubit(
+      this.profileRepoPassword,
+      this.changeEmailRepo,
+      this.notificationRepoQuation,
+      this.deletRepo,
+      this.viewGradeRepo,
+      this.bookRepo,
+      this.userIformationRepo,
+      this.notificationRepo)
       : super(ProfileAndNotificationState.initial());
   static ProfileAndNotificationCubit get(context) => BlocProvider.of(context);
   BookRepo bookRepo;
   NotificationRepo notificationRepo;
+  NotificationRepoQuation notificationRepoQuation;
   DeletRepo deletRepo;
   List<Book> book = [];
-  List<NotificationItem> notification = [];
+  List<NotificationAlertItem> notification = [];
   List<QuestionAndResponse> questionAndResponse = [];
   void emitBook() async {
     emit(ProfileAndNotificationState.loadingBook());
     final response = await bookRepo.getBook();
     response.when(
       success: (bookResponse) {
-        book = bookResponse.bookResponse;
-        emit(
-            ProfileAndNotificationState.successBook(bookResponse.bookResponse));
+        book.addAll(bookResponse);
+        print(book.length);
+        emit(ProfileAndNotificationState.successBook(book));
       },
       failure: (errorHandler) {
         emit(ProfileAndNotificationState.errorBook(error: 'nobook'));
@@ -40,20 +50,33 @@ class ProfileAndNotificationCubit extends Cubit<ProfileAndNotificationState> {
     );
   }
 
-  void emitNotification() async {
+  void emitNotificationAlert() async {
     emit(ProfileAndNotificationState.loadingNotificationNormal());
     final response = await notificationRepo.getNotification();
     response.whenOrNull(
       success: (notificationRepo) {
-        notification = notificationRepo.notificatio;
-        questionAndResponse = notificationRepo.question;
+        notification = notificationRepo;
         emit(ProfileAndNotificationState.successNotificationNormal(
             notification));
-        emit(ProfileAndNotificationState.successNotificationQuestion(
-            questionAndResponse));
       },
       failure: (errorHandler) {
         emit(ProfileAndNotificationState.errorNotificationNormal(
+            error: 'noNotification'));
+      },
+    );
+  }
+
+  void emitNotificationQuation() async {
+    emit(ProfileAndNotificationState.loadingNotificationQuation());
+    final response = await notificationRepoQuation.getNotification();
+    response.whenOrNull(
+      success: (Repo) {
+        questionAndResponse = Repo;
+        emit(ProfileAndNotificationState.successNotificationQuation(
+            questionAndResponse));
+      },
+      failure: (errorHandler) {
+        emit(ProfileAndNotificationState.errorNotificationQuation(
             error: 'noNotification'));
       },
     );
@@ -69,8 +92,8 @@ class ProfileAndNotificationCubit extends Cubit<ProfileAndNotificationState> {
     emit(ProfileAndNotificationState.loadingSecurite());
     final response = await profileRepoPassword.changePasseord(
         ChangePasswordRequest(
-            passwordOld: controllerPassword?.text,
-            passwordNew: controllerPassword2?.text));
+            old_password: controllerPassword?.text,
+            new_password: controllerPassword2?.text));
     response.when(success: (data) {
       emit(ProfileAndNotificationState.successSecurite(data));
     }, failure: (error) {
@@ -85,7 +108,7 @@ class ProfileAndNotificationCubit extends Cubit<ProfileAndNotificationState> {
   void emiteChangeEmail() async {
     emit(ProfileAndNotificationState.loadingPersoinInformation());
     final response = await changeEmailRepo.changePasseord(ChangeEmailRequest(
-        email: controllerEmail?.text, name: controllerName?.text));
+        email: controllerEmail?.text, username: controllerName?.text));
     response.when(success: (data) {
       emit(ProfileAndNotificationState.successPersoinInformation(data));
     }, failure: (error) {
@@ -106,11 +129,26 @@ class ProfileAndNotificationCubit extends Cubit<ProfileAndNotificationState> {
     });
   }
 
+  UserIformationRepo userIformationRepo;
+  String? user_name;
+  String? email;
+  void emiteGetInformation() async {
+    emit(ProfileAndNotificationState.loadingGetInformation());
+    final response = await userIformationRepo.getInformation();
+    response.when(success: (data) {
+      emit(ProfileAndNotificationState.successGetInformation(data));
+      user_name = data.username;
+      email = data.email;
+    }, failure: (error) {
+      emit(ProfileAndNotificationState.errorGetInformation(error: "Noooooot"));
+    });
+  }
+
   void emiteDeletUser() async {
     emit(ProfileAndNotificationState.loadingDelete());
-    final response = await deletRepo.delUser(DeletUserRuqest('1'));
+    final response = await deletRepo.delUser();
     response.when(success: (data) {
-      emit(ProfileAndNotificationState.successDelete(data.message));
+      emit(ProfileAndNotificationState.successDelete(''));
     }, failure: (error) {
       emit(ProfileAndNotificationState.errorDelete(error: "Noooooot"));
     });

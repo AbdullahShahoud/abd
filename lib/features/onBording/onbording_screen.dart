@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_programtion/core/helper/extention.dart';
-import 'package:learn_programtion/core/theming/color.dart';
 import 'package:learn_programtion/core/theming/font_style.dart';
 import 'package:learn_programtion/features/onBording/onbording_Item.dart';
 import 'package:learn_programtion/features/widget/button.dart';

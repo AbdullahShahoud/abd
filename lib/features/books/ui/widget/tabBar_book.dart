@@ -1,7 +1,6 @@
 // ignore_for_file: unnecessary_null_comparison
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:learn_programtion/features/profile/logic/profile_cubit/cubit/profile_and_notification_cubit.dart';
@@ -42,12 +41,11 @@ class _TabBarhomeState extends State<TabBarBook> {
                       ),
                     ),
                     InkWell(
-                      onTap: (){
+                      onTap: () {
                         showSearch(
                             context: context,
                             delegate: SearchBookName(
-                                books:
-                                ProfileAndNotificationCubit.get(context)
+                                books: ProfileAndNotificationCubit.get(context)
                                     .book,
                                 history: ['mm', 'tt', 'yy']));
                       },
@@ -59,7 +57,7 @@ class _TabBarhomeState extends State<TabBarBook> {
                           keyboardType: TextInputType.name,
                           validator: (value) {
                             if (value!.isEmpty || value == null) {
-                              return 'الرجاء ادخال البريد الالكتروني';
+                              return 'المدخل خاطئ';
                             }
                             return null;
                           },

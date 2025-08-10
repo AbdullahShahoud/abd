@@ -26,7 +26,7 @@ class GradeBlocListener extends StatelessWidget {
           }, errorGrade: (error) {
             return AlertDialog(
               content: Text(
-                '${error}',
+                error,
                 textDirection: TextDirection.rtl,
                 style: FontStyleAndText.font_big,
               ),
@@ -88,7 +88,7 @@ void errorGrade(BuildContext context, String error) {
       context: context,
       builder: (context) => AlertDialog(
             content: Text(
-              '${error}',
+              error,
               textDirection: TextDirection.rtl,
               style: FontStyleAndText.font_big,
             ),

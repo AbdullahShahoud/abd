@@ -7,32 +7,29 @@ import 'package:learn_programtion/features/notification/Ui/widget/notification_q
 import 'package:learn_programtion/features/profile/logic/profile_cubit/cubit/profile_and_notification_cubit.dart';
 import 'package:learn_programtion/features/profile/logic/profile_cubit/cubit/profile_and_notification_state.dart';
 
-import '../../logic/model/notification_response.dart';
+import '../../logic/model/notification_question_response.dart';
 
 class NotificationQuestionListener extends StatelessWidget {
   const NotificationQuestionListener({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocListener<ProfileAndNotificationCubit,
+    return BlocBuilder<ProfileAndNotificationCubit,
             ProfileAndNotificationState>(
-        child: const SizedBox.shrink(),
-        listenWhen: (previous, current) =>
-            current is LoadingNotificationNormal ||
-            current is SuccessNotificationQuestion ||
-            current is ErrorNotificationNormal,
-        listener: (context, state) {
-          state.maybeWhen(
-              successNotificationQuestion: (data) {
-                successQuestion(data);
-              },
-              errorNotificationNormal: (error) {
-                errorQuestion();
-              },
-              loadingNotificationNormal: () {
-                loadingQuestion();
-              },
-              orElse: () {});
+        buildWhen: (previous, current) =>
+            current is LoadingNotificationQuation ||
+            current is SuccessNotificationQuation ||
+            current is ErrorNotificationQuation,
+        builder: (context, state) {
+          return state.maybeWhen(successNotificationQuation: (data) {
+            return successQuestion(data);
+          }, errorNotificationQuation: (error) {
+            return errorQuestion();
+          }, loadingNotificationQuation: () {
+            return loadingQuestion();
+          }, orElse: () {
+            return SizedBox.shrink();
+          });
         });
   }
 }

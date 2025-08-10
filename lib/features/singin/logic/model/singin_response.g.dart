@@ -8,28 +8,28 @@ part of 'singin_response.dart';
 
 SinginResponse _$SinginResponseFromJson(Map<String, dynamic> json) =>
     SinginResponse(
-      token: json['token'] as String?,
+      account_type: json['account_type'] as String?,
       user: json['user'] == null
           ? null
           : User.fromJson(json['user'] as Map<String, dynamic>),
-      account_type: json['account_type'] as String?,
+      token: json['token'] as String?,
     );
 
 Map<String, dynamic> _$SinginResponseToJson(SinginResponse instance) =>
     <String, dynamic>{
-      'token': instance.token,
       'user': instance.user,
       'account_type': instance.account_type,
+      'token': instance.token,
     };
 
 User _$UserFromJson(Map<String, dynamic> json) => User(
+      id: (json['id'] as num?)?.toInt(),
       email: json['email'] as String?,
       username: json['username'] as String?,
-      id: json['id'] as String?,
     );
 
 Map<String, dynamic> _$UserToJson(User instance) => <String, dynamic>{
+      'id': instance.id,
       'email': instance.email,
       'username': instance.username,
-      'id': instance.id,
     };

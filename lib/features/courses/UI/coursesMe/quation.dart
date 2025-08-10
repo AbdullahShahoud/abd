@@ -53,8 +53,8 @@ class QuationLevel extends StatelessWidget {
                       paddingV: 16.h,
                       paddingH: 140.w,
                       function: () {
-                        CourseesCubit.get(context).accountDagre();
-                        CourseesCubit.get(context).emitFinishTest();
+                        // CourseesCubit.get(context).accountDagre();
+                        // CourseesCubit.get(context).emitFinishTest();
                         // if (CourseesCubit.get(context).accountDagre() >
                         //     (CourseesCubit.get(context).accountDagre() / 2)) {
                         //   CourseesCubit.get(context).emitFinishTest();
@@ -72,7 +72,7 @@ class QuationLevel extends StatelessWidget {
                                         children: [
                                           Text(
                                             '''لقد حصلت عل
-                                                ${CourseesCubit.get(context).accountDagre()}//${CourseesCubit.get(context).responseUser.length} ''',
+                                           00000''',
                                             textDirection: TextDirection.rtl,
                                             style: FontStyleAndText.fontmedia,
                                           ),
@@ -125,7 +125,6 @@ class QuationLevel extends StatelessWidget {
                                                                 ),
                                                               ),
                                                             ));
-
                                               })
                                         ],
                                       )),

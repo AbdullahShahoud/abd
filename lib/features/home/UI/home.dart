@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_programtion/core/helper/spacing.dart';
-import '../widget/category.dart';
-import '../widget/check_courses_blocListener.dart';
-import '../widget/courses_bloc_listener.dart';
+import '../../../core/DI/dependency_injection.dart';
+import '../../courses/logic/cubit/cubit/coursees_cubit.dart';
+import '../widget/courses/check_courses_blocListener.dart';
+import '../widget/courses/courses_bloc_listener.dart';
 import '../widget/courses_me_bloc_listener.dart';
 import '../widget/tapbar_home.dart';
 
@@ -17,26 +19,37 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-    // context.read<CourseesCubit>().emitCourses();
-    // context.read<CourseesCubit>().emitCoursesMe();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              TabBarhome(),
-              CoursesMeBlocListener(),
-              verticalBox(7.h),
-              CheekCoursesBlocListener(),
-              verticalBox(7.h),
-              CoursesBlocListenerCubit(),
-            ],
+      body: BlocProvider(
+        create: (context) => CourseesCubit(
+          getIt(),
+          getIt(),
+          getIt(),
+          getIt(),
+          getIt(),
+          getIt(),
+          getIt(),
+          getIt(),
+        )
+          ..emitCoursesList()
+          ..emitCoursesMe(),
+        child: SafeArea(
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                TabBarhome(),
+                CoursesMeBlocListener(),
+                verticalBox(7.h),
+                CheekCoursesBlocListener(),
+                verticalBox(7.h),
+                CoursesBlocListenerCubit(),
+              ],
+            ),
           ),
         ),
       ),

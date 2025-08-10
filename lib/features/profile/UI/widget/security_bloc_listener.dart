@@ -52,7 +52,7 @@ void sucessSecurity(BuildContext context, String message) {
       context: context,
       builder: (context) => AlertDialog(
             content: Text(
-              '$message',
+              message,
               style: FontStyleAndText.font_big,
             ),
             actions: [

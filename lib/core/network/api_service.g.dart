@@ -92,20 +92,21 @@ class _ApiService implements ApiService {
   }
 
   @override
-  Future<OtpResponse> veifyEmail(OtpRuqest otpRuqest) async {
+  Future<OtpResponseLogin> veifyEmailLogin(
+      OtpRuqestLogin otpRuqestLogin) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     final _data = <String, dynamic>{};
-    _data.addAll(otpRuqest.toJson());
-    final _options = _setStreamType<OtpResponse>(Options(
+    _data.addAll(otpRuqestLogin.toJson());
+    final _options = _setStreamType<OtpResponseLogin>(Options(
       method: 'POST',
       headers: _headers,
       extra: _extra,
     )
         .compose(
           _dio.options,
-          'verfify_email/',
+          'verify-email/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -115,9 +116,9 @@ class _ApiService implements ApiService {
           baseUrl,
         )));
     final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late OtpResponse _value;
+    late OtpResponseLogin _value;
     try {
-      _value = OtpResponse.fromJson(_result.data!);
+      _value = OtpResponseLogin.fromJson(_result.data!);
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options);
       rethrow;
@@ -126,12 +127,12 @@ class _ApiService implements ApiService {
   }
 
   @override
-  Future<BookResponse> getBook() async {
+  Future<List<Book>> getBook() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _options = _setStreamType<BookResponse>(Options(
+    final _options = _setStreamType<List<Book>>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
@@ -147,10 +148,12 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         )));
-    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late BookResponse _value;
+    final _result = await _dio.fetch<List<dynamic>>(_options);
+    late List<Book> _value;
     try {
-      _value = BookResponse.fromJson(_result.data!);
+      _value = _result.data!
+          .map((dynamic i) => Book.fromJson(i as Map<String, dynamic>))
+          .toList();
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options);
       rethrow;
@@ -159,12 +162,12 @@ class _ApiService implements ApiService {
   }
 
   @override
-  Future<NotificationResponse> getNotification() async {
+  Future<List<NotificationAlertItem>> getNotificationAlert() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _options = _setStreamType<NotificationResponse>(Options(
+    final _options = _setStreamType<List<NotificationAlertItem>>(Options(
       method: 'GET',
       headers: _headers,
       extra: _extra,
@@ -180,10 +183,49 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         )));
-    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late NotificationResponse _value;
+    final _result = await _dio.fetch<List<dynamic>>(_options);
+    late List<NotificationAlertItem> _value;
     try {
-      _value = NotificationResponse.fromJson(_result.data!);
+      _value = _result.data!
+          .map((dynamic i) =>
+              NotificationAlertItem.fromJson(i as Map<String, dynamic>))
+          .toList();
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<List<QuestionAndResponse>> getNotificationQuation() async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    const Map<String, dynamic>? _data = null;
+    final _options = _setStreamType<List<QuestionAndResponse>>(Options(
+      method: 'GET',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'lesson-question/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<List<dynamic>>(_options);
+    late List<QuestionAndResponse> _value;
+    try {
+      _value = _result.data!
+          .map((dynamic i) =>
+              QuestionAndResponse.fromJson(i as Map<String, dynamic>))
+          .toList();
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options);
       rethrow;
@@ -200,7 +242,7 @@ class _ApiService implements ApiService {
     final _data = <String, dynamic>{};
     _data.addAll(changeEmailRequest.toJson());
     final _options = _setStreamType<ChangeEmailResponse>(Options(
-      method: 'POST',
+      method: 'PATCH',
       headers: _headers,
       extra: _extra,
     )
@@ -235,7 +277,7 @@ class _ApiService implements ApiService {
     final _data = <String, dynamic>{};
     _data.addAll(changePasswordRequest.toJson());
     final _options = _setStreamType<ChangePasswordResponse>(Options(
-      method: 'POST',
+      method: 'PUT',
       headers: _headers,
       extra: _extra,
     )
@@ -262,6 +304,39 @@ class _ApiService implements ApiService {
   }
 
   @override
+  Future<UserInformation> getInformation() async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    const Map<String, dynamic>? _data = null;
+    final _options = _setStreamType<UserInformation>(Options(
+      method: 'GET',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'user-detail/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late UserInformation _value;
+    try {
+      _value = UserInformation.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
   Future<GradeRespons> getView() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
@@ -274,7 +349,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'profile/change_view_grade',
+          'courses/certificate/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -307,7 +382,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'courses/',
+          'course/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -343,7 +418,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'coursesMe',
+          'enrollments/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -380,7 +455,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'CheckCourse',
+          'enrollments/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -415,7 +490,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'FinishCourse',
+          'courses/check-course-completion/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -520,7 +595,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'lessons/',
+          'lessons/mark-attendance/',
           queryParameters: queryParameters,
           data: _data,
         )
@@ -576,14 +651,13 @@ class _ApiService implements ApiService {
   }
 
   @override
-  Future<UserDeletResponse> deletUser(DeletUserRuqest deletUserRuqest) async {
+  Future<void> deletUser() async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
-    final _data = <String, dynamic>{};
-    _data.addAll(deletUserRuqest.toJson());
-    final _options = _setStreamType<UserDeletResponse>(Options(
-      method: 'DELETE',
+    const Map<String, dynamic>? _data = null;
+    final _options = _setStreamType<void>(Options(
+      method: 'POST',
       headers: _headers,
       extra: _extra,
     )
@@ -598,10 +672,513 @@ class _ApiService implements ApiService {
           _dio.options.baseUrl,
           baseUrl,
         )));
+    await _dio.fetch<void>(_options);
+  }
+
+  @override
+  Future<ForgetPasswordResponse> passwordReset(
+      FoargetPasswordRuqest foargetPasswordRuqest) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    _data.addAll(foargetPasswordRuqest.toJson());
+    final _options = _setStreamType<ForgetPasswordResponse>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'password_reset/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
     final _result = await _dio.fetch<Map<String, dynamic>>(_options);
-    late UserDeletResponse _value;
+    late ForgetPasswordResponse _value;
     try {
-      _value = UserDeletResponse.fromJson(_result.data!);
+      _value = ForgetPasswordResponse.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<ForgetPasswordResponse> passwordResetConfirm(
+      ForgatePasswordConfirmRquest forgatePasswordConfirmRquest) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    _data.addAll(forgatePasswordConfirmRquest.toJson());
+    final _options = _setStreamType<ForgetPasswordResponse>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'password_reset/confirm/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late ForgetPasswordResponse _value;
+    try {
+      _value = ForgetPasswordResponse.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<List<NotificationResponse>> getNotificationTeacher() async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    const Map<String, dynamic>? _data = null;
+    final _options = _setStreamType<List<NotificationResponse>>(Options(
+      method: 'GET',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'notification/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<List<dynamic>>(_options);
+    late List<NotificationResponse> _value;
+    try {
+      _value = _result.data!
+          .map((dynamic i) =>
+              NotificationResponse.fromJson(i as Map<String, dynamic>))
+          .toList();
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<List<NotificationQuationsResponse>>
+      getNotificationTeacherQuations() async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    const Map<String, dynamic>? _data = null;
+    final _options = _setStreamType<List<NotificationQuationsResponse>>(Options(
+      method: 'GET',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'lesson-question/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<List<dynamic>>(_options);
+    late List<NotificationQuationsResponse> _value;
+    try {
+      _value = _result.data!
+          .map((dynamic i) =>
+              NotificationQuationsResponse.fromJson(i as Map<String, dynamic>))
+          .toList();
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<List<CoursesResponseTc>> getCoursesTeacher() async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    const Map<String, dynamic>? _data = null;
+    final _options = _setStreamType<List<CoursesResponseTc>>(Options(
+      method: 'GET',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'courses/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<List<dynamic>>(_options);
+    late List<CoursesResponseTc> _value;
+    try {
+      _value = _result.data!
+          .map((dynamic i) =>
+              CoursesResponseTc.fromJson(i as Map<String, dynamic>))
+          .toList();
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<void> sendQuationsTeacher(QuationsRequest quationsRequest) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    _data.addAll(quationsRequest.toJson());
+    final _options = _setStreamType<void>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'lesson-question/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    await _dio.fetch<void>(_options);
+  }
+
+  @override
+  Future<CourseResponse> editCourses(AddCourseRuqest addCourseRuqest) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    _data.addAll(addCourseRuqest.toJson());
+    final _options = _setStreamType<CourseResponse>(Options(
+      method: 'PUT',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'courses/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late CourseResponse _value;
+    try {
+      _value = CourseResponse.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<AddCourseResponse> addCourses(AddCourseRuqest addCourseRuqest) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    _data.addAll(addCourseRuqest.toJson());
+    final _options = _setStreamType<AddCourseResponse>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'courses/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late AddCourseResponse _value;
+    try {
+      _value = AddCourseResponse.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<AddLevelResponse> addLevel(AddLevelRuqest addLevelRuqest) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    _data.addAll(addLevelRuqest.toJson());
+    final _options = _setStreamType<AddLevelResponse>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'levels/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late AddLevelResponse _value;
+    try {
+      _value = AddLevelResponse.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<CourseResponse> editLevel(AddLevelRuqest addLevelRuqest) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    _data.addAll(addLevelRuqest.toJson());
+    final _options = _setStreamType<CourseResponse>(Options(
+      method: 'PUT',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'levels/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late CourseResponse _value;
+    try {
+      _value = CourseResponse.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<AddLessionResponse> addLession(
+      AddLessionRuqest addLessionRuqest) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    _data.addAll(addLessionRuqest.toJson());
+    final _options = _setStreamType<AddLessionResponse>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'lessons/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late AddLessionResponse _value;
+    try {
+      _value = AddLessionResponse.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<CourseResponse> editLession(AddLessionRuqest addLessionRuqest) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    _data.addAll(addLessionRuqest.toJson());
+    final _options = _setStreamType<CourseResponse>(Options(
+      method: 'PUT',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'lessons/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late CourseResponse _value;
+    try {
+      _value = CourseResponse.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<AddTestResponse> addTest(AddTestRuqest addTestRuqest) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    _data.addAll(addTestRuqest.toJson());
+    final _options = _setStreamType<AddTestResponse>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'exams/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late AddTestResponse _value;
+    try {
+      _value = AddTestResponse.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<AddQuationResponse> addQuations(
+      List<QuationRuqest> quationRuqest) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = quationRuqest.map((e) => e.toJson()).toList();
+    final _options = _setStreamType<AddQuationResponse>(Options(
+      method: 'POST',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'questions/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late AddQuationResponse _value;
+    try {
+      _value = AddQuationResponse.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
+  }
+
+  @override
+  Future<CourseResponse> editQuations(List<QuationRuqest> quationRuqest) async {
+    final _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = quationRuqest.map((e) => e.toJson()).toList();
+    final _options = _setStreamType<CourseResponse>(Options(
+      method: 'PUT',
+      headers: _headers,
+      extra: _extra,
+    )
+        .compose(
+          _dio.options,
+          'questions/',
+          queryParameters: queryParameters,
+          data: _data,
+        )
+        .copyWith(
+            baseUrl: _combineBaseUrls(
+          _dio.options.baseUrl,
+          baseUrl,
+        )));
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late CourseResponse _value;
+    try {
+      _value = CourseResponse.fromJson(_result.data!);
     } on Object catch (e, s) {
       errorLogger?.logError(e, s, _options);
       rethrow;

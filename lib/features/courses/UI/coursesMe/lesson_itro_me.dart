@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:learn_programtion/core/helper/extention.dart';
 import 'package:learn_programtion/core/helper/spacing.dart';
-import 'package:learn_programtion/core/theming/color.dart';
 import 'package:learn_programtion/features/courses/logic/cubit/cubit/coursees_cubit.dart';
 import 'package:learn_programtion/features/courses/widget/item_device.dart';
 import 'package:learn_programtion/features/courses/widget/tab_bar_course.dart';

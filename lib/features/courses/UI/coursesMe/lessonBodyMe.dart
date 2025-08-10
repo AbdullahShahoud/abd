@@ -149,8 +149,8 @@ class _LessonItemState extends State<LessonBodyMe> {
                       textDirection: TextDirection.rtl,
                       textAlign: TextAlign.right,
                       softWrap: true,
-                      lessonMe!.descrption!,
-                      maxLines: 15,
+                      lessonMe!.description!,
+                      maxLines: 20,
                       textScaler: TextScaler.linear(1),
                       style: FontStyleAndText.homefonttext,
                     ),
@@ -182,7 +182,7 @@ class _LessonItemState extends State<LessonBodyMe> {
 }
 
 void sendQuationsMe(
-    BuildContext context, String idCourse, String idLesson, String text) {
+    BuildContext context, int idCourse, int idLesson, String text) {
   if (CourseesCubit.get(context).keyMe.currentState!.validate()) {
     CourseesCubit.get(context).emitSendQuation(idCourse, idLesson, text);
   }

@@ -23,19 +23,13 @@ class _CoursesLevelState extends State<CoursesLevel> {
   @override
   Widget build(BuildContext context) {
     final course = context.read<CourseesCubit>().selectedcorse;
-    if (course == null) {
-      return Scaffold(
-        body: Center(child: Text('لا يوجد كورس محدد')),
-      );
-    }
-
     return Scaffold(body: BlocBuilder<CourseesCubit, CoursesState>(
       builder: (context, state) {
         return SafeArea(
             child: SingleChildScrollView(
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
-            TabBarCourse(image: course.image!, name: course.name!),
+            TabBarCourse(image: course!.image!, name: course.name!),
             verticalBox(10.h),
             Text('المستويات', style: FontStyleAndText.homefont),
             Container(
@@ -48,12 +42,11 @@ class _CoursesLevelState extends State<CoursesLevel> {
                           child: LevelItem(
                             image: course.image!,
                             name: course.level[index].name,
-                            check: course.level[index].check,
                           ));
                     })),
             verticalBox(10.h),
             button(
-                text: 'التسجيل بالكورس ',
+                text: 'المتابعة',
                 paddingV: 16.h,
                 paddingH: 120.w,
                 function: () {

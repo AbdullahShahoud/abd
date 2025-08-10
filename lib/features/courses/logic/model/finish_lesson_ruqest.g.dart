@@ -8,12 +8,12 @@ part of 'finish_lesson_ruqest.dart';
 
 FinishLessonRuqest _$FinishLessonRuqestFromJson(Map<String, dynamic> json) =>
     FinishLessonRuqest(
-      lessonId: json['lessonId'] as String?,
-      courseId: json['courseId'] as String?,
+      lesson: (json['lesson'] as num?)?.toInt(),
+      course: (json['course'] as num?)?.toInt(),
     );
 
 Map<String, dynamic> _$FinishLessonRuqestToJson(FinishLessonRuqest instance) =>
     <String, dynamic>{
-      'courseId': instance.courseId,
-      'lessonId': instance.lessonId,
+      'course': instance.course,
+      'lesson': instance.lesson,
     };

@@ -28,12 +28,12 @@ class _QuationItemState extends State<QuationItem> {
         return Container(
             height: 650.h,
             child: ListView.builder(
-                itemCount: widget.test.question.length,
+                itemCount: widget.test.questions.length,
                 itemBuilder: (context, index) {
-                  final question = widget.test.question[index];
+                  final question = widget.test.questions[index];
                   return Container(
                       margin:
-                      EdgeInsets.only(bottom: 10.h, left: 8.w, right: 8.w),
+                          EdgeInsets.only(bottom: 10.h, left: 8.w, right: 8.w),
                       height: 300.h,
                       decoration: BoxDecoration(
                         color: ColorManger.primary_ColorBlue,
@@ -78,7 +78,7 @@ class _QuationItemState extends State<QuationItem> {
                                   children: [
                                     Text(
                                       textDirection: TextDirection.rtl,
-                                      question.responseOne!,
+                                      question.a!,
                                       textAlign: TextAlign.right,
                                       maxLines: 2,
                                       style: FontStyleAndText.fontmedia,
@@ -89,7 +89,7 @@ class _QuationItemState extends State<QuationItem> {
                                       child: Radio(
                                           focusColor: Colors.white,
                                           splashRadius: 15,
-                                          value: question.responseOne!,
+                                          value: question.a!,
                                           groupValue: grob[index],
                                           onChanged: (value) {
                                             setState(() {
@@ -114,7 +114,7 @@ class _QuationItemState extends State<QuationItem> {
                                   children: [
                                     Text(
                                       textDirection: TextDirection.rtl,
-                                      question.responseTwo!,
+                                      question.b!,
                                       textAlign: TextAlign.right,
                                       style: FontStyleAndText.fontmedia,
                                     ),
@@ -124,7 +124,7 @@ class _QuationItemState extends State<QuationItem> {
                                       child: Radio(
                                           focusColor: Colors.white,
                                           splashRadius: 15,
-                                          value: question.responseTwo,
+                                          value: question.b,
                                           groupValue: grob[index],
                                           onChanged: (value) {
                                             setState(() {
@@ -149,7 +149,7 @@ class _QuationItemState extends State<QuationItem> {
                                   children: [
                                     Text(
                                       textDirection: TextDirection.rtl,
-                                      question.responseThree!,
+                                      question.c!,
                                       textAlign: TextAlign.right,
                                       style: FontStyleAndText.fontmedia,
                                     ),
@@ -159,7 +159,7 @@ class _QuationItemState extends State<QuationItem> {
                                       child: Radio(
                                           focusColor: Colors.white,
                                           splashRadius: 15,
-                                          value: question.responseThree,
+                                          value: question.c,
                                           groupValue: grob[index],
                                           onChanged: (value) {
                                             setState(() {

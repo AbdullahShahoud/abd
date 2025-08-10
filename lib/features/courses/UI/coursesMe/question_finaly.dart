@@ -57,8 +57,7 @@ class _QuestionFinalyState extends State<QuestionFinaly> {
                       paddingV: 16.h,
                       paddingH: 140.w,
                       function: () {
-                        CourseesCubit.get(context).accountDagre();
-                        CourseesCubit.get(context).emitFinishTest();
+                        // CourseesCubit.get(context).emitFinishTest();
                         showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
@@ -69,7 +68,7 @@ class _QuestionFinalyState extends State<QuestionFinaly> {
                                         children: [
                                           Text(
                                             '''لقد حصلت عل
-                                                ${CourseesCubit.get(context).accountDagre()}/${CourseesCubit.get(context).responseUser.length} ''',
+                                              00 ''',
                                             textDirection: TextDirection.rtl,
                                             style: FontStyleAndText.fontmedia,
                                           ),
@@ -79,55 +78,51 @@ class _QuestionFinalyState extends State<QuestionFinaly> {
                                               paddingH: 50.w,
                                               paddingV: 17.h,
                                               function: () {
-                                                if (CourseesCubit.get(context)
-                                                        .accountDagre() >
-                                                    (CourseesCubit.get(context)
-                                                            .accountDagre() /
-                                                        2)) {
-                                                  CourseesCubit.get(context)
-                                                      .emitFinishCourse();
-                                                  showDialog(
-                                                      context: context,
-                                                      builder: (context) =>
-                                                          AlertDialog(
-                                                            content: Container(
-                                                              height: 200.h,
-                                                              child: Column(
-                                                                mainAxisAlignment:
-                                                                    MainAxisAlignment
-                                                                        .center,
-                                                                children: [
-                                                                  Icon(
-                                                                    Icons
-                                                                        .lock_open_rounded,
-                                                                    size: 40,
-                                                                    color: Colors
-                                                                        .green,
-                                                                  ),
-                                                                  verticalBox(
-                                                                      15.h),
-                                                                  Text(
-                                                                    'تم إنهاء الكورس بنجاح',
-                                                                    style: FontStyleAndText
-                                                                        .fontmedia,
-                                                                  ),
-                                                                  verticalBox(
-                                                                      10.h),
-                                                                  button(
-                                                                      paddingH:
-                                                                          30.w,
-                                                                      text:
-                                                                          'موافق',
-                                                                      function:
-                                                                          () {
-                                                                        context.pushNamed(
-                                                                            Routers.home_page);
-                                                                      })
-                                                                ],
+                                                CourseesCubit.get(context)
+                                                    .emitFinishCourse();
+                                                showDialog(
+                                                    context: context,
+                                                    builder:
+                                                        (context) =>
+                                                            AlertDialog(
+                                                              content:
+                                                                  Container(
+                                                                height: 200.h,
+                                                                child: Column(
+                                                                  mainAxisAlignment:
+                                                                      MainAxisAlignment
+                                                                          .center,
+                                                                  children: [
+                                                                    Icon(
+                                                                      Icons
+                                                                          .lock_open_rounded,
+                                                                      size: 40,
+                                                                      color: Colors
+                                                                          .green,
+                                                                    ),
+                                                                    verticalBox(
+                                                                        15.h),
+                                                                    Text(
+                                                                      'تم إنهاء الكورس بنجاح',
+                                                                      style: FontStyleAndText
+                                                                          .fontmedia,
+                                                                    ),
+                                                                    verticalBox(
+                                                                        10.h),
+                                                                    button(
+                                                                        paddingH: 30
+                                                                            .w,
+                                                                        text:
+                                                                            'موافق',
+                                                                        function:
+                                                                            () {
+                                                                          context
+                                                                              .pushNamed(Routers.home_page);
+                                                                        })
+                                                                  ],
+                                                                ),
                                                               ),
-                                                            ),
-                                                          ));
-                                                }
+                                                            ));
                                               })
                                         ],
                                       )),

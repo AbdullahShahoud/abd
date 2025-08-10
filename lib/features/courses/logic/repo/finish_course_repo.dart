@@ -1,5 +1,6 @@
-import 'package:learn_programtion/features/courses/logic/model/finish_coures_ruqest.dart';
-import 'package:learn_programtion/features/courses/logic/model/finish_course_response.dart';
+import 'package:dio/dio.dart';
+import 'package:learn_programtion/features/courses/logic/model/finishCourser/finish_coures_ruqest.dart';
+import 'package:learn_programtion/features/courses/logic/model/finishCourser/finish_course_response.dart';
 
 import '../../../../core/network/api_error_handler.dart';
 import '../../../../core/network/api_result.dart';
@@ -13,8 +14,10 @@ class FinishCourseRepo {
     try {
       final response = await _apiService.finishCourse(finishCourseRuqest);
       return ApiResult.success(response);
+    } on DioError catch (error) {
+      return ApiResult.failure(ApiErrorHandler.fromDioError(error));
     } catch (error) {
-      return ApiResult.failure(ApiErrorHandler(error));
+      return ApiResult.failure(ApiErrorHandler.fromGenericError(error));
     }
   }
 }
